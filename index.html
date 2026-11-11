@@ -1,0 +1,1479 @@
+<!doctype html>
+<html lang="pt-PT">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Casa Chãs d’Égua</title>
+<meta name="description" content="Casa Chãs d’Égua, Arganil: estudo de interiores de uma casa de xisto. A casa em 3D, as vistas, os desenhos e os documentos.">
+<link rel="icon" href="icone.svg" type="image/svg+xml">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Casa Chãs d’Égua">
+<meta property="og:description" content="Estudo de interiores de uma casa de xisto em Chãs d’Égua: a casa em 3D, as vistas, os desenhos e os documentos.">
+<meta property="og:image" content="https://lgnative.github.io/casa-chas-de-egua/img/partilha.jpg">
+<meta property="og:image:width" content="1200"><meta property="og:image:height" content="630">
+<meta property="og:locale" content="pt_PT">
+<meta name="twitter:card" content="summary_large_image">
+<script>document.documentElement.classList.add("js");
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..600;1,400&display=swap" rel="stylesheet">
+<style>
+  
+  :root {
+    color-scheme: light;
+    --papel: #ffffff; --tinta: #1b1c1d; --cinza: #62625d; --linha: #dddcd6; --azul: #3f5870; --fundo: #f5f3ee;
+    --serif: "Instrument Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    --sans: "Instrument Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    --margem: clamp(20px, 5vw, 88px); --max: 1480px;
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body { margin: 0; background: var(--papel); color: var(--tinta); font: 400 17px/1.55 var(--sans); -webkit-font-smoothing: antialiased; }
+  img { display: block; max-width: 100%; height: auto; }
+  a { color: inherit; text-underline-offset: 4px; text-decoration-thickness: 1px; }
+  h1, h2, h3, p, figure, ul { margin: 0; padding: 0; }
+  ul { list-style: none; }
+  .serif { font-family: var(--serif); font-weight: 400; letter-spacing: -.01em; }
+  .rotulo { font-size: 12px; font-weight: 600; letter-spacing: .14em; text-transform: uppercase; color: var(--cinza); }
+
+  
+  .barra { position: fixed; inset: 0 0 auto 0; z-index: 20; display: flex; justify-content: space-between; align-items: center; gap: 24px;
+    padding: 18px var(--margem); color: #fff; transition: background .3s var(--ease), color .3s var(--ease), border-color .3s var(--ease); border-bottom: 1px solid transparent; }
+  .barra.fixa { background: rgba(255, 255, 255, .92); -webkit-backdrop-filter: blur(12px); backdrop-filter: blur(12px); color: var(--tinta); border-color: var(--linha); }
+  
+  .barra .nome { font-family: var(--serif); font-size: 28px; text-decoration: none; }
+  .barra nav { display: flex; gap: clamp(18px, 2.6vw, 40px); font-size: 17px; font-weight: 500; letter-spacing: -.01em; }
+  .barra nav a { text-decoration: none; padding: 8px 0; background: linear-gradient(currentColor, currentColor) 0 100% / 0 1.5px no-repeat; transition: background-size .3s var(--ease); }
+  .barra nav a:hover { background-size: 100% 1.5px; }
+  .barra nav a[aria-current] { background-size: 100% 1.5px; }   
+  .barra .entrar { display: inline-flex; align-items: center; height: 42px; padding: 0 20px; border-radius: 999px; background: #fff; color: var(--tinta); font-size: 15px; font-weight: 500; text-decoration: none; white-space: nowrap; transition: background .3s var(--ease), color .3s var(--ease), transform .2s var(--ease); }
+  .barra .entrar:hover { transform: translateY(-1px); } .barra.fixa .entrar { background: var(--tinta); color: #fff; }
+  .capa::before { content: ""; position: absolute; inset: 0 0 auto 0; height: 170px; background: linear-gradient(rgba(15, 15, 14, .58), rgba(15, 15, 14, .3) 55%, transparent); z-index: 1; pointer-events: none; }
+
+  
+  .capa { position: relative; min-height: 92svh; display: grid; align-items: end; color: #fff; overflow: hidden; }
+  .capa > img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; transform: scale(1.04); animation: none; }
+  .capa::after { content: ""; position: absolute; inset: 0; background: linear-gradient(180deg, rgba(20, 20, 18, 0) 0%, rgba(20, 20, 18, 0) 56%, rgba(20, 20, 18, .66) 100%); }
+  @keyframes respira { to { transform: scale(1); } }
+  .capa .texto { position: relative; z-index: 1; padding: 0 var(--margem) clamp(36px, 7vh, 84px); max-width: var(--max); width: 100%; margin: 0 auto; }
+  .capa h1 { font-family: var(--serif); font-weight: 400; font-size: clamp(64px, 13vw, 208px); line-height: .9; letter-spacing: -.025em; }
+  .capa .sob { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: end; gap: 20px 40px; margin-top: clamp(18px, 3vh, 34px); }
+  .capa .onde { display: block; margin-top: 10px; font-size: 14px; opacity: .8; }
+  .capa .sob p { max-width: 34ch; font-size: clamp(16px, 1.5vw, 20px); line-height: 1.4; }
+  .botoes { display: flex; flex-wrap: wrap; gap: 10px; }
+  .botao { display: inline-flex; align-items: center; height: 46px; padding: 0 22px; border-radius: 999px; font-size: 15px; font-weight: 500; text-decoration: none; background: #fff; color: var(--tinta); transition: transform .2s var(--ease), background .2s var(--ease); }
+  .botao:hover { transform: translateY(-1px); }
+  .botao.linha { background: transparent; color: #fff; box-shadow: inset 0 0 0 1px rgba(255, 255, 255, .7); }
+  .botao.escuro { background: var(--tinta); color: #fff; }
+  .botao.contorno { background: transparent; color: var(--tinta); box-shadow: inset 0 0 0 1px var(--tinta); }
+
+  
+  section { padding: clamp(72px, 12vh, 150px) var(--margem); }
+  .dentro { max-width: var(--max); margin: 0 auto; }
+  .cab { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 2.2fr); gap: 24px clamp(24px, 6vw, 110px); align-items: start; margin-bottom: clamp(36px, 6vh, 72px); }
+  .cab .num { font-family: var(--serif); font-size: clamp(54px, 7vw, 108px); line-height: .85; color: var(--azul); }
+  .cab h2 { font-family: var(--serif); font-weight: 400; font-size: clamp(36px, 4.8vw, 76px); line-height: 1; letter-spacing: -.015em; }
+  .cab p { margin-top: 18px; max-width: 58ch; color: var(--cinza); }
+
+  .ideia { background: var(--fundo); }
+  .serra { padding: 0; }
+  .serra img { width: 100%; height: min(82svh, 900px); object-fit: cover; }
+  .serra figcaption { padding: 0 var(--margem); max-width: var(--max); margin: 12px auto 0; }
+  .ideia-grelha { display: grid; grid-template-columns: minmax(0, 7fr) minmax(0, 5fr); gap: clamp(28px, 6vw, 110px); align-items: center; }   
+  .ideia-grelha img { width: 100%; aspect-ratio: 4 / 5; max-height: 78svh; object-fit: cover; object-position: 50% 70%; }
+  .lema { font-size: clamp(30px, 3.9vw, 60px); line-height: 1.1; letter-spacing: -.035em; font-weight: 500; max-width: 18ch; text-wrap: balance; }
+  .corpo { margin-top: clamp(22px, 3vh, 36px); font-size: clamp(17px, 1.35vw, 20px); line-height: 1.55; max-width: 44ch; color: var(--tinta); }
+  .ideia blockquote { margin: 0; font-family: var(--serif); font-size: clamp(30px, 4.3vw, 68px); line-height: 1.08; letter-spacing: -.012em; max-width: 22ch; }
+  .ideia blockquote em { color: var(--azul); font-style: italic; }
+  .factos { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 0; margin-top: clamp(48px, 8vh, 96px); border-top: 1px solid var(--tinta); }
+  .factos li { padding: 18px 18px 0 0; }
+  .factos b { display: block; font-family: var(--serif); font-weight: 400; font-size: clamp(40px, 5vw, 76px); line-height: 1; }
+  .factos span { display: block; margin-top: 8px; font-size: 15px; color: var(--cinza); max-width: 22ch; }
+
+  
+  
+  .tres { display: grid; grid-template-columns: minmax(0, 5fr) minmax(0, 7fr); gap: clamp(24px, 6vw, 110px); align-items: center; max-width: calc(var(--max) + 2 * var(--margem)); margin: 0 auto; }
+  .tres img { order: 2; width: 100%; height: auto; }
+  .tres .por { order: 1; }
+  .tres h2 { font-size: clamp(36px, 4.8vw, 76px); line-height: 1; letter-spacing: -.035em; font-weight: 500; max-width: 16ch; margin: 0 0 20px; }
+  .tres p { max-width: 42ch; margin: 0 0 28px; color: var(--cinza); }
+  .tres .rotulo { color: rgba(255, 255, 255, .8); }
+  @media (max-width: 767px) { .tres .pc { display: none; } .tres .tel { display: block; } }
+
+  
+  .div { display: grid; grid-template-columns: repeat(12, minmax(0, 1fr)); gap: clamp(10px, 1.4vw, 22px); }
+  .div figure { overflow: hidden; background: var(--fundo); cursor: zoom-in; }
+  .div figure img { width: 100%; height: 100%; object-fit: cover; transition: transform .9s var(--ease); }
+  .div figure:hover img { transform: scale(1.025); }
+  .g8 { grid-column: span 8; aspect-ratio: 3 / 2; } .g4 { grid-column: span 4; } .g6 { grid-column: span 6; aspect-ratio: 3 / 2; } .g12 { grid-column: span 12; aspect-ratio: 21 / 9; }
+  .pilha { display: grid; gap: clamp(10px, 1.4vw, 22px); grid-template-rows: 1fr 1fr; }
+  .pilha figure { min-height: 0; }
+  .notas { grid-column: span 12; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 0 clamp(20px, 3vw, 48px); margin: clamp(18px, 3vh, 34px) 0 clamp(56px, 9vh, 110px); }
+  .notas li { border-top: 1px solid var(--linha); padding: 12px 0 0; font-size: 15px; color: var(--cinza); }
+  .notas b { display: block; color: var(--tinta); font-weight: 500; margin-bottom: 2px; }
+  .sub { grid-column: span 12; display: flex; align-items: baseline; gap: 18px; margin-bottom: 6px; }
+  .sub h3 { font-family: var(--serif); font-weight: 400; font-size: clamp(30px, 3.4vw, 52px); line-height: 1; }
+  .sub span { font-size: 15px; color: var(--cinza); }
+
+  
+  .hoje-fora { display: grid; grid-template-columns: minmax(0, 5fr) minmax(0, 7fr); gap: clamp(10px, 1.4vw, 22px); margin-bottom: clamp(56px, 9vh, 110px); }
+  .hoje-fora img { width: 100%; height: clamp(320px, 40vw, 620px); object-fit: cover; background: var(--fundo); }
+  .pares { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: clamp(22px, 3vh, 36px) clamp(10px, 1.4vw, 22px); margin-top: clamp(14px, 2vh, 22px); }
+  .pares img { width: 100%; aspect-ratio: 3 / 2; object-fit: cover; background: var(--fundo); }
+  
+  .comparas { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: clamp(22px, 3vh, 36px) clamp(10px, 1.4vw, 22px); margin-top: clamp(14px, 2vh, 22px); }
+  
+  .compara .janela { --x: 50%; position: relative; aspect-ratio: 3 / 2; overflow: hidden; background: var(--fundo); }
+  .compara img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+  .compara .prop { clip-path: inset(0 0 0 var(--x)); }
+  .compara .fio { position: absolute; top: 0; bottom: 0; left: var(--x); width: 2px; margin-left: -1px; background: #fff; pointer-events: none; }
+  .compara .fio::after { content: ""; position: absolute; top: 50%; left: 50%; width: 46px; height: 46px; transform: translate(-50%, -50%); border-radius: 50%; background: #fff url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 256 256' fill='%231b1c1d'%3E%3Cpath d='M236.24,132.24l-32,32a6,6,0,0,1-8.48-8.48L217.51,134h-179l21.75,21.76a6,6,0,1,1-8.48,8.48l-32-32a6,6,0,0,1,0-8.48l32-32a6,6,0,0,1,8.48,8.48L38.49,122h179l-21.75-21.76a6,6,0,0,1,8.48-8.48l32,32A6,6,0,0,1,236.24,132.24Z'/%3E%3C/svg%3E") center / 24px no-repeat; box-shadow: 0 2px 12px rgba(20, 20, 18, .22); transition: transform .2s var(--ease); }
+  .compara .janela:hover .fio::after { transform: translate(-50%, -50%) scale(1.08); }
+  .compara .rot { position: absolute; top: 14px; padding: 5px 11px; border-radius: 999px; background: rgba(20, 20, 18, .78); color: #fff; font-size: 13px; font-weight: 500; pointer-events: none; }   
+  .compara .rot.e { left: 14px; } .compara .rot.d { right: 14px; }
+  .compara:first-child { grid-column: span 2; }
+  .compara input { position: absolute; inset: 0; width: 100%; height: 100%; margin: 0; opacity: 0; cursor: ew-resize; touch-action: pan-y; pointer-events: none; }
+  .compara .janela { touch-action: pan-y; cursor: ew-resize; user-select: none; -webkit-user-select: none; } .compara .janela img { pointer-events: none; -webkit-user-drag: none; }
+  .compara .janela:has(input:focus-visible) { outline: 2px solid var(--azul); outline-offset: 3px; }
+  #hoje .hoje-fora figure, .ideia figure { cursor: zoom-in; } .hoje figcaption { margin-top: 10px; }
+  #hoje .sub { margin-bottom: 0; }
+
+  
+  .desenhos { background: var(--fundo); }
+  .folhas { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: clamp(16px, 2.4vw, 40px); }
+  .folhas figure { background: var(--papel); padding: clamp(10px, 1.6vw, 26px); cursor: zoom-in; }
+  .folhas figure.larga { grid-column: span 2; }
+  .folhas img { width: 100%; }
+  figcaption { margin-top: 12px; font-size: 15px; color: var(--cinza); }
+  figcaption b { color: var(--tinta); font-weight: 500; }
+
+  
+  .mats { display: grid; grid-template-columns: repeat(6, minmax(0, 1fr)); gap: clamp(12px, 1.6vw, 24px); }
+  .mats i { display: block; aspect-ratio: 3 / 4; border: 1px solid rgba(0, 0, 0, .08); }
+  .mats b { display: block; margin-top: 12px; font-weight: 500; font-size: 15px; }
+  .mats span { display: block; font-size: 14px; color: var(--cinza); line-height: 1.4; margin-top: 2px; }
+
+  
+  .docs { border-top: 1px solid var(--tinta); }
+  .docs li { border-bottom: 1px solid var(--linha); }
+  .docs a { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr) 84px; gap: 24px clamp(24px, 6vw, 110px); align-items: baseline; padding: clamp(18px, 2.6vh, 30px) 0; text-decoration: none; transition: padding .3s var(--ease), color .2s var(--ease); }
+  .docs a:hover { padding-left: 14px; color: var(--azul); }
+  .docs strong { font-family: var(--serif); font-weight: 400; font-size: clamp(26px, 3vw, 46px); line-height: 1.05; }
+  .docs em { font-style: normal; font-size: 16px; color: var(--cinza); }
+  .docs .seta { font-size: 15px; font-weight: 500; white-space: nowrap; text-align: right; }
+
+  
+  .falta { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 2.2fr); gap: 0 clamp(24px, 6vw, 110px); }
+  .falta > div { grid-column: 2; }
+  .falta h3 { font-size: 17px; font-weight: 600; letter-spacing: -.01em; color: var(--tinta); padding-bottom: 10px; border-bottom: 1px solid var(--tinta); }
+  .falta li { padding: 12px 0; border-bottom: 1px solid var(--linha); font-size: 16px; }
+
+  footer { padding: 44px var(--margem) 54px; border-top: 1px solid var(--linha); color: var(--cinza); font-size: 14px; }
+  footer .dentro { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 12px 40px; }
+
+  
+  
+  dialog { border: 0; padding: clamp(10px, 3vw, 44px) clamp(64px, 6vw, 104px) clamp(58px, 8vh, 88px); margin: 0; max-width: none; max-height: none; width: 100vw; height: 100dvh; background: #141413; }
+  dialog[open] { display: grid; place-items: center; }
+  dialog::backdrop { background: transparent; }
+  dialog img { max-width: 100%; max-height: 100%; width: auto; height: auto; min-width: 0; min-height: 0; background: #fff; cursor: zoom-out; }
+  dialog img[src$='.svg'] { aspect-ratio: 420 / 297; width: min(100%, calc((100dvh - clamp(10px, 3vw, 44px) - clamp(58px, 8vh, 88px)) * 420 / 297)); height: auto; }
+  dialog #fechar { position: fixed; top: 16px; right: 18px; height: 44px; padding: 0 18px; border-radius: 999px; border: 0; background: #fff; color: var(--tinta); font: 500 14px var(--sans); cursor: pointer; }
+
+  
+  dialog .passa { position: fixed; top: 50%; transform: translateY(-50%); display: grid; place-items: center; width: 48px; height: 48px; border: 0; border-radius: 999px; background: rgba(255, 255, 255, .92); color: var(--tinta); cursor: pointer; transition: background .2s var(--ease); }
+  dialog .passa:hover { background: #fff; } #anterior { left: clamp(8px, 1.6vw, 28px); } #seguinte { right: clamp(8px, 1.6vw, 28px); }
+  dialog .legenda { position: fixed; left: 0; right: 0; bottom: clamp(16px, 2.6vh, 30px); padding: 0 72px; text-align: center; color: rgba(255, 255, 255, .84); font-size: 15px; line-height: 1.45; text-wrap: balance; }
+  dialog .legenda b { color: #fff; font-weight: 500; }
+  dialog .conta { position: fixed; top: 26px; left: 22px; color: rgba(255, 255, 255, .62); font-size: 14px; font-variant-numeric: tabular-nums; }
+  @media (max-width: 860px) { dialog { padding: 64px 10px 92px; } dialog .passa { top: auto; bottom: 22px; transform: none; width: 44px; height: 44px; } dialog .legenda { bottom: 76px; padding: 0 16px; } }
+
+  
+  
+  .js .ver { opacity: 1; transform: none; }
+  
+  .capa h1, .cab h2, .cab .num, .ideia blockquote, .sub h3, .docs strong, .factos b, .barra .nome { letter-spacing: -.035em; font-weight: 500; }
+  .cab .num, .factos b { font-weight: 400; } .capa h1 { font-size: clamp(52px, 8.4vw, 132px); letter-spacing: -.04em; word-spacing: .06em; } .ideia blockquote { line-height: 1.12; }
+  
+  ::selection { background: var(--azul); color: #fff; }
+  :focus-visible { outline: 2px solid var(--azul); outline-offset: 3px; }
+  h1, h2, h3, blockquote { text-wrap: balance; } p, li, figcaption { text-wrap: pretty; }
+  .factos b, .docs em, .sub span { font-variant-numeric: tabular-nums; }
+  html { scrollbar-color: #b9b7af transparent; }
+  .js .ver.visto { opacity: 1; transform: none; }
+  
+  .botao { gap: 10px; transition: transform .3s var(--ease), background .2s var(--ease), box-shadow .2s var(--ease); }
+  .botao::after, #menu .tres3d::after { content: ""; flex: none; width: 18px; height: 18px; background: currentColor; transition: transform .3s var(--ease);
+    -webkit-mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 256 256' fill='%23000'%3E%3Cpath d='M220.24,132.24l-72,72a6,6,0,0,1-8.48-8.48L201.51,134H40a6,6,0,0,1,0-12H201.51L139.76,60.24a6,6,0,0,1,8.48-8.48l72,72A6,6,0,0,1,220.24,132.24Z'/%3E%3C/svg%3E") center / contain no-repeat;
+    mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 256 256' fill='%23000'%3E%3Cpath d='M220.24,132.24l-72,72a6,6,0,0,1-8.48-8.48L201.51,134H40a6,6,0,0,1,0-12H201.51L139.76,60.24a6,6,0,0,1,8.48-8.48l72,72A6,6,0,0,1,220.24,132.24Z'/%3E%3C/svg%3E") center / contain no-repeat; }
+  .botao:hover::after, #menu .tres3d:hover::after { transform: translateX(5px); }
+  .botao.linha::after { transform: rotate(90deg); } .botao.linha:hover::after { transform: rotate(90deg) translateX(4px); }   
+  .botao:active, .barra .entrar:active, .abre-menu:active, #menu .tres3d:active, #menu .fecha:active { transform: scale(.97); }
+  .abre-menu, #menu .tres3d, #menu .fecha { transition: transform .2s var(--ease), background .2s var(--ease); }
+  #menu .tres3d { gap: 10px; }
+  @media (prefers-reduced-motion: no-preference) { .capa .botao:first-child { animation: none; } }
+  @keyframes sobe { from { transform: translateY(14px); } }
+  
+  .ver-hero { display: none; }
+  dialog.so-uma .passa, dialog.so-uma .conta { display: none; }
+  
+  .abre-menu { display: none; align-items: center; height: 44px; padding: 0 18px; margin-left: auto; border: 0; border-radius: 999px; background: var(--tinta); color: #fff; font: 500 14.5px var(--sans); cursor: pointer; }
+  .botoes .desce { display: none; align-items: center; justify-content: center; gap: 8px; height: 44px; color: #fff; font-size: 15px; font-weight: 500; text-decoration: none; }
+  .botoes .desce svg { animation: none; }
+  @keyframes desce { 0%, 100% { transform: translateY(-2px); } 50% { transform: translateY(3px); } }
+  @media (prefers-reduced-motion: reduce) { .botoes .desce svg { animation: none; } }
+  
+  dialog#menu { background: var(--fundo); color: var(--tinta); }
+  dialog#menu[open] { display: flex; flex-direction: column; align-items: stretch; justify-items: stretch; padding: 14px var(--margem) max(22px, env(safe-area-inset-bottom, 0px)); }
+  #menu .topo { display: flex; justify-content: space-between; align-items: center; font-size: 24px; font-weight: 500; letter-spacing: -.035em; }
+  #menu .fecha { height: 44px; padding: 0 18px; border: 0; border-radius: 999px; background: var(--tinta); color: #fff; font: 500 14.5px var(--sans); cursor: pointer; }
+  #menu nav { display: grid; margin-top: 28px; border-top: 1px solid var(--tinta); }
+  #menu nav a { display: flex; justify-content: space-between; align-items: center; padding: 16px 0; border-bottom: 1px solid var(--linha); color: var(--tinta); font-size: clamp(30px, 9.4vw, 40px); line-height: 1.05; font-weight: 500; letter-spacing: -.04em; text-decoration: none; }
+  #menu nav a::after { content: ""; flex: none; width: 22px; height: 22px; background: var(--azul); -webkit-mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 256 256' fill='%23000'%3E%3Cpath d='M220.24,132.24l-72,72a6,6,0,0,1-8.48-8.48L201.51,134H40a6,6,0,0,1,0-12H201.51L139.76,60.24a6,6,0,0,1,8.48-8.48l72,72A6,6,0,0,1,220.24,132.24Z'/%3E%3C/svg%3E") center / contain no-repeat; mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 256 256' fill='%23000'%3E%3Cpath d='M220.24,132.24l-72,72a6,6,0,0,1-8.48-8.48L201.51,134H40a6,6,0,0,1,0-12H201.51L139.76,60.24a6,6,0,0,1,8.48-8.48l72,72A6,6,0,0,1,220.24,132.24Z'/%3E%3C/svg%3E") center / contain no-repeat; transition: transform .3s var(--ease); }
+  #menu nav a:hover::after, #menu nav a:active::after { transform: translateX(5px); }
+  #menu nav a span { display: inline-flex; align-items: center; gap: 16px; }
+  #menu .ic { flex: none; width: 30px; height: 30px; fill: none; stroke: var(--azul); stroke-width: 1.5; stroke-linecap: round; stroke-linejoin: round; }   
+  #menu .fim { margin-top: auto; padding-top: 24px; display: grid; gap: 14px; }
+  #menu .tres3d { display: flex; align-items: center; justify-content: center; height: 54px; border-radius: 999px; background: var(--tinta); color: #fff; font-size: 16px; font-weight: 500; text-decoration: none; }
+  #menu .sitio { font-size: 14px; color: var(--cinza); text-align: center; }
+  @media (prefers-reduced-motion: no-preference) {
+    #menu[open] nav a { animation: entra .5s var(--ease) backwards; }
+    #menu[open] nav a:nth-child(2) { animation-delay: .04s; } #menu[open] nav a:nth-child(3) { animation-delay: .08s; } #menu[open] nav a:nth-child(4) { animation-delay: .12s; }
+    #menu[open] nav a:nth-child(5) { animation-delay: .16s; } #menu[open] nav a:nth-child(6) { animation-delay: .2s; }
+  }
+  @keyframes entra { from { transform: translateY(16px); } }
+  
+  .carrossel { display: contents; }
+  @media (max-width: 860px) {
+    .carrossel, .hoje-fora { grid-column: span 12; display: flex; gap: 10px; overflow-x: auto; scroll-snap-type: x mandatory; margin: 0 calc(-1 * var(--margem)); padding: 0 var(--margem); scroll-padding: 0 var(--margem); scrollbar-width: none; -webkit-overflow-scrolling: touch; }
+    .carrossel::-webkit-scrollbar, .hoje-fora::-webkit-scrollbar { display: none; }
+    .carrossel .pilha { display: contents; }
+    .carrossel figure, .hoje-fora figure { flex: 0 0 86%; scroll-snap-align: start; }
+    .carrossel figure, .carrossel .pilha figure { aspect-ratio: 4 / 3; }
+    .hoje-fora { margin-bottom: clamp(40px, 6vh, 64px); } .hoje-fora img { aspect-ratio: 4 / 3; height: auto; }
+    .factos { row-gap: 0; } .factos li { display: grid; grid-template-columns: 40% minmax(0, 1fr); gap: 14px; align-items: baseline; padding: 14px 0; border-bottom: 1px solid var(--linha); }
+    .factos b { font-size: 30px; } .factos span { margin-top: 0; max-width: none; }
+    section { padding-top: 64px; padding-bottom: 64px; } .tres { row-gap: 20px; }
+  }
+  
+  
+  .barra .nome, .barra .entrar { transition: opacity .3s var(--ease), background .3s var(--ease), color .3s var(--ease); }
+  .barra:not(.fixa) .entrar { opacity: 0; pointer-events: none; }
+  @media (max-width: 860px) { .barra:not(.fixa) .nome { opacity: 0; pointer-events: none; } }
+  @media (max-width: 860px) {
+    
+    .capa { display: flex; flex-direction: column; min-height: 92svh; color: var(--tinta); background: var(--fundo); }
+    .capa .texto { order: 1; position: static; padding: 84px var(--margem) 24px; }
+    .capa h1 { font-size: clamp(64px, 22.5vw, 96px); line-height: .88; letter-spacing: -.045em; }
+    .capa .sob { margin-top: 16px; display: block; } .capa .sob p { max-width: 30ch; font-size: 17px; }
+    .capa .onde { opacity: 1; color: var(--cinza); }
+    .capa > img { order: 2; position: static; flex: 1 1 auto; width: 100%; height: auto; min-height: 44svh; object-fit: cover; object-position: 48% 50%; animation: none; transform: none; }
+    .capa::before { display: none; }
+    .capa::after { inset: auto 0 0 0; height: 190px; background: linear-gradient(180deg, rgba(20, 20, 18, 0), rgba(20, 20, 18, .66)); }
+    .ver-hero { position: absolute; z-index: 1; right: var(--margem); bottom: 128px; display: inline-flex; align-items: center; gap: 8px; height: 40px; padding: 0 14px; border: 0; border-radius: 999px; background: rgba(255, 255, 255, .92); color: var(--tinta); font: 500 13.5px var(--sans); cursor: pointer; }
+    .capa > img { cursor: zoom-in; }
+    .botoes { position: absolute; z-index: 1; left: var(--margem); right: var(--margem); bottom: 14px; flex-direction: column; gap: 2px; }
+    .botoes .botao { justify-content: center; height: 50px; } .botoes .botao.linha { display: none; }
+    .botoes .desce { display: inline-flex; }
+    .barra { color: var(--tinta); } .barra .entrar, .barra nav, .barra.fixa nav { display: none; } .abre-menu { display: inline-flex; }
+    .barra { flex-wrap: nowrap; padding-top: 14px; padding-bottom: 14px; } section[id] { scroll-margin-top: 76px; }
+  }
+
+
+  section[id] { scroll-margin-top: 84px; } .sem-topo { padding-top: 0; }
+  @media (min-width: 768px) { .tres .tel { display: none; } }
+  .capa :focus-visible, .barra:not(.fixa) :focus-visible, dialog :focus-visible { outline-color: #fff; }
+  .botao:hover { background: var(--fundo); } .botao.linha:hover { background: rgba(255, 255, 255, .12); } .botao.escuro:hover { background: #000; }
+  @media print { .js .ver { opacity: 1; transform: none; } .barra, dialog { display: none; } .capa { min-height: 0; } .capa > img { position: static; animation: none; transform: none; } .capa .texto { color: var(--tinta); } }
+  @media (prefers-reduced-motion: reduce) { .js .ver { opacity: 1; transform: none; transition: none var(--ease); } .capa > img { animation: none; transform: none; } html { scroll-behavior: auto; } }
+
+  @media (max-width: 860px) {
+    body { font-size: 16px; }
+    .barra { flex-wrap: wrap; row-gap: 2px; padding-top: 12px; padding-bottom: 8px; }
+    .barra nav { display: none; order: 3; flex-basis: 100%; overflow-x: auto; gap: 22px; font-size: 15px; white-space: nowrap; scrollbar-width: none; margin: 0 calc(-1 * var(--margem)); padding: 0 var(--margem); }
+    .barra nav::-webkit-scrollbar { display: none; }
+    .barra.fixa nav { display: flex; } .barra nav a { padding: 10px 0; }
+    section[id] { scroll-margin-top: 112px; }
+    .barra .nome { font-size: 24px; } .barra .entrar { height: 44px; padding: 0 18px; font-size: 15px; }
+    .cab { grid-template-columns: 1fr; } .cab > div:first-child:empty { display: none; }
+    .factos { grid-template-columns: 1fr; row-gap: 26px; }
+    .g8, .g4, .g6 { grid-column: span 12; } .g12 { aspect-ratio: 3 / 2; }
+    .pilha { grid-template-rows: none; grid-template-columns: 1fr 1fr; } .pilha figure { aspect-ratio: 1; }
+    .notas { grid-template-columns: 1fr; row-gap: 12px; }
+    .ideia-grelha, .tres { grid-template-columns: minmax(0, 1fr); } .tres img { order: 0; } .serra img { height: 62svh; }
+    .mats { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+    .hoje-fora, .pares, .comparas { grid-template-columns: minmax(0, 1fr); } .compara:first-child { grid-column: auto; } .hoje-fora img { height: auto; aspect-ratio: 4 / 3; }
+    .folhas { grid-template-columns: 1fr; } .folhas figure.larga { grid-column: auto; }
+    .docs a { grid-template-columns: 1fr auto; } .docs em { grid-column: 1; grid-row: 2; }
+    .falta { grid-template-columns: 1fr; row-gap: 36px; } .falta > div { grid-column: auto; }
+  }
+
+  
+  .cab { grid-template-columns: minmax(0, 1fr); }
+  .cab > div:first-child:empty, .cab > .num:empty { display: none; }
+  .cab > div:last-child { display: grid; grid-template-columns: minmax(0, 5fr) minmax(0, 7fr); gap: 16px clamp(24px, 5vw, 96px); align-items: end; }
+  .cab > div:last-child > p { margin-top: 0; padding-bottom: .35em; }
+  .cab > div:last-child > *:not(h2):not(p) { grid-column: 1 / -1; }
+  .factos li { padding: 26px 28px 0 0; }
+  .factos .fi { display: block; width: 34px; height: 34px; color: var(--azul); margin-bottom: 22px; }
+  .factos span { max-width: 30ch; }
+  footer .assin { display: inline-flex; align-items: center; gap: 12px; color: var(--tinta); }
+  footer .marca { width: 26px; height: 26px; color: var(--azul); }
+  @media (max-width: 860px) {
+    .cab > div:last-child { grid-template-columns: minmax(0, 1fr); }
+    .cab > div:last-child > p { margin-top: 14px; padding-bottom: 0; }
+    .factos .fi { display: none; }
+  }
+
+  
+  .guia { position: fixed; right: var(--margem); bottom: 24px; z-index: 30; width: 216px; padding: 14px 14px 12px; background: color-mix(in srgb, var(--fundo) 94%, transparent); border: 1px solid var(--linha); border-radius: 14px; backdrop-filter: blur(8px); opacity: 0; transform: translateY(12px); pointer-events: none; transition: opacity .3s var(--ease), transform .5s var(--ease); }
+  .guia.on { opacity: 1; transform: none; pointer-events: auto; }
+  .guia-t { display: block; font-size: 13px; color: var(--cinza); margin-bottom: 8px; }
+  .planta-guia { display: block; width: 100%; height: auto; overflow: visible; }
+  .planta-guia .mur { fill: var(--tinta); }
+  .planta-guia polygon { fill: #fbfaf7; transition: fill .3s var(--ease); }
+  .planta-guia .hall { fill: #ecebe5; }
+  .planta-guia [data-d] { cursor: pointer; }
+  .planta-guia [data-d]:hover, .planta-guia [data-d]:hover polygon { fill: #dfe5ec; }
+  .planta-guia .ativa, .planta-guia .ativa polygon { fill: var(--azul); }
+  .planta-guia text { font: 500 7px var(--sans); fill: var(--tinta); text-anchor: middle; dominant-baseline: middle; pointer-events: none; transition: fill .3s var(--ease); }
+  .planta-guia text.ativa { fill: #fff; }
+  .sub .planta-mini { display: none; }
+  @media (max-width: 860px) {
+    .guia { display: none; }
+    .sub { position: relative; padding-right: 96px; }
+    .sub .planta-mini { display: block; position: absolute; right: 0; top: 50%; transform: translateY(-50%); width: 80px; }
+    .sub .planta-mini text { display: none; }
+  }
+  @media (prefers-reduced-motion: reduce) { .guia { transition: none var(--ease); } }
+
+
+
+  
+  @media (min-width: 861px) {
+    .ideia-grelha { grid-template-columns: minmax(0, 6fr) minmax(0, 6fr); align-items: end; gap: clamp(32px, 5vw, 96px); }
+    .ideia-grelha figure { margin-right: calc(-1 * var(--margem)); }
+    .ideia-grelha img { aspect-ratio: 5 / 6; max-height: 86svh; }
+    .ideia-grelha figcaption { padding-right: var(--margem); }
+    .ideia-grelha > div:first-child { padding-bottom: clamp(24px, 6vh, 64px); }
+    .factos { border-top: 0; gap: 16px; }
+    .factos li { padding: 28px 28px 30px; background: #fff; border: 1px solid var(--linha); border-radius: 4px; transition: transform .5s var(--ease), border-color .3s var(--ease); }
+    .factos li:hover { transform: translateY(-3px); border-color: var(--azul); }
+    .factos b { color: var(--tinta); }
+    .factos .fi { width: 40px; height: 40px; padding: 9px; border-radius: 50%; background: color-mix(in srgb, var(--azul) 12%, transparent); box-sizing: border-box; }
+  }
+
+  
+  .desce-c { display: inline-flex; align-items: center; gap: 14px; color: #fff; text-decoration: none; font-size: 15px; font-weight: 500; margin-right: 18px; }
+  .desce-c .circ { position: relative; display: grid; place-items: center; width: 48px; height: 48px; border-radius: 50%; box-shadow: inset 0 0 0 1px rgba(255,255,255,.55); overflow: hidden; transition: box-shadow .3s var(--ease); }
+  .desce-c:hover .circ { box-shadow: inset 0 0 0 1px #fff; }
+  @media (prefers-reduced-motion: no-preference) {
+    .desce-c svg { animation: none; }
+    @keyframes cai { 0%, 55% { transform: translateY(0); opacity: 1; } 72% { transform: translateY(22px); opacity: 0; } 73% { transform: translateY(-22px); opacity: 0; } 92%, 100% { transform: translateY(0); opacity: 1; } }
+  }
+  .barra:not(.fixa) { text-shadow: 0 1px 12px rgba(0,0,0,.25); }
+  .capa::before { height: 200px; background: linear-gradient(rgba(15, 15, 14, .62), rgba(15, 15, 14, .32) 55%, transparent); }
+  @media (max-width: 860px) {
+    .capa .botoes { display: flex; flex-direction: column; align-items: stretch; gap: 14px; }
+    .capa .desce, .capa .botoes .desce { display: none; }
+    .desce-c { margin: 0; text-shadow: 0 1px 8px rgba(0,0,0,.4); }
+    .desce-c .circ { width: 40px; height: 40px; }
+  }
+
+  
+  @media (min-width: 861px) { .falta { grid-template-columns: minmax(0, 5fr) minmax(0, 7fr); gap: 0 clamp(24px, 5vw, 96px); } }
+
+  
+  .barra:not(.fixa) .entrar { opacity: 1; pointer-events: auto; }
+  .desce-c { margin-right: 0; }
+  @media (max-width: 860px) {
+    .barra .entrar { display: inline-flex; height: 44px; padding: 0 16px; font-size: 14.5px; margin-left: auto; background: #fff; color: var(--tinta); box-shadow: inset 0 0 0 1px var(--linha); }
+    .barra.fixa .entrar { background: #fff; color: var(--tinta); }
+    .barra .entrar { order: 1; padding: 0 14px; font-size: 14px; flex: none; } .barra .abre-menu { order: 2; margin-left: 8px; padding: 0 16px; flex: none; } .barra nav { order: 3; }
+    .barra .nome { font-size: 20px; white-space: nowrap; flex: 0 1 auto; min-width: 0; overflow: hidden; } .barra { gap: 0; }
+  }
+  @media (max-width: 359px) { .barra .nome { display: none; } }
+  
+  @media (max-width: 860px) { .barra nav, .barra.fixa nav { display: none; } .barra.fixa { padding-top: 10px; padding-bottom: 10px; box-shadow: 0 1px 0 var(--linha); } }
+  
+  .planta-guia [data-d]:focus-visible { outline: 2px solid var(--azul); outline-offset: 2px; }
+  .lema { margin: 0; }
+  
+  .ver-hero, .capa .ver-hero { display: none !important; }
+
+  
+  .capa .sob p { max-width: 58ch; font-size: clamp(16px, 1.25vw, 19px); line-height: 1.5; }
+  .capa .onde.antes { display: block; margin: 0 0 12px; font-size: 14px; opacity: .92; }
+  #lugar .lema { max-width: none; } #lugar .hoje-fora { margin: clamp(28px, 5vh, 56px) 0 0; }
+  .folhas.uma { grid-template-columns: minmax(0, 1fr); } .folhas.uma img { max-height: 82svh; width: 100%; object-fit: contain; }
+  #planta .tres { margin-top: clamp(48px, 8vh, 96px); padding: 0 var(--margem); }
+  .tres .lead { max-width: 30ch; font-size: clamp(22px, 2.2vw, 32px); line-height: 1.25; letter-spacing: -.02em; color: var(--tinta); margin: 0 0 28px; }
+  #divisoes .cab { margin-bottom: clamp(20px, 3vh, 36px); }
+  .div .txt { grid-column: 1 / -1; max-width: 62ch; font-size: clamp(17px, 1.3vw, 20px); line-height: 1.5; margin: 0 0 clamp(10px, 2vh, 20px); }
+  .div .sub:not(:first-child) { margin-top: clamp(56px, 9vh, 110px); }
+  .antes-depois { grid-column: 1 / -1; margin-top: clamp(36px, 6vh, 64px); padding: clamp(24px, 3vw, 44px); background: var(--fundo); }
+  .ad-cab { display: grid; grid-template-columns: minmax(0, 5fr) minmax(0, 7fr); gap: 14px clamp(24px, 5vw, 96px); align-items: end; }
+  .ad-cab h4 { font-size: clamp(24px, 2.6vw, 38px); line-height: 1.05; letter-spacing: -.03em; font-weight: 500; margin: 0; }
+  .ad-cab p { margin: 0; color: var(--cinza); max-width: 58ch; }
+  .vistas { display: flex; flex-wrap: wrap; gap: 8px; margin: clamp(18px, 3vh, 28px) 0 14px; }
+  .vistas button { min-height: 44px; padding: 0 18px; border: 1px solid var(--linha); border-radius: 999px; background: #fff; color: var(--tinta); font: 500 15px var(--sans); cursor: pointer; transition: background .2s var(--ease), color .2s var(--ease), border-color .2s var(--ease); }
+  .vistas button:hover { border-color: var(--tinta); }
+  .vistas button[aria-pressed="true"] { background: var(--tinta); color: #fff; border-color: var(--tinta); }
+  .comparas.uma { grid-template-columns: minmax(0, 1fr); margin-top: 0; } .comparas.uma .compara[hidden] { display: none; } .comparas.uma figcaption { display: none; }
+  .mats.frases span { margin-top: 12px; font-size: 15px; color: var(--tinta); }
+  #documentos .folhas { margin-bottom: clamp(48px, 8vh, 96px); }
+  #falta .cab { margin-bottom: 0; }
+  footer .dentro > span:empty { display: none; }
+  @media (max-width: 860px) {
+    .capa .sob p { font-size: 16px; }
+    .ad-cab { grid-template-columns: minmax(0, 1fr); } .antes-depois { margin-left: calc(-1 * var(--margem)); margin-right: calc(-1 * var(--margem)); padding: 28px var(--margem); }
+    .vistas { flex-wrap: nowrap; overflow-x: auto; margin-left: calc(-1 * var(--margem)); margin-right: calc(-1 * var(--margem)); padding: 0 var(--margem); scrollbar-width: none; } .vistas::-webkit-scrollbar { display: none; } .vistas button { flex: none; white-space: nowrap; }
+    #planta .tres { padding: 0 var(--margem); }
+  }
+  @media (min-width: 861px) { #lugar .ideia-grelha { align-items: center; } #lugar .ideia-grelha > div:first-child { padding-bottom: 0; } }
+  @media (max-width: 860px) { .mats.frases { grid-template-columns: repeat(2, minmax(0, 1fr)); row-gap: 28px; } .mats.frases i { aspect-ratio: 4 / 3; } }
+  
+  .capa .meta { margin: 0 0 12px; font-size: 14px; opacity: .92; } .capa .meta span + span::before { content: " · "; }
+  
+  @media (min-width: 861px) {
+    .capa { display: flex; flex-direction: column; min-height: 100svh; color: var(--tinta); background: var(--fundo); padding: 0 var(--margem) var(--margem); }
+    .capa::before, .capa::after { display: none; }
+    .capa .texto { order: 1; position: static; max-width: none; padding: clamp(104px, 15vh, 150px) 0 clamp(26px, 4vh, 44px); display: grid; grid-template-columns: minmax(0, 7fr) minmax(0, 5fr); gap: 24px clamp(32px, 6vw, 110px); align-items: end; }
+    .capa h1 { font-size: clamp(76px, 11.6vw, 196px); line-height: .86; letter-spacing: -.055em; word-spacing: .03em; margin-left: -.045em; text-wrap: balance; }
+    .capa .sob { display: block; margin: 0; padding: 0 0 .5vw; border: 0; }
+    .capa .meta { margin: 0 0 14px; font-size: 14.5px; color: var(--cinza); opacity: 1; } .capa .meta span { display: inline; } .capa .meta span + span::before { content: " · "; }
+    .capa .meta span:first-child { font-weight: 600; color: var(--tinta); } .capa .meta span { white-space: nowrap; }
+    .capa .sob p.resumo { max-width: 52ch; font-size: clamp(17px, 1.3vw, 20px); line-height: 1.5; text-wrap: pretty; }
+    .capa .botoes { margin-top: 22px; justify-content: flex-start; }
+    .capa .desce-c { color: var(--tinta); margin: 0; text-shadow: none; } .capa .desce-c .circ { box-shadow: inset 0 0 0 1px rgba(27, 28, 29, .4); } .capa .desce-c:hover .circ { box-shadow: inset 0 0 0 1px var(--tinta); }
+    .capa > img { order: 2; position: static; flex: 1 1 auto; width: 100%; height: auto; min-height: 46svh; max-height: 68svh; object-fit: cover; object-position: 50% 58%; border-radius: 0; transform: none; animation: none; }
+    .barra:not(.fixa) { color: var(--tinta); text-shadow: none; } .barra:not(.fixa) .entrar { background: var(--tinta); color: #fff; }
+    .capa :focus-visible, .barra:not(.fixa) :focus-visible { outline-color: var(--azul); }
+  }
+  
+  .ficha { background: var(--tinta); color: #f3f1ec; }
+  .ficha ::selection { background: #fff; color: var(--tinta); } .ficha :focus-visible { outline-color: #fff; }
+  .ft-cab { display: grid; grid-template-columns: minmax(0, 5fr) minmax(0, 7fr); gap: 16px clamp(24px, 5vw, 96px); align-items: end; margin-bottom: clamp(40px, 7vh, 84px); }
+  .ft-cab h2 { font-family: var(--serif); font-weight: 500; font-size: clamp(40px, 6vw, 96px); line-height: .96; letter-spacing: -.045em; }
+  .ft-cab p { max-width: 54ch; color: #b9b7b0; padding-bottom: .4em; text-wrap: pretty; }
+  .ft-grupo { display: grid; grid-template-columns: minmax(0, 5fr) minmax(0, 7fr); gap: 12px clamp(24px, 5vw, 96px); padding: clamp(22px, 3.4vh, 36px) 0; border-top: 1px solid rgba(255, 255, 255, .22); }
+  .ft-grupo:last-child { border-bottom: 1px solid rgba(255, 255, 255, .22); }
+  .ft-grupo h3 { font-family: var(--serif); font-weight: 500; font-size: clamp(22px, 2.2vw, 32px); line-height: 1.1; letter-spacing: -.03em; }
+  .ft-grupo dl { margin: 0; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 20px clamp(20px, 3vw, 48px); }
+  .ft-grupo dt { font-size: 13.5px; color: #a3a19a; margin-bottom: 4px; }
+  .ft-grupo dd { margin: 0; font-size: 16.5px; line-height: 1.4; font-variant-numeric: tabular-nums; text-wrap: pretty; }
+  @media (max-width: 860px) {
+    .ft-cab, .ft-grupo { grid-template-columns: minmax(0, 1fr); } .ft-grupo dl { grid-template-columns: minmax(0, 1fr); gap: 14px; }
+    .ft-grupo h3 { margin-bottom: 6px; }
+    .capa .meta span { display: inline; } .capa .meta span:first-child { display: block; } .capa .meta span:first-child + span::before { content: none; }
+  }
+  @media (min-width: 861px) and (max-width: 1180px) { .barra nav { gap: 16px; font-size: 15.5px; } }
+  
+  body .rot, body .guia-t, body .ft-grupo dt, body footer .assin, body footer span { font-size: 14px !important; }
+  body .barra .entrar, body .barra nav a, body .desce-c > span:last-child, body figcaption, body .botao, body .sub > span, body .vistas button, body .mats li span, body .docs .seta, body .docs em, body .ft-grupo dd { font-size: 16px !important; }
+  body .cab p, body .ad-cab p, body .ft-cab p, body .capa .sob p.resumo, body .txt, body .corpo { font-size: 18px !important; line-height: 1.55; }
+  body .lead, body .ft-grupo h3, body .ad-cab h4 { font-size: clamp(22px, 2.2vw, 32px) !important; }
+  body .docs strong, body .sub h3 { font-size: clamp(26px, 3vw, 44px) !important; }
+  body .cab h2, body .ft-cab h2, body .lema { font-size: clamp(34px, 4.4vw, 64px) !important; line-height: 1; letter-spacing: -.04em; }
+  body .capa h1 { font-size: clamp(46px, 6.5vw, 96px) !important; line-height: .92; letter-spacing: -.05em; }
+  body .capa .meta { font-size: 14px !important; }
+  @media (min-width: 861px) { .capa .texto { padding-top: clamp(92px, 12vh, 118px); align-items: end; } .capa h1 { white-space: nowrap; } }
+  @media (max-width: 860px) {
+    body .cab p, body .ad-cab p, body .ft-cab p, body .capa .sob p.resumo, body .txt, body .corpo { font-size: 17px !important; }
+    body .capa h1 { font-size: clamp(44px, 13.5vw, 58px) !important; line-height: .95; }
+  }
+  
+  #avanco { position: fixed; inset: 0 0 auto 0; height: 3px; background: var(--azul); transform: scaleX(var(--p, 0)); transform-origin: left; z-index: 30; pointer-events: none; }
+  
+  @media (hover: hover) and (pointer: fine) {
+    .ft-grupo dl > div, .mats li { transition: opacity .3s var(--ease); } .mats i { transition: transform .5s var(--ease); }
+    .ft-grupo dl:hover > div:not(:hover) { opacity: .42; }
+    .mats:hover li:not(:hover) { opacity: .45; } .mats li:hover i { transform: translateY(-8px); }
+    #segue { position: fixed; left: 0; top: 0; z-index: 40; pointer-events: none; height: 34px; padding: 0 14px; display: flex; align-items: center; border-radius: 999px; background: var(--tinta); color: #fff; font-size: 14px; font-weight: 500; white-space: nowrap;
+      opacity: 0; transition: opacity .2s var(--ease); will-change: transform; }
+    #segue.on { opacity: 1; }
+  }
+  @media not ((hover: hover) and (pointer: fine)) { #segue { display: none; } }
+  
+  @media (min-width: 861px) { .ft-grupo h3 { position: sticky; top: 96px; align-self: start; } }
+  
+  .docs em { max-width: 46ch; }
+  
+  .ph { flex: none; fill: currentColor; stroke: none; }
+  #menu .ic.ph { fill: var(--azul); stroke: none; width: 30px; height: 30px; }
+  .ft-grupo h3 { display: flex; align-items: center; gap: 14px; } .ft-grupo h3 .ph { width: 28px; height: 28px; color: #9fb3c8; }
+  
+  #menu nav a { font-size: 24px; letter-spacing: -.025em; padding: 15px 0; } #menu nav a span { gap: 14px; }
+  #menu .ic.ph { width: 26px; height: 26px; } #menu nav a::after { width: 18px; height: 18px; }
+  
+  .compara .janela { max-height: 72svh; }
+  @media (max-width: 860px) {
+    .compara .janela { aspect-ratio: 4 / 3; }
+    .vistas { flex-wrap: wrap; overflow: visible; margin-inline: 0; padding: 0; }
+    .vistas button { padding-inline: 12px; }
+    .compara .rot { top: 8px; }
+    .compara .rot.e { left: 8px; }
+    .compara .rot.d { right: 8px; }
+  }
+  
+  .pend { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 28px clamp(24px, 4vw, 64px); margin-top: clamp(28px, 5vh, 56px); }
+  .pend h3 { font-size: 18px; font-weight: 600; letter-spacing: -.01em; padding-bottom: 12px; border-bottom: 1px solid var(--tinta); }
+  .pend li { padding: 12px 0; border-bottom: 1px solid var(--linha); font-size: 16px; }
+  .fecho { background: var(--tinta); color: #fff; padding-top: clamp(72px, 14vh, 160px); padding-bottom: clamp(72px, 14vh, 160px); }
+  .fecho-t { font-size: clamp(34px, 4.4vw, 64px); line-height: 1.05; letter-spacing: -.04em; font-weight: 500; max-width: 18ch; text-wrap: balance; }
+  .fecho-acoes { display: flex; flex-wrap: wrap; align-items: center; gap: 14px 22px; margin-top: clamp(28px, 4vh, 44px); }
+  .fecho .botao.escuro { background: #fff; color: var(--tinta); } .fecho .botao.escuro:hover { background: var(--fundo); }
+  .fecho .botao.contorno { color: #fff; box-shadow: inset 0 0 0 1px rgba(255, 255, 255, .6); } .fecho .botao.contorno:hover { background: rgba(255, 255, 255, .1); }
+  .fecho .volta { color: #fff; font-size: 16px; text-underline-offset: 5px; } .fecho :focus-visible { outline-color: #fff; }
+  footer { border-top: 0; }
+  @media (max-width: 860px) { .pend { grid-template-columns: minmax(0, 1fr); } .fecho-acoes .botao { width: 100%; justify-content: center; } }
+  
+  .ficha { background: var(--papel); color: var(--tinta); border-top: 1px solid var(--linha); }
+  .ficha ::selection { background: var(--azul); color: #fff; } .ficha :focus-visible { outline-color: var(--azul); }
+  .ft-cab p { color: var(--cinza); }
+  .ft-grupo, .ft-grupo:last-child { border-color: var(--linha); } .ft-grupo:first-of-type { border-top-color: var(--tinta); }
+  .ft-grupo dt { color: var(--cinza) !important; } .ft-grupo h3 .ph { color: var(--azul); }
+  #documentos { border-top: 1px solid var(--linha); }
+  
+  .ft-num { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); margin: 0 0 clamp(40px, 7vh, 80px); border-top: 1px solid var(--tinta); }
+  .ft-num > div { padding: 18px 20px 0 0; } .ft-num > div + div { padding-left: 20px; border-left: 1px solid var(--linha); }
+  .ft-num dt { font-size: 14px; color: var(--cinza); } .ft-num dd { margin: 6px 0 0; font-size: clamp(40px, 4.6vw, 68px); line-height: 1; letter-spacing: -.045em; font-weight: 500; font-variant-numeric: tabular-nums; }
+  .ft-num small { font-size: .38em; letter-spacing: 0; margin-left: .2em; color: var(--cinza); font-weight: 400; }
+  .ft-grupo dl { display: block; } .ft-grupo dl > div { display: grid; grid-template-columns: minmax(130px, 2fr) minmax(0, 5fr); gap: 16px; padding: 11px 0; border-bottom: 1px solid var(--linha); align-items: baseline; }
+  .ft-grupo dl > div:first-child { padding-top: 0; } .ft-grupo dl > div:last-child { border-bottom: 0; }
+  .ft-grupo dt { margin: 0; } .ft-grupo dd { font-size: 16.5px !important; }
+  .ft-grupo { padding: clamp(26px, 4vh, 40px) 0; }
+  @media (max-width: 860px) {
+    .ft-num { grid-template-columns: repeat(2, minmax(0, 1fr)); } .ft-num > div { padding: 16px 12px 16px 0; border-bottom: 1px solid var(--linha); }
+    .ft-num > div + div { padding-left: 0; border-left: 0; } .ft-num > div:nth-child(even) { padding-left: 14px; border-left: 1px solid var(--linha); }
+    .ft-num dd { font-size: 40px; }
+    .ft-grupo dl > div { grid-template-columns: minmax(0, 1fr); gap: 2px; }
+  }
+  
+  
+  .capa-legenda { order: 3; font-size: 14px !important; color: var(--cinza); }
+  .capa .botoes .entra3d { order: 0; }
+  @media (min-width: 861px) {
+    .capa { padding: 0 0 clamp(18px, 3vh, 30px); }
+    .capa .texto { padding: clamp(100px, 13vh, 128px) var(--margem) clamp(28px, 4.5vh, 48px); max-width: calc(var(--max) + 2 * var(--margem)); }
+    body .capa h1 { font-size: clamp(60px, 7.2vw, 116px) !important; }
+    .capa > img { width: 100%; max-width: none; margin: 0; height: min(72svh, 780px); min-height: 0; max-height: none; flex: none; object-position: 50% 62%; clip-path: none; animation: none; transform: none; }
+    .capa-legenda { width: 100%; max-width: calc(var(--max) + 2 * var(--margem)); margin: 12px auto 0; padding: 0 var(--margem); }
+    .capa .botoes { margin-top: 24px; gap: 14px 26px; align-items: center; justify-content: flex-start; }
+  }
+  @media (max-width: 860px) {
+    .capa { min-height: 0; padding-bottom: 18px; }
+    .capa::after { display: none; }
+    .capa .botoes { position: static; display: flex; flex-direction: column; align-items: stretch; gap: 14px; margin-top: 22px; }
+    .capa .botoes .entra3d { justify-content: center; height: 52px; }
+    .capa .desce-c { color: var(--tinta); text-shadow: none; } .capa .desce-c .circ { width: 40px; height: 40px; box-shadow: inset 0 0 0 1px rgba(27, 28, 29, .4); }
+    .capa > img { height: 50svh; min-height: 280px; flex: none; }
+    .capa-legenda { padding: 10px var(--margem) 0; }
+  }
+  
+  .ideia figcaption b, .hoje-fora figcaption b { color: var(--tinta); font-weight: 600; }
+  @media (prefers-reduced-motion: no-preference) {
+    @supports (animation-timeline: view()) {
+      .aldeia img { animation: aldeia linear both; animation-timeline: view(); animation-range: entry 0% cover 35%; }
+      @keyframes aldeia { from { clip-path: inset(5% 5% 5% 5%); transform: scale(1.04); } to { clip-path: inset(0 0 0 0); transform: none; } }
+    }
+  }
+  
+  .div figure { position: relative; }
+  .div figure .etq { position: absolute; left: 12px; bottom: 12px; margin: 0; padding: 5px 11px; border-radius: 999px; background: rgba(250, 249, 246, .94); color: var(--tinta); font-size: 13.5px !important; font-weight: 500; line-height: 1.25; pointer-events: none; }
+  .div figure.pormenor img { object-position: 54% 60%; }
+  .sub { flex-wrap: wrap; row-gap: 8px; }
+  .prov { display: inline-flex; align-items: center; gap: 6px; padding: 3px 10px 3px 8px; border-radius: 999px; background: #f3ebdd; color: #6b4f28; font-size: 13.5px !important; font-weight: 500; line-height: 1.3; vertical-align: baseline; }
+  .prov .ph { width: 15px; height: 15px; flex: none; }
+  figcaption .prov { margin-left: 4px; } .ft-num .prov { margin-top: 10px; }
+  
+  .vistas { display: grid !important; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 0 !important; padding: 4px; margin-left: 0 !important; margin-right: 0 !important; overflow: visible !important; background: #fff; border: 1px solid var(--linha); border-radius: 999px; max-width: 640px; }
+  .vistas button { border: 0 !important; border-radius: 999px !important; min-height: 44px; padding: 6px 12px !important; white-space: normal !important; line-height: 1.2; text-align: center; background: transparent; }
+  .vistas button[aria-pressed="true"] { background: var(--tinta); color: #fff; }
+  .compara .rot { background: rgba(20, 20, 18, .78); } .compara .rot.d { background: var(--azul); }
+  .comparas.uma .compara:not([hidden]) .janela { animation: vista .3s var(--ease); }
+  @keyframes vista { from { opacity: .35; } }
+  @media (max-width: 860px) { .vistas { border-radius: 16px; } .vistas button { border-radius: 12px !important; font-size: 14px !important; padding: 6px 8px !important; } }
+  
+  .folhas figure { position: relative; }
+  .folhas figure::after { content: "Ampliar"; position: absolute; top: clamp(10px, 1.6vw, 26px); right: clamp(10px, 1.6vw, 26px); display: flex; align-items: center; gap: 6px; padding: 6px 12px 6px 30px; border-radius: 999px; background: #fff url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 256 256' fill='%231b1c1d'%3E%3Cpath d='M214,48V96a6,6,0,0,1-12,0V62.48l-53.76,53.76a6,6,0,0,1-8.48-8.48L193.52,54H160a6,6,0,0,1,0-12h48A6,6,0,0,1,214,48ZM107.76,139.76,54,193.52V160a6,6,0,0,0-12,0v48a6,6,0,0,0,6,6H96a6,6,0,0,0,0-12H62.48l53.76-53.76a6,6,0,0,0-8.48-8.48Z'/%3E%3C/svg%3E") 10px 50% / 15px no-repeat; box-shadow: 0 1px 2px rgba(29, 29, 27, .12), 0 0 0 1px var(--linha); color: var(--tinta); font-size: 13.5px; font-weight: 500; pointer-events: none; }
+  dialog #perto { position: fixed; top: 16px; right: 108px; display: inline-flex; align-items: center; gap: 8px; height: 44px; padding: 0 16px; border-radius: 999px; border: 0; background: rgba(255, 255, 255, .92); color: var(--tinta); font: 500 14px var(--sans); cursor: pointer; z-index: 2; }
+  dialog #perto .ph { width: 18px; height: 18px; } dialog #perto .menos, dialog.perto #perto .mais { display: none; } dialog.perto #perto .menos { display: block; }
+  dialog img { cursor: zoom-in; } dialog.perto { overflow: auto; place-items: start; } dialog.perto img { max-width: none !important; max-height: none !important; height: auto !important; cursor: zoom-out; }
+  dialog.so-uma #perto { display: inline-flex; }
+  
+  .mats.frases b { display: block; margin-top: 12px; font-size: 16px; font-weight: 600; } .mats.frases span { margin-top: 4px !important; }
+  .mats .onde { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 10px; } .mats .onde em { font-style: normal; font-size: 13px; padding: 2px 9px; border-radius: 999px; border: 1px solid var(--linha); background: #fff; color: var(--tinta); }
+  .sr { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+  
+  .docs-grupos { display: grid; gap: clamp(36px, 6vh, 64px); }
+  .docs-t { display: flex; align-items: center; gap: 10px; font-size: 18px; font-weight: 600; letter-spacing: -.01em; margin: 0 0 12px; }
+  .docs .seta { display: inline-flex; align-items: center; justify-content: flex-end; gap: 8px; white-space: nowrap; } .docs .seta-i { width: 20px; height: 20px; color: var(--azul); }
+  .docs a { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr) 150px; }
+  @media (max-width: 860px) { .docs a { grid-template-columns: minmax(0, 1fr) auto; } .docs .seta { grid-column: 2; grid-row: 1 / span 2; } }
+  
+  .guia.tapa { opacity: 0 !important; pointer-events: none !important; transform: translateY(12px) !important; }
+  .compara .janela { margin-inline: auto; }
+  .capa :focus-visible, .barra :focus-visible { outline-color: var(--azul) !important; }   
+  
+  .barra .entrar { transition: opacity .3s var(--ease), transform .3s var(--ease), background .3s var(--ease), color .3s var(--ease); }
+  .barra:not(.fixa) .entrar { opacity: 0 !important; visibility: hidden; pointer-events: none !important; transform: translateY(-6px); }
+  
+  @media (min-width: 861px) { .capa .texto { padding-top: clamp(150px, 20vh, 196px) !important; } }
+  @media (max-width: 860px) { .capa .texto { padding-top: 116px !important; } }
+  
+  @media (min-width: 861px) {
+    .capa { display: grid; grid-template-columns: minmax(0, 5fr) minmax(0, 7fr); grid-template-rows: minmax(0, 1fr) auto; min-height: 100svh; padding: 0 !important; align-items: stretch; }
+    .capa .texto { grid-column: 1; grid-row: 1 / span 2; align-self: end; display: block; max-width: none; margin: 0; padding: 140px clamp(32px, 4vw, 72px) clamp(44px, 8vh, 88px) var(--margem) !important; }
+    body .capa h1 { font-size: clamp(56px, 6.4vw, 112px) !important; line-height: .9; white-space: normal; text-wrap: balance; margin-left: -.04em; }
+    .capa .sob { margin-top: clamp(24px, 4vh, 40px); padding: 0; border: 0; }
+    .capa .sob p.resumo { max-width: 38ch; }
+    .capa .botoes { margin-top: 28px; }
+    .capa > img { grid-column: 2; grid-row: 1 / span 2; width: 100%; height: 100svh; min-height: 620px; max-height: none; object-fit: cover; object-position: 50% 55%; }
+    .capa-legenda { grid-column: 2; grid-row: 2; align-self: end; justify-self: start; position: relative; z-index: 1; width: auto; max-width: none; margin: 0 0 18px 18px; padding: 6px 13px; border-radius: 999px; background: rgba(250, 249, 246, .94); color: var(--tinta); font-weight: 500; }
+    .barra { background: rgba(245, 243, 238, .94); -webkit-backdrop-filter: blur(10px); backdrop-filter: blur(10px); }
+  }
+  @media (min-width: 861px) { .capa .meta { display: flex; flex-wrap: wrap; column-gap: .35em; } .capa .meta span { white-space: normal !important; } .capa > img { background: #e6e1d6; } }
+  .vistas button { white-space: nowrap !important; hyphens: none; overflow: hidden; text-overflow: ellipsis; }
+  @media (max-width: 520px) { html body .vistas button { font-size: 14px !important; padding: 6px 4px !important; letter-spacing: -.01em; } }
+  html body .prov { border-radius: 10px; }
+  @media (min-width: 861px) { html body .vistas { display: grid !important; grid-template-columns: repeat(3, auto); width: max-content; margin: 8px 0 20px !important; } html body .vistas button { padding: 8px 26px !important; } }
+  @media (min-width: 861px) { html body .compara .janela { margin-inline: 0 !important; } }
+  .pontos { display: none; }
+  @media (max-width: 860px) { .pontos { grid-column: span 12; display: flex; align-items: center; gap: 10px; margin-top: 12px; font: 500 14px var(--sans); color: var(--cinza, #62625d); }
+    .pontos i { width: 7px; height: 7px; border-radius: 50%; background: var(--linha); transition: background .2s var(--ease), width .2s var(--ease); }
+    .pontos i.on { width: 20px; border-radius: 4px; background: var(--tinta); }
+    .pontos span { margin-left: 6px; } }
+  
+  .passagem { background: var(--tinta); color: #fff; padding: clamp(88px, 14vw, 200px) var(--margem); }
+  .passagem p { margin: 0; max-width: 18em; font-size: clamp(30px, 4.6vw, 72px); line-height: 1.08; letter-spacing: -.035em; font-weight: 500; text-wrap: balance; }
+  .passagem span { opacity: 1; }
+  @supports (animation-timeline: view()) { @media (prefers-reduced-motion: no-preference) {
+    .passagem p { view-timeline: --frase block; }
+    .passagem span { opacity: .5; animation: acende linear both; animation-timeline: --frase;
+      animation-range: cover calc(18% + var(--i) * 2.1%) cover calc(26% + var(--i) * 2.1%); }
+    @keyframes acende { to { opacity: 1; } }
+  } }
+  
+  .fecho .dentro { display: grid; grid-template-columns: minmax(0, 6fr) minmax(0, 6fr); gap: clamp(32px, 5vw, 88px); align-items: end; }
+  .fecho .dentro > * { grid-column: auto; min-width: 0; }
+  .fecho-porta { position: relative; display: block; overflow: hidden; margin-right: calc(-1 * var(--margem)); aspect-ratio: 3 / 2; background: #2a2b2c; }
+  .fecho-porta img { display: block; width: 100%; height: 100%; object-fit: cover; transition: transform .9s var(--ease); }
+  .fecho-selo { position: absolute; left: 20px; bottom: 20px; display: inline-flex; align-items: center; gap: 10px; height: 44px; padding: 0 18px; border-radius: 999px; background: #fff; color: var(--tinta); font-weight: 500; font-size: 16px; transition: gap .3s var(--ease), padding .3s var(--ease); }
+  .fecho-porta:hover img { transform: scale(1.04); } .fecho-porta:hover .fecho-selo { gap: 16px; padding-right: 22px; }
+  @media (prefers-reduced-motion: reduce) { .fecho-porta img, .fecho-selo { transition: none var(--ease); } .fecho-porta:hover img { transform: none; } }
+  @media (max-width: 860px) { .fecho .dentro { grid-template-columns: minmax(0, 1fr); } .fecho-porta { order: -1; margin: 0 calc(-1 * var(--margem)); } }
+  
+  main > section:not(.passagem):not(.fecho):not(.lugar) > .dentro { border-top: 1px solid var(--tinta); padding-top: clamp(28px, 3vw, 44px); }
+  main > section:not(.passagem):not(.fecho):not(.lugar) { padding-top: clamp(48px, 6vw, 88px); border-top: 0 !important; }
+  #divisoes .div > .sub { border-top: 1px solid var(--linha); padding-top: clamp(20px, 2.2vw, 32px); }
+  #divisoes .div > .sub ~ .sub { margin-top: clamp(56px, 7vw, 112px); }
+  
+  @media (min-width: 861px) {
+    .passagem { background: var(--papel); color: var(--tinta); padding-top: clamp(72px, 8vw, 128px); padding-bottom: clamp(72px, 8vw, 128px); }
+    .passagem p { font-size: clamp(30px, 3.4vw, 54px); line-height: 1.12; max-width: 22em; }
+  }
+  
+  .lugar .dentro { display: grid; grid-template-columns: minmax(0, 5fr) minmax(0, 7fr); column-gap: clamp(32px, 5vw, 88px); row-gap: clamp(32px, 4vw, 64px); }
+  .lugar .dentro > * { min-width: 0; }
+  .lugar-topo { grid-column: 1 / -1; display: grid; grid-template-columns: subgrid; align-items: end; }
+  .lugar-topo .lema, .lugar-topo .corpo { margin: 0; } .lugar-topo .corpo { max-width: 38em; }
+  .lugar-lista { display: grid; grid-auto-rows: 1fr; border-bottom: 1px solid var(--linha); }
+  .lugar-lista button { all: unset; box-sizing: border-box; cursor: pointer; display: flex; align-items: center; justify-content: space-between; gap: 16px; min-height: 56px; border-top: 1px solid var(--linha); color: var(--cinza); transition: color .3s var(--ease); }
+  .lugar-lista b { font-weight: 500; font-size: clamp(20px, 1.9vw, 28px); letter-spacing: -.025em; }
+  .lugar-lista svg { flex: none; opacity: 0; transform: translateX(-8px); transition: opacity .3s var(--ease), transform .3s var(--ease); }
+  .lugar-lista button:hover, .lugar-lista button[aria-pressed="true"] { color: var(--tinta); }
+  .lugar-lista button[aria-pressed="true"] svg { opacity: 1; transform: none; }
+  .lugar-lista button:focus-visible { outline: 2px solid var(--azul); outline-offset: -2px; }
+  .lugar-palco { position: relative; aspect-ratio: 3 / 2; overflow: hidden; background: #e6e1d6; }
+  .lugar-palco img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; opacity: 0; transform: scale(1.03); transition: opacity .5s var(--ease), transform .9s var(--ease); }
+  .lugar-palco img.on { opacity: 1; transform: none; }
+  .lugar-leg { position: absolute; left: 16px; bottom: 16px; margin: 0; padding: 8px 14px; border-radius: 999px; background: rgba(255, 255, 255, .94); color: var(--tinta); font-size: 15px; line-height: 1.2; }
+  @media (prefers-reduced-motion: reduce) { .lugar-palco img, .lugar-lista svg { transition: none var(--ease); transform: none; } }
+  @media (max-width: 860px) {
+    .lugar .dentro { grid-template-columns: minmax(0, 1fr); row-gap: 20px; }
+    .lugar-topo { display: block; } .lugar-topo .corpo { margin-top: 14px; }
+    .lugar-palco { order: 1; aspect-ratio: 4 / 5; margin: 0 calc(-1 * var(--margem)); } .lugar-lista { order: 2; }
+    .lugar-lista button { min-height: 52px; }
+  }
+  
+  :root { --ease: cubic-bezier(.16, 1, .3, 1); }
+  @supports (animation-timeline: view()) { @media (prefers-reduced-motion: no-preference) {
+    main > section .ver, main > section .cab, .lugar-topo, .lugar-lista, .lugar-palco, #divisoes .sub, .fecho-t, .fecho-acoes, .fecho-porta, main > section .mats li, main > section .docs li, .ft-grupo, .pend > * {
+      animation: surge linear both; animation-timeline: view(); animation-range: entry 0% cover 22%; }
+    @keyframes surge { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: none; } }
+  } }
+  
+  html body .ad-cab { align-items: first baseline; }
+  @media (min-width: 861px) { html body .vistas { margin-top: clamp(28px, 2.6vw, 40px) !important; } }
+  @media (max-width: 860px) { html body .vistas { margin-top: 22px !important; } }
+  
+  @media (min-width: 861px) {
+    html body .capa { position: relative; display: block !important; min-height: 100svh; padding: 0 !important; background: #1b1c1d; overflow: hidden; }
+    html body .capa > img { position: absolute; inset: 0; width: 100%; height: 100%; min-height: 0; max-height: none; object-fit: cover; object-position: 50% 62%; }
+    html body .capa::after { content: "" !important; display: block !important; position: absolute; inset: 0; z-index: 0; opacity: 1 !important; pointer-events: none;
+      background: linear-gradient(to top, rgba(14, 14, 14, .82) 0%, rgba(14, 14, 14, .5) 22%, rgba(14, 14, 14, .12) 42%, rgba(14, 14, 14, 0) 56%), linear-gradient(to bottom, rgba(14, 14, 14, .42) 0%, rgba(14, 14, 14, 0) 18%) !important; }
+    html body .capa .texto { position: absolute; z-index: 1; left: var(--margem); right: var(--margem); bottom: clamp(40px, 7vh, 80px); width: auto !important; max-width: none !important; box-sizing: border-box; display: flex !important; flex-direction: row; justify-content: space-between; align-items: flex-end; gap: clamp(32px, 5vw, 96px); padding: 0 !important; margin: 0 !important; color: #fff; }
+    html body .capa h1 { flex: none; margin: 0 0 -.08em -.04em; color: #fff; font-size: clamp(64px, 9.2vw, 168px) !important; line-height: .88; }
+    html body .capa .sob { margin: 0 !important; padding: 0 !important; min-width: 0; flex: 0 1 28em; width: auto; max-width: 28em; align-self: flex-end; display: block; }
+    html body .capa .meta span { white-space: normal; }
+    html body .capa .meta, html body .capa .meta span:first-child { color: #fff; } html body .capa .meta { opacity: .86; }
+    html body .capa .sob p.resumo { color: #fff; }
+    html body .capa .botao.escuro { background: #fff; color: var(--tinta); } html body .capa .botao.escuro:hover { background: var(--fundo); }
+    html body .capa .desce-c { color: #fff; } html body .capa .desce-c .circ { box-shadow: inset 0 0 0 1px rgba(255, 255, 255, .6); }
+    html body .capa .desce-c:hover .circ { box-shadow: inset 0 0 0 1px #fff; }
+    html body .capa .desce-c svg { fill: currentColor; }
+    html body .capa :focus-visible { outline-color: #fff; }
+    html body .capa-legenda { position: absolute; z-index: 1; right: var(--margem); top: auto; left: auto; bottom: clamp(40px, 7vh, 80px); margin: 0; background: rgba(250, 249, 246, .9); }
+    html body .barra:not(.fixa) { background: transparent; -webkit-backdrop-filter: none; backdrop-filter: none; color: #fff; border-color: transparent; }
+  }
+  
+  @media (min-width: 861px) {
+    html body .capa .texto { display: block !important; right: auto; width: min(640px, 52vw) !important; }
+    html body .capa h1 { font-size: clamp(40px, 4.2vw, 68px) !important; line-height: 1; margin: 0 0 clamp(14px, 1.4vw, 20px) -.02em; white-space: nowrap; }
+    html body .capa .sob { max-width: none; display: flex; flex-direction: column; align-items: flex-start; justify-content: flex-start; gap: 0; flex: none; align-self: auto; }
+    html body .capa .sob > * { margin-left: 0; margin-right: 0; align-self: flex-start; }
+    html body .capa .botoes { margin: 0 !important; padding: 0; }
+    html body .capa .meta { order: -1; position: absolute; left: 0; bottom: 100%; margin: 0 0 clamp(14px, 1.4vw, 20px); white-space: nowrap; }
+    html body .capa .sob p.resumo { max-width: 32em; margin: 0 0 clamp(22px, 2.2vw, 32px); }
+    html body .capa .botoes { display: flex; align-items: center; flex-wrap: wrap; gap: 14px 22px; }
+  }
+  
+  @media (max-width: 860px) {
+    html body .capa > img { content: url(img/sala-para-a-cozinha-capa.jpg); aspect-ratio: 1 / 1 !important; height: auto !important; min-height: 0 !important; max-height: none !important; width: 100% !important; object-fit: cover !important; object-position: 55% 60% !important; }
+    html body .capa .desce-c .circ svg, html body .capa .desce-c .circ * { animation: none !important; transform: none !important; }
+    html body .capa .desce-c .circ { display: grid; place-items: center; }
+    html body .capa h1 { font-size: clamp(40px, 11vw, 52px) !important; line-height: 1; }
+    html body .capa .sob p.resumo { margin-bottom: 24px; }
+    html body .capa .botoes { gap: 14px; }
+  }
+  
+  @media (prefers-reduced-motion: no-preference) {
+    .capa > img { animation: assenta .9s var(--ease) both; }
+    .capa .meta, .capa h1, .capa .resumo, .capa .botoes { animation: surge-capa .9s var(--ease) both; }
+    .capa .meta { animation-delay: .15s; } .capa h1 { animation-delay: .22s; } .capa .resumo { animation-delay: .29s; } .capa .botoes { animation-delay: .36s; }
+    @keyframes assenta { from { opacity: 0; transform: scale(1.04); } to { opacity: 1; transform: none; } }
+    @keyframes surge-capa { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: none; } }
+    .desce-c svg, .botoes .desce svg { transition: transform .3s var(--ease); }
+    .desce-c:hover svg, .botoes .desce:hover svg { transform: translateY(3px); }
+    .botao svg, .fecho-selo svg { transition: transform .3s var(--ease); } .botao:hover svg { transform: translateX(3px); }
+  }
+  
+  .fecho .volta, .barra .nome { display: inline-flex; align-items: center; min-height: 44px; }
+  
+  .passagem span { opacity: 1 !important; animation: none !important; }
+  main > section .mats li, main > section .docs li, .ft-grupo, .pend > *, .lugar-lista { animation: none !important; }
+  
+  .ver-falta { display: inline-block; margin-top: 6px; color: var(--cinza); text-underline-offset: 4px; }
+  .ver-falta:hover { color: var(--tinta); }
+  
+  .saltar { position: absolute; left: 12px; top: -60px; z-index: 50; padding: 12px 16px; border-radius: 8px; background: var(--tinta); color: #fff; text-decoration: none; transition: top .2s var(--ease); }
+  .saltar:focus { top: 12px; }
+  :where(a, button, [role="button"], summary, [tabindex]):focus-visible { outline: 2px solid var(--azul); outline-offset: 3px; }
+  
+  @media (max-width: 860px) { #documentos .folhas figure { margin-left: calc(-1 * var(--margem)); margin-right: calc(-1 * var(--margem)); padding: 8px; } #documentos .folhas figcaption { padding: 0 calc(var(--margem) - 8px); } }
+  
+  .planta-guia [data-d]:focus, .planta-guia [data-d]:focus-visible { outline: none !important; }
+  .planta-guia [data-d]:focus-visible, .planta-guia [data-d]:focus-visible polygon { stroke: var(--azul); stroke-width: 2.5; }
+  
+  .capa .meta .etiqueta { display: inline-flex; align-items: center; height: 26px; padding: 0 11px; margin: 0 4px; border-radius: 999px; box-shadow: inset 0 0 0 1px rgba(255, 255, 255, .55); font-size: 13px; font-weight: 500; }
+  .capa .meta .etiqueta::before, .capa .meta .etiqueta + span::before { content: none !important; }
+  @media (max-width: 860px) { .capa .meta .etiqueta { box-shadow: inset 0 0 0 1px var(--linha); margin: 6px 0; } }
+  
+  .capa .texto .meta { padding-bottom: 14px; margin-bottom: 18px !important; border-bottom: 1px solid rgba(255, 255, 255, .35); }
+  .capa .texto h1 { margin-bottom: 10px !important; }
+  .capa .texto .resumo { max-width: 30em; opacity: .9; }
+  @media (max-width: 860px) { .capa .texto .meta { border-bottom-color: var(--linha); } .capa .texto .resumo { opacity: 1; } }
+  
+  @media (min-width: 861px) {
+    html body .capa > img { content: url(img/sala-para-a-cozinha-capa.jpg); object-position: 50% 45%; }
+    html body .capa::after { background: radial-gradient(120% 90% at 0% 100%, rgba(14, 14, 14, .72) 0%, rgba(14, 14, 14, .38) 38%, rgba(14, 14, 14, 0) 70%), linear-gradient(to bottom, rgba(14, 14, 14, .32) 0%, rgba(14, 14, 14, 0) 14%) !important; }
+    html body .capa .texto .meta { position: static !important; display: flex; flex-wrap: wrap; align-items: center; gap: 8px 12px; margin: 0 0 20px !important; padding-bottom: 18px; white-space: normal !important; }
+    html body .capa .texto .meta .etiqueta { margin: 0; }
+    html body .capa .texto h1 { margin: 0 0 18px -.02em !important; }
+    html body .capa .texto .resumo { margin: 0 0 28px !important; }
+  }
+  
+  @media (min-width: 861px) {
+    html body .capa .texto { display: flex !important; flex-direction: column; align-items: flex-start; gap: 0 !important; height: auto !important; top: auto !important; }
+    html body .capa .texto .sob { display: contents !important; }
+    html body .capa .texto .meta { order: 0; } html body .capa .texto h1 { order: 1; } html body .capa .texto .resumo { order: 2; font-size: 19px !important; line-height: 1.5; max-width: 32em; opacity: .95; } html body .capa .texto .botoes { order: 3; }
+    html body .capa .texto .meta { border-bottom: 0 !important; padding-bottom: 0; margin-bottom: 16px !important; }
+    html body .capa .botoes { display: flex; gap: 12px !important; align-items: center; }
+    html body .capa .botoes .botao, html body .capa .botoes .desce-c { height: 52px; padding: 0 24px; border-radius: 999px; font-size: 16px !important; font-weight: 500; display: inline-flex; align-items: center; gap: 10px; }
+    html body .capa .botoes .desce-c { color: #fff; box-shadow: inset 0 0 0 1px rgba(255, 255, 255, .6); text-decoration: none; transition: background .3s var(--ease); }
+    html body .capa .botoes .desce-c:hover { background: rgba(255, 255, 255, .12); }
+    html body .capa .botoes .desce-c .circ { width: auto; height: auto; box-shadow: none !important; order: 2; background: none; }
+  }
+  
+  html body .capa::after, html body .capa::before { display: none !important; }
+  .carimbo { position: relative; z-index: 2; background: var(--papel); color: var(--tinta); }
+  .carimbo .c-tipo { margin: 0 0 14px; font-size: 13px; font-weight: 600; letter-spacing: .08em; text-transform: uppercase; color: var(--azul); }
+  html body .carimbo h1 { margin: 0 0 16px -.02em !important; color: var(--tinta) !important; font-size: clamp(40px, 4vw, 64px) !important; line-height: 1 !important; letter-spacing: -.035em; font-weight: 500; white-space: normal; }
+  .carimbo .c-resumo { margin: 0 0 22px; font-size: 17px; line-height: 1.5; color: var(--cinza); max-width: 30em; }
+  .carimbo .c-dados { display: grid; grid-template-columns: minmax(0, 1.5fr) minmax(0, .9fr) minmax(0, 1.2fr); margin: 0 0 24px; border-top: 1px solid var(--tinta); border-bottom: 1px solid var(--linha); }
+  .carimbo .c-dados > div { padding: 12px 14px 12px 0; } .carimbo .c-dados > div + div { padding-left: 14px; border-left: 1px solid var(--linha); }
+  .carimbo dt { font-size: 12px; letter-spacing: .06em; text-transform: uppercase; color: var(--cinza); margin-bottom: 4px; }
+  .carimbo dd { margin: 0; font-size: 15px; font-weight: 500; }
+  .carimbo .c-botoes { display: flex; flex-wrap: wrap; gap: 10px; }
+  .c-b { display: inline-flex; align-items: center; justify-content: center; gap: 10px; height: 48px; padding: 0 22px; border-radius: 999px; color: var(--tinta); text-decoration: none; font-size: 16px; font-weight: 500; box-shadow: inset 0 0 0 1px var(--tinta); transition: background .3s var(--ease), color .3s var(--ease); }
+  .c-b svg { width: 18px; height: 18px; fill: currentColor; transition: transform .3s var(--ease); }
+  .c-b:hover { background: var(--fundo); } .c-b:hover svg { transform: translateY(2px); }
+  .c-b-cheio { background: var(--tinta); color: #fff; } .c-b-cheio:hover { background: #000; }
+  .c-b-cheio::after { content: none; font-size: 17px; transition: transform .3s var(--ease); } .c-b-cheio:hover::after { transform: translateX(3px); }
+  @media (min-width: 861px) {
+    html body .capa > img { object-position: 50% 45%; }
+    .carimbo { position: absolute; left: var(--margem); bottom: clamp(32px, 5vh, 64px); width: min(500px, 40vw); padding: clamp(24px, 2.2vw, 34px); }
+    html body .barra:not(.fixa) { background: linear-gradient(rgba(20, 20, 20, .38), rgba(20, 20, 20, 0)); }
+  }
+  @media (max-width: 860px) {
+    .carimbo { padding: 96px var(--margem) 28px; }
+    .carimbo .c-dados { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); } .carimbo .c-dados > div:nth-child(3) { grid-column: 1 / -1; padding-left: 0; border-left: 0; border-top: 1px solid var(--linha); }
+    .c-b { flex: 1 1 100%; }
+  }
+  @media (prefers-reduced-motion: no-preference) {
+    .carimbo { animation: surge-capa .9s var(--ease) .2s both; }
+  }
+  
+  .carimbo .c-dados { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr) !important; }
+  .carimbo .c-dados > div { padding: 12px 14px 12px 0 !important; border-left: 0 !important; }
+  .carimbo .c-dados > div:nth-child(even) { padding-left: 14px !important; border-left: 1px solid var(--linha) !important; }
+  .carimbo .c-dados > div:nth-child(n+3) { border-top: 1px solid var(--linha) !important; grid-column: auto !important; }
+  
+  @media (max-width: 860px) {
+    html body .capa { display: flex !important; flex-direction: column; padding: 0 !important; background: var(--fundo); }
+    html body .capa > img { order: 0; display: block; width: 100% !important; aspect-ratio: 4 / 5 !important; height: auto !important; object-fit: cover !important; object-position: 55% 55% !important; }
+    .carimbo { order: 1; margin: -72px 16px 0; padding: 24px 20px 22px !important; }
+    html body .carimbo h1 { font-size: 40px !important; margin-bottom: 12px !important; }
+    .carimbo .c-resumo { font-size: 16px; margin-bottom: 18px; }
+    .carimbo .c-dados { margin-bottom: 20px; }
+    .carimbo dd { font-size: 14.5px; }
+    .c-b { height: 50px; }
+  }
+  @media (max-width: 860px) {
+    .carimbo .c-dados { grid-template-columns: minmax(0, 1fr) !important; }
+    .carimbo .c-dados > div { display: flex; justify-content: space-between; align-items: baseline; gap: 16px; padding: 11px 0 !important; border-left: 0 !important; border-top: 0 !important; }
+    .carimbo .c-dados > div + div { border-top: 1px solid var(--linha) !important; }
+    .carimbo dt { margin: 0; } .carimbo dd { text-align: right; }
+  }
+  @media (max-width: 860px) { html body .carimbo .c-dados > div:nth-child(n) { padding: 11px 0 !important; border-left: 0 !important; } }
+  
+  html body main *, html body .carimbo { animation-name: none !important; }
+  @media (prefers-reduced-motion: no-preference) { html body .capa > img { animation: assenta .9s var(--ease) both !important; } }
+  
+  .lugar-lista .mini { flex: none; width: 64px; height: 44px; object-fit: cover; opacity: .55; filter: grayscale(.4); transition: opacity .3s var(--ease), filter .3s var(--ease); }
+  .lugar-lista button:hover .mini, .lugar-lista button[aria-pressed="true"] .mini { opacity: 1; filter: none; }
+  .lugar-lista button[aria-pressed="true"] .mini { outline: 2px solid var(--tinta); outline-offset: 2px; }
+  .lugar-conta { position: absolute; right: 16px; top: 16px; margin: 0; padding: 6px 12px; border-radius: 999px; background: rgba(255, 255, 255, .94); color: var(--tinta); font-size: 14px; font-variant-numeric: tabular-nums; }
+  @media (max-width: 860px) { .lugar-lista .mini { width: 56px; height: 40px; } }
+  
+  @media (min-width: 861px) { html body .compara .janela { width: 100%; max-height: none !important; aspect-ratio: 16 / 9 !important; } }
+  
+  html body .fecho { padding-top: clamp(48px, 6vw, 88px) !important; padding-bottom: clamp(48px, 6vw, 88px) !important; }
+  @media (min-width: 861px) { html body .fecho .dentro { align-items: center; } }
+  
+  @media (min-width: 861px) {
+    html body .guia { width: 210px !important; padding: 12px 14px 14px !important; }
+    html body .guia .guia-t { font-size: 13px !important; margin-bottom: 8px !important; }
+    html body .guia .planta-guia { width: 100% !important; height: auto !important; }
+  }
+  .guia.tapa { opacity: 1 !important; pointer-events: auto !important; transform: none !important; }
+  .guia { position: fixed; } .guia-x { position: absolute; top: 6px; right: 6px; width: 32px; height: 32px; border: 0; border-radius: 50%; background: transparent; color: var(--cinza); font: 400 22px/1 var(--sans); cursor: pointer; transition: background .2s var(--ease), color .2s var(--ease); }
+  .guia-x:hover { background: var(--linha); color: var(--tinta); }
+  
+  .barra .nome { display: inline-flex; align-items: center; color: var(--tinta); --marca-letra: #f5f3ee; }
+  .barra .nome .marca { width: auto; height: 60px; display: block; }
+  @media (min-width: 861px) { html body .barra:not(.fixa) .nome { color: #fff; --marca-letra: #1b1c1d; } }
+  @media (max-width: 860px) { .barra .nome .marca { height: 44px; } }
+  
+  .carimbo dt { display: flex; align-items: center; gap: 6px; }
+  .carimbo .c-ic { width: 16px; height: 16px; flex: none; fill: currentColor; opacity: .8; }
+  .c-b .c-ic { width: 20px; height: 20px; opacity: 1; }
+  .c-b-cheio::after { content: none !important; }
+  
+  .barra .entrar, #menu .tres3d, .fecho-selo { display: inline-flex; align-items: center; gap: 8px; }
+  .barra .entrar .c-ic, #menu .tres3d .c-ic, .fecho-selo .c-ic { width: 18px; height: 18px; flex: none; fill: currentColor; opacity: 1; }
+  #menu .tres3d::after { content: none !important; }
+  
+  @media (max-width: 860px) { html body .barra:not(.fixa) .nome { opacity: 1 !important; pointer-events: auto !important; } html body .barra .nome { display: inline-flex !important; } }
+html body #menu .topo .logo{display:block;height:44px;width:auto}
+html body img.logo{background:none!important;box-shadow:none!important;border:0!important}
+</style>
+</head>
+<body><a class="saltar" href="#lugar">Saltar para o conteúdo</a>
+
+<header class="barra" id="barra">
+  <a class="nome" href="#topo" aria-label="Casa Chãs d’Égua, voltar ao início"><svg class="marca" viewBox="0 0 400 420" aria-hidden="true"><path d="M200 18 C226 18 246 40 276 66 C306 92 344 118 366 148 C384 172 386 200 386 236 C386 290 388 336 372 366 C354 398 318 402 266 404 C222 406 178 406 134 404 C82 402 46 398 28 366 C12 336 14 290 14 236 C14 200 16 172 34 148 C56 118 94 92 124 66 C154 40 174 18 200 18 Z" fill="currentColor"/><g font-family="Instrument Sans, Helvetica Neue, Helvetica, Arial, sans-serif" font-weight="500" font-size="58" text-anchor="middle" fill="var(--marca-letra, #fff)" letter-spacing="-0.5"><text x="200" y="234">CASA</text><text x="200" y="292">CHÃS</text><text x="200" y="350">D’ÉGUA</text></g></svg></a>
+  <nav aria-label="Secções">
+    <a href="#lugar">A casa</a><a href="#planta">Planta</a><a href="#divisoes">Divisões</a><a href="#materiais">Materiais</a><a href="#ficha">Ficha técnica</a><a href="#documentos">Documentos</a>
+  </nav>
+  <a class="entrar" href="passeio/index.html"><svg class="ph c-ic" viewBox="0 0 256 256" aria-hidden="true"><path d="M222.72,67.9l-88-48.17a13.9,13.9,0,0,0-13.44,0l-88,48.18A14,14,0,0,0,26,80.18v95.64a14,14,0,0,0,7.28,12.27l88,48.18a13.92,13.92,0,0,0,13.44,0l88-48.18A14,14,0,0,0,230,175.82V80.18A14,14,0,0,0,222.72,67.9ZM127,30.25a2,2,0,0,1,1.92,0L212.51,76,128,122.24,43.49,76ZM39,177.57a2,2,0,0,1-1-1.75V86.66l84,46V223Zm177.92,0L134,223V132.64l84-46v89.16A2,2,0,0,1,217,177.57Z"/></svg>Casa em 3D</a>
+  <button class="abre-menu" type="button" id="abre-menu" aria-haspopup="dialog">Menu</button>
+</header>
+
+<main id="topo">
+  <div class="capa">
+    <img width="3200" height="2134" src="img/sala-para-a-cozinha.jpg" alt="Vista da sala para a cozinha através do arco, com sofá de linho, mesa de carvalho e frentes azul-claras.">
+    <div class="carimbo">
+      <h1>Casa Chãs d’Égua</h1>
+      <p class="c-resumo">Um estudo de interiores para uma casa de férias em xisto. A proposta usa paredes caiadas, carvalho claro e dois tons de azul.</p>
+      <dl class="c-dados">
+        <div><dt><svg class="ph c-ic" viewBox="0 0 256 256" aria-hidden="true"><path d="M232,58H70V40a6,6,0,0,0-6-6H48A30,30,0,0,0,18,64V176a30,30,0,0,0,30,30H232a6,6,0,0,0,6-6V64A6,6,0,0,0,232,58ZM30,64A18,18,0,0,1,48,46H58V146H48a29.87,29.87,0,0,0-18,6ZM226,194H48a18,18,0,0,1,0-36H64a6,6,0,0,0,6-6V70H226ZM104,138a6,6,0,0,0,0,12h18v10a6,6,0,0,0,12,0V150h28v10a6,6,0,0,0,12,0V150h18a6,6,0,0,0,0-12H174V118h18a6,6,0,0,0,0-12H174V96a6,6,0,0,0-12,0v10H134V96a6,6,0,0,0-12,0v10H104a6,6,0,0,0,0,12h18v20Zm30-20h28v20H134Z"/></svg>Fase</dt><dd>Estudo prévio de interiores</dd></div>
+        <div><dt><svg class="ph c-ic" viewBox="0 0 256 256" aria-hidden="true"><path d="M128,66a38,38,0,1,0,38,38A38,38,0,0,0,128,66Zm0,64a26,26,0,1,1,26-26A26,26,0,0,1,128,130Zm0-112a86.1,86.1,0,0,0-86,86c0,30.91,14.34,63.74,41.47,94.94a252.32,252.32,0,0,0,41.09,38,6,6,0,0,0,6.88,0,252.32,252.32,0,0,0,41.09-38c27.13-31.2,41.47-64,41.47-94.94A86.1,86.1,0,0,0,128,18Zm0,206.51C113,212.93,54,163.62,54,104a74,74,0,0,1,148,0C202,163.62,143,212.93,128,224.51Z"/></svg>Local</dt><dd>Chãs d’Égua, Arganil</dd></div>
+        <div><dt><svg class="ph c-ic" viewBox="0 0 256 256" aria-hidden="true"><path d="M233.91,74.79,181.22,22.1a14,14,0,0,0-19.8,0L22.09,161.41a14,14,0,0,0,0,19.8L74.78,233.9a14,14,0,0,0,19.8,0L233.91,94.59A14,14,0,0,0,233.91,74.79ZM225.42,86.1,86.1,225.41h0a2,2,0,0,1-2.83,0L30.58,172.73a2,2,0,0,1,0-2.83L64,136.48l27.76,27.76a6,6,0,1,0,8.48-8.48L72.48,128,96,104.48l27.76,27.76a6,6,0,0,0,8.48-8.48L104.48,96,128,72.49l27.76,27.75a6,6,0,0,0,8.48-8.48L136.49,64,169.9,30.59a2,2,0,0,1,2.83,0l52.69,52.68A2,2,0,0,1,225.42,86.1Z"/></svg>Área útil</dt><dd>67,4 m²</dd></div>
+        <div><dt><svg class="ph c-ic" viewBox="0 0 256 256" aria-hidden="true"><path d="M208,34H182V24a6,6,0,0,0-12,0V34H86V24a6,6,0,0,0-12,0V34H48A14,14,0,0,0,34,48V208a14,14,0,0,0,14,14H208a14,14,0,0,0,14-14V48A14,14,0,0,0,208,34ZM48,46H74V56a6,6,0,0,0,12,0V46h84V56a6,6,0,0,0,12,0V46h26a2,2,0,0,1,2,2V82H46V48A2,2,0,0,1,48,46ZM208,210H48a2,2,0,0,1-2-2V94H210V208A2,2,0,0,1,208,210Z"/></svg>Data</dt><dd>novembro de 2026</dd></div>
+      </dl>
+      <div class="c-botoes"><a class="c-b c-b-cheio" href="passeio/index.html"><svg class="ph c-ic" viewBox="0 0 256 256" aria-hidden="true"><path d="M222.72,67.9l-88-48.17a13.9,13.9,0,0,0-13.44,0l-88,48.18A14,14,0,0,0,26,80.18v95.64a14,14,0,0,0,7.28,12.27l88,48.18a13.92,13.92,0,0,0,13.44,0l88-48.18A14,14,0,0,0,230,175.82V80.18A14,14,0,0,0,222.72,67.9ZM127,30.25a2,2,0,0,1,1.92,0L212.51,76,128,122.24,43.49,76ZM39,177.57a2,2,0,0,1-1-1.75V86.66l84,46V223Zm177.92,0L134,223V132.64l84-46v89.16A2,2,0,0,1,217,177.57Z"/></svg>Entrar na casa em 3D</a><a class="c-b" href="#planta">Ver o projeto <svg class="ph" width="20" height="20" viewBox="0 0 256 256" aria-hidden="true"><path d="M204.24,148.24l-72,72a6,6,0,0,1-8.48,0l-72-72a6,6,0,0,1,8.48-8.48L122,201.51V40a6,6,0,0,1,12,0V201.51l61.76-61.75a6,6,0,0,1,8.48,8.48Z"/></svg></a></div>
+    </div>
+    </div>
+  </div>
+
+  <section class="ideia lugar" id="lugar">
+    <div class="dentro">
+      <header class="lugar-topo">
+        <h2 class="lema">A casa e a aldeia</h2>
+        <p class="corpo">Em Chãs d’Égua, as casas de xisto acompanham os socalcos da serra. Por fora, a casa mantém a pedra. Por dentro, a cal e o carvalho claro aproveitam a luz natural que entra pelas janelas. Na cozinha, as frentes são azul-claras. O azul-ardósia da caixilharia retoma os cinzentos do xisto.</p>
+      </header>
+      <div class="lugar-lista" role="group" aria-label="Fotografias do lugar"><button type="button" aria-pressed="true" data-k="2" data-leg="Vistas por uma abertura no muro"><b>Casas</b><img class="mini" src="img/aldeia-muro.jpg" alt="" aria-hidden="true" loading="lazy" decoding="async"></button><button type="button" aria-pressed="false" data-k="4" data-leg="Círculos gravados na pedra"><b>Arte rupestre</b><img class="mini" src="img/serra-gravuras.jpg" alt="" aria-hidden="true" loading="lazy" decoding="async"></button><button type="button" aria-pressed="false" data-k="3" data-leg="Ao fim da tarde"><b>Xisto</b><img class="mini" src="img/serra-palheiro.jpg" alt="" aria-hidden="true" loading="lazy" decoding="async"></button><button type="button" aria-pressed="false" data-k="5" data-leg="Uma cascata na serra"><b>Água</b><img class="mini" src="img/serra-cascata.jpg" alt="" aria-hidden="true" loading="lazy" decoding="async"></button><button type="button" aria-pressed="false" data-k="0" data-leg="Chãs d’Égua, Arganil, vista de cima"><b>Aldeia</b><img class="mini" src="img/aldeia.jpg" alt="" aria-hidden="true" loading="lazy" decoding="async"></button><button type="button" aria-pressed="false" data-k="1" data-leg="Muros e casas de xisto sobre o vale"><b>Serra</b><img class="mini" src="img/serra-casas.jpg" alt="" aria-hidden="true" loading="lazy" decoding="async"></button></div>
+      <div class="lugar-palco"><img loading="lazy" data-k="1" src="img/serra-casas.jpg" decoding="async" alt="Casas e muros de xisto com telhados de lousa, e a serra com socalcos ao fundo." style="object-position:50% 60%"><img loading="lazy" data-k="0" src="img/aldeia.jpg" decoding="async" alt="A aldeia de Chãs d’Égua vista de cima: casas de xisto em socalcos, oliveiras e o pinhal da serra ao fundo." style="object-position:50% 96%"><img class="on" data-k="2" src="img/aldeia-muro.jpg" decoding="async" alt="A aldeia vista por uma abertura num muro de xisto: telhados de lousa e portadas verdes." style="object-position:50% 50%"><img loading="lazy" data-k="3" src="img/serra-palheiro.jpg" decoding="async" alt="Pequena construção de xisto com porta de madeira, ao sol do fim da tarde." style="object-position:60% 50%"><img loading="lazy" data-k="4" src="img/serra-gravuras.jpg" decoding="async" alt="Rocha com círculos gravados, vista de cima, com umas botas e uma máquina fotográfica." style="object-position:60% 50%"><img loading="lazy" data-k="5" src="img/serra-cascata.jpg" decoding="async" alt="Pequena cascata entre rochas com musgo e fetos." style="object-position:40% 40%"><p class="lugar-conta" aria-hidden="true">1 de 6</p><p class="lugar-leg" aria-live="polite">Vistas por uma abertura no muro</p></div>
+    </div>
+  </section>
+
+  <section id="planta">
+    <div class="dentro">
+      <div class="cab ver"><div></div><div><h2>Planta da casa</h2><p>A casa tem 67,4 m² de área útil, distribuídos por uma sala, uma cozinha, uma casa de banho, um hall e dois quartos. Na planta da proposta vê-se a disposição do mobiliário e a diferença de nível: o hall e os quartos ficam cerca de 60 cm abaixo da sala, a confirmar no local.</p></div></div>
+      <div class="folhas uma"><figure class="ver"><img width="420" height="297" src="img/planta-apresentacao.svg" decoding="async" alt="Planta de mobiliário da proposta, com a sala, a cozinha, a casa de banho e os dois quartos."><figcaption><b>Planta da proposta.</b> Norte para cima. Toque ou clique para ampliar. <a class="ver-falta" href="#falta">Medidas por confirmar: ver o que falta definir.</a></figcaption></figure></div>
+    </div>
+    <div class="tres" id="tres">
+      <img width="3600" height="2700" src="img/vista-de-cima.jpg" decoding="async" alt="A casa vista de cima, sem teto, com os móveis e os materiais.">
+      <div class="por">
+        <div class="ver">
+          <p class="lead">No modelo 3D, pode escolher uma divisão a partir da planta, vê-la por dentro e experimentar outras cores para a cozinha, a caixilharia, a porta de entrada e o chão.</p>
+          <a class="botao escuro" href="passeio/index.html">Ver a casa em 3D</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="divisoes">
+    <div class="dentro">
+      <div class="cab ver"><div></div><div><h2>Divisão a divisão</h2></div></div>
+
+      <div class="div">
+        <div class="sub ver"><h3>Sala</h3><span>25,8 m²</span></div>
+        <p class="txt ver">Uma bancada baixa de 4,50 m reúne o recuperador, a lenha e a televisão. Uma consola de carvalho fica atrás do sofá e a mesa tem lugar para seis pessoas. Mantém-se o aparador antigo.</p>
+        <figure class="g8 ver"><img width="3200" height="2134" src="img/sala-recuperador.jpg" loading="lazy" decoding="async" alt="A parede sul da sala: bancada baixa a cal, nicho da lenha, recuperador preto e televisão."><figcaption class="etq">Parede da lareira</figcaption></figure>
+        <div class="g4 pilha"><figure class="ver"><img width="3200" height="2134" src="img/entrada.jpg" loading="lazy" decoding="async" alt="A sala vista da porta da rua, com a consola de carvalho atrás do sofá."><figcaption class="etq">Entrada</figcaption></figure><figure class="ver"><img width="3200" height="2134" src="img/sala-varanda.jpg" loading="lazy" decoding="async" alt="A sala com a porta-janela de portadas de madeira e o aparador antigo."><figcaption class="etq">Porta-janela</figcaption></figure></div>
+
+        <div class="sub ver"><h3>Cozinha</h3><span>14,5 m²</span></div>
+        <p class="txt ver">A bancada em U ocupa três paredes: a norte, com o lava-loiça e a placa, e os dois lados, um junto às colunas e outro debaixo da janela. Tem tampo de carvalho, frentes em azul-claro e azulejo marfim entre a bancada e os armários. A arrumação vai até ao teto. Uma das colunas guarda o termoacumulador e o exaustor aproveita a saída de fumos existente.</p>
+        <figure class="g12 ver"><img width="3200" height="2134" src="img/cozinha-bancada.jpg" loading="lazy" decoding="async" alt="A cozinha: frentes azul-claro, tampo de carvalho, nicho de carvalho e azulejo marfim."><figcaption class="etq">Bancada norte</figcaption></figure>
+        <figure class="g6 ver"><img width="3200" height="2134" src="img/cozinha-janela.jpg" loading="lazy" decoding="async" alt="A cozinha vista da janela, com as colunas até ao teto."><figcaption class="etq">Lado da janela</figcaption></figure>
+        <figure class="g6 ver"><img width="3200" height="2134" src="img/cozinha-lava-loica.jpg" loading="lazy" decoding="async" alt="O lava-loiça embutido no tampo de carvalho, com torneira de latão."><figcaption class="etq">Lava-loiça</figcaption></figure>
+        <div class="antes-depois fim">
+          <div class="ad-cab ver"><h4>A cozinha existente e a proposta</h4><p>Escolha uma vista e mova o separador para comparar. À esquerda, a cozinha existente, fotografada em julho de 2026; à direita, a proposta.</p></div>
+          <div class="vistas" role="group" aria-label="Vistas da cozinha"><button type="button" aria-pressed="true" data-vista="0">Da sala</button><button type="button" aria-pressed="false" data-vista="1">Do lava&#8209;loiça</button><button type="button" aria-pressed="false" data-vista="2">Da lavandaria</button></div>
+          <div class="comparas uma"><figure class="compara ver" data-vista="0">
+          <div class="janela"><img width="1600" height="1067" src="img/hoje-arco.jpg" decoding="async" alt="Fotografia de hoje: a cozinha de madeira vista da sala, pelo arco."><img width="1600" height="1067" class="prop" src="img/proposta-arco.jpg" decoding="async" alt="Proposta: a cozinha vista da sala, com frentes azul-claro e a mesa de carvalho."><span class="rot e">Existente</span><span class="rot d">Proposta</span><span class="fio" aria-hidden="true"></span><input type="range" min="0" max="100" value="50" aria-label="Comparar o existente com a proposta: a cozinha vista da sala"></div>
+          <figcaption><b>A cozinha vista da sala.</b></figcaption>
+        </figure><figure class="compara ver" data-vista="1" hidden>
+          <div class="janela"><img width="1600" height="1067" src="img/hoje-lava-loica.jpg" decoding="async" alt="Fotografia de hoje: o canto do lava-loiça, com armários de madeira e bancada clara."><img width="1600" height="1067" class="prop" src="img/proposta-lava-loica.jpg" decoding="async" alt="Proposta: a bancada com frentes azul-claro, tampo de carvalho e azulejo marfim."><span class="rot e">Existente</span><span class="rot d">Proposta</span><span class="fio" aria-hidden="true"></span><input type="range" min="0" max="100" value="50" aria-label="Comparar o existente com a proposta: a bancada do lava-loiça"></div>
+          <figcaption><b>A bancada do lava-loiça.</b></figcaption>
+        </figure><figure class="compara ver" data-vista="2" hidden>
+          <div class="janela"><img width="1600" height="1067" src="img/hoje-janela.jpg" decoding="async" alt="Fotografia de hoje: a parede da máquina de lavar roupa, com armários de madeira."><img width="1600" height="1067" class="prop" src="img/proposta-janela.jpg" decoding="async" alt="Proposta: a mesma parede, com armários azul-claro, nicho de carvalho e colunas até ao teto."><span class="rot e">Existente</span><span class="rot d">Proposta</span><span class="fio" aria-hidden="true"></span><input type="range" min="0" max="100" value="50" aria-label="Comparar o existente com a proposta: a parede da máquina de lavar roupa"></div>
+          <figcaption><b>A parede da máquina de lavar roupa.</b></figcaption>
+        </figure></div>
+        </div>
+
+        <div class="sub ver"><h3>Casa de banho</h3><span>4,3 m²</span></div>
+        <p class="txt ver">O duche ocupa toda a largura do fundo e é revestido com o mesmo azulejo marfim da cozinha. A sanita e o bidé mantêm-se. O novo lavatório assenta num móvel de carvalho, com um espelho redondo iluminado por cima.</p>
+        <figure class="g8 ver"><img width="3200" height="2134" src="img/casa-de-banho-duche.jpg" loading="lazy" decoding="async" alt="A casa de banho vista da porta: duche em azulejo marfim, portadas interiores e toalheiro de latão."><figcaption class="etq">Duche</figcaption></figure>
+        <figure class="g4 pormenor ver"><img width="3200" height="2134" src="img/casa-de-banho-movel.jpg" loading="lazy" decoding="async" alt="A parede das loiças de frente: bidé, sanita, móvel de carvalho com lavatório e espelho redondo com luz."><figcaption class="etq">Lavatório e loiças</figcaption></figure>
+
+        <div class="sub ver"><h3>Quartos</h3><span>9,3 m² e 9,6 m²</span></div>
+        <p class="txt ver">Os dois quartos têm roupeiros até ao teto, lacados em branco mate, como as paredes. No quarto de casal, o carvalho reveste o nicho da cabeceira. No quarto da bicama, a cama fica dentro de um pórtico de carvalho. Cada quarto tem uma porta de sacada para uma varanda ainda por desenhar.</p>
+        <figure class="g6 ver"><img width="3200" height="2134" src="img/quarto-casal.jpg" loading="lazy" decoding="async" alt="O quarto de casal: roupeiros brancos de cada lado e nicho de carvalho com dois candeeiros."><figcaption class="etq">Quarto de casal</figcaption></figure>
+        <figure class="g6 ver"><img width="3200" height="2134" src="img/quarto-bicama.jpg" loading="lazy" decoding="async" alt="O quarto da bicama: bicama dentro de um pórtico de carvalho, com armários até ao teto."><figcaption class="etq">Quarto da bicama</figcaption></figure>
+      </div>
+    </div>
+  </section>
+
+  <section id="materiais" class="desenhos">
+    <div class="dentro">
+      <div class="cab ver"><div></div><div><h2>Materiais e acabamentos</h2><p>O carvalho aparece na sala, na cozinha, na casa de banho e nos quartos. O azulejo marfim da cozinha repete-se no duche.</p></div></div>
+      <ul class="mats frases ver">
+        <li><i style="background:#efeae1"></i><b>Cal</b><span>Cal nas paredes e na bancada da lareira.</span><small class="onde"><span class="sr">Onde se usa: </span><em>Toda a casa</em></small></li>
+        <li><i style="background:#d6c09c url(img/mat-chao.jpg) center / cover"></i><b>Chão de carvalho claro</b><span>Chão vinílico com acabamento em carvalho claro.</span><small class="onde"><span class="sr">Onde se usa: </span><em>Sala</em><em>Cozinha</em><em>Hall</em><em>Quartos</em></small></li>
+        <li><i style="background:#c3ab8c url(img/mat-carvalho.jpg) center / cover"></i><b>Carvalho</b><span>Carvalho nos tampos, nos nichos, na consola e na mesa.</span><small class="onde"><span class="sr">Onde se usa: </span><em>Sala</em><em>Cozinha</em><em>Casa de banho</em><em>Quartos</em></small></li>
+        <li><i style="background:#aab6c0"></i><b>Azul-claro</b><span>Laminado mate azul-claro nas frentes da cozinha.</span><small class="onde"><span class="sr">Onde se usa: </span><em>Cozinha</em></small></li>
+        <li><i style="background:#637d96"></i><b>Azul-ardósia</b><span>Azul-ardósia na caixilharia e na porta de entrada.</span><small class="onde"><span class="sr">Onde se usa: </span><em>Janelas</em><em>Porta de entrada</em></small></li>
+        <li><i style="background:#e9e2d2 url(img/mat-azulejo.jpg) center / cover"></i><b>Azulejo marfim</b><span>Azulejo marfim de 10 × 10 cm na cozinha e no duche.</span><small class="onde"><span class="sr">Onde se usa: </span><em>Cozinha</em><em>Duche</em></small></li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="ficha" class="ficha">
+    <div class="dentro">
+      <div class="ft-cab ver"><h2>Ficha técnica</h2><p>O que a casa é e o que o estudo propõe, numa página. As medidas vêm do levantamento de julho de 2026 e do modelo; confirmam-se na casa antes de qualquer encomenda.</p></div>
+      <dl class="ft-num ver"><div><dt>Área útil</dt><dd>67,4<small>m²</small></dd></div><div><dt>Pé-direito na sala</dt><dd>2,41<small>m</small></dd></div><div><dt>Paredes de xisto</dt><dd>0,50<small>m</small></dd></div><div><dt>Hall e quartos abaixo da sala</dt><dd>0,60<small>m</small></dd></div></dl>
+        <div class="ft-grupo ver"><h3><svg class="ph" viewBox="0 0 256 256" aria-hidden="true"><path d="M240,210H222V131.17l5.76,5.76a6,6,0,0,0,8.48-8.49L137.9,30.09a14,14,0,0,0-19.8,0L19.76,128.44a6,6,0,0,0,8.48,8.49L34,131.17V210H16a6,6,0,0,0,0,12H240a6,6,0,0,0,0-12ZM46,119.17l80.58-80.59a2,2,0,0,1,2.84,0L210,119.17V210H158V152a6,6,0,0,0-6-6H104a6,6,0,0,0-6,6v58H46ZM146,210H110V158h36Z"/></svg>A casa</h3><dl><div><dt>Área útil</dt><dd>67,4 m², em dois níveis</dd></div><div><dt>Divisões</dt><dd>Sala, cozinha, casa de banho, hall e dois quartos</dd></div><div><dt>Pé-direito</dt><dd>2,41 m, ao teto de madeira</dd></div><div><dt>Paredes exteriores</dt><dd>Xisto, com 0,50 m de espessura</dd></div><div><dt>Níveis</dt><dd>Hall e quartos cerca de 0,60 m abaixo da sala</dd></div></dl></div>
+        <div class="ft-grupo ver"><h3><svg class="ph" viewBox="0 0 256 256" aria-hidden="true"><path d="M224,50H32a6,6,0,0,0-6,6V200a6,6,0,0,0,6,6H224a6,6,0,0,0,6-6V56A6,6,0,0,0,224,50ZM86,146V110h84v36Zm-48,0V110H74v36Zm144-36h36v36H182Zm36-12H134V62h84ZM122,62V98H38V62ZM38,158h84v36H38Zm96,36V158h84v36Z"/></svg>Paredes, teto e chão</h3><dl><div><dt>Paredes</dt><dd>Cal, em branco quente</dd></div><div><dt>Teto</dt><dd>Tábuas de madeira, à vista</dd></div><div><dt>Chão</dt><dd>Vinílico com base de cortiça, carvalho claro, réguas de 1,52 m (Coretec Piano 50)</dd></div><div><dt>Azulejo</dt><dd>Marfim, 10 × 10, na cozinha e no duche (Morocco Marfim)</dd></div></dl></div>
+        <div class="ft-grupo ver"><h3><svg class="ph" viewBox="0 0 256 256" aria-hidden="true"><path d="M249.92,113.4,182.47,45.49a94.12,94.12,0,0,0-133,.06L35.68,59.78a6,6,0,0,0,8.63,8.35L58,54A82,82,0,0,1,78.55,39l49,49L30.09,185.4a14,14,0,0,0,0,19.81L50.78,225.9a14,14,0,0,0,19.8,0L168,128.46l33.42,33.42a14,14,0,0,0,19.8,0l28.68-28.69A14,14,0,0,0,249.92,113.4ZM62.1,217.41a2,2,0,0,1-2.83,0L38.58,196.72a2,2,0,0,1,0-2.83L108,124.46,131.51,148ZM163.76,115.73,140,139.49,116.48,116l23.76-23.76a6,6,0,0,0,0-8.49L90.54,34A82.07,82.07,0,0,1,174,54l45.62,45.93L188,131.49l-15.76-15.76A6,6,0,0,0,163.76,115.73Zm77.66,9-28.69,28.7a2,2,0,0,1-2.83,0L196.49,140l31.56-31.57,13.37,13.46A2,2,0,0,1,241.42,124.7Z"/></svg>Carpintaria</h3><dl><div><dt>Frentes da cozinha</dt><dd>Laminado HPL mate azul-claro sobre contraplacado de bétula</dd></div><div><dt>Puxadores</dt><dd>Disco de carvalho embutido, Ø 5,5 cm</dd></div><div><dt>Tampos</dt><dd>Carvalho, com 4 cm, a 0,90 m do chão</dd></div><div><dt>Roupeiros</dt><dd>Lacado branco mate, do chão ao teto</dd></div><div><dt>Quartos</dt><dd>Carvalho natural no nicho da cabeceira e no pórtico da bicama</dd></div></dl></div>
+        <div class="ft-grupo ver"><h3><svg class="ph" viewBox="0 0 256 256" aria-hidden="true"><path d="M198,80v32a6,6,0,0,1-12,0V86H160a6,6,0,0,1,0-12h32A6,6,0,0,1,198,80ZM96,170H70V144a6,6,0,0,0-12,0v32a6,6,0,0,0,6,6H96a6,6,0,0,0,0-12ZM230,56V200a14,14,0,0,1-14,14H40a14,14,0,0,1-14-14V56A14,14,0,0,1,40,42H216A14,14,0,0,1,230,56Zm-12,0a2,2,0,0,0-2-2H40a2,2,0,0,0-2,2V200a2,2,0,0,0,2,2H216a2,2,0,0,0,2-2Z"/></svg>Vãos</h3><dl><div><dt>Caixilharia</dt><dd>Alumínio azul-ardósia, RAL 5014</dd></div><div><dt>Portadas</dt><dd>Alumínio, a substituir</dd></div><div><dt>Quartos</dt><dd>Porta de sacada para a varanda, ainda por desenhar</dd></div></dl></div>
+        <div class="ft-grupo ver"><h3><svg class="ph" viewBox="0 0 256 256" aria-hidden="true"><path d="M174,232a6,6,0,0,1-6,6H88a6,6,0,0,1,0-12h80A6,6,0,0,1,174,232Zm40-128a85.56,85.56,0,0,1-32.88,67.64A18.23,18.23,0,0,0,174,186v6a14,14,0,0,1-14,14H96a14,14,0,0,1-14-14v-6a18,18,0,0,0-7-14.23h0a85.59,85.59,0,0,1-33-67.24C41.74,57.91,79.39,19.12,125.93,18A86,86,0,0,1,214,104Zm-12,0a74,74,0,0,0-75.79-74C86.17,31,53.78,64.34,54,104.42a73.67,73.67,0,0,0,28.4,57.87A29.92,29.92,0,0,1,94,186v6a2,2,0,0,0,2,2h64a2,2,0,0,0,2-2v-6a30.18,30.18,0,0,1,11.7-23.78A73.59,73.59,0,0,0,202,104Zm-20.08-9A55.58,55.58,0,0,0,137,50.08a6,6,0,1,0-2,11.84C152.38,64.84,167.13,79.6,170.08,97a6,6,0,0,0,5.91,5,6.87,6.87,0,0,0,1-.08A6,6,0,0,0,181.92,95Z"/></svg>Luz</h3><dl><div><dt>Teto</dt><dd>20 focos de superfície numa só grelha, LED a 3000 K, reguláveis</dd></div><div><dt>Móveis</dt><dd>Fita LED a 2700 K sob os armários e no pórtico</dd></div><div><dt>Mesa</dt><dd>Candeeiro de linho suspenso</dd></div></dl></div>
+        <div class="ft-grupo ver"><h3><svg class="ph" viewBox="0 0 256 256" aria-hidden="true"><path d="M172.53,49.06a252.86,252.86,0,0,0-41.09-38,6,6,0,0,0-6.88,0,252.86,252.86,0,0,0-41.09,38C56.34,80.26,42,113.09,42,144a86,86,0,0,0,172,0C214,113.09,199.66,80.26,172.53,49.06ZM128,218a74.09,74.09,0,0,1-74-74c0-59.62,59-108.93,74-120.51C143,35.07,202,84.38,202,144A74.09,74.09,0,0,1,128,218Zm53.92-65A55.58,55.58,0,0,1,137,197.92a7,7,0,0,1-1,.08,6,6,0,0,1-1-11.92c17.38-2.92,32.13-17.68,35.08-35.08a6,6,0,1,1,11.84,2Z"/></svg>Água, calor e eletricidade</h3><dl><div><dt>Água quente</dt><dd>Termoacumulador elétrico de 80 L, numa coluna da cozinha</dd></div><div><dt>Aquecimento</dt><dd>Recuperador a lenha existente, reabilitado</dd></div><div><dt>Placa de indução</dt><dd>Circuito próprio de 32 A</dd></div><div><dt>Máquinas e forno</dt><dd>Um circuito de 16 A cada</dd></div></dl></div>
+    </div>
+  </section>
+
+  <section id="documentos">
+    <div class="dentro">
+      <div class="cab ver"><div></div><div><h2>Desenhos e documentos</h2><p>Consulte o levantamento da casa, a planta de mobiliário, os cortes e os desenhos de iluminação. O estudo prévio reúne estes desenhos, as vistas interiores e o mapa de acabamentos.</p></div></div>
+      <div class="folhas">
+        <figure class="ver"><img width="420" height="297" src="img/planta-existente.svg" loading="lazy" decoding="async" alt="Planta do existente, com cotas, mapa de vãos e áreas."><figcaption><b>Levantamento do existente.</b> Planta do piso térreo.</figcaption></figure>
+        <figure class="ver"><img width="420" height="297" src="img/planta-apresentacao.svg" loading="lazy" decoding="async" alt="Planta de mobiliário da proposta."><figcaption><b>Proposta.</b> Planta de mobiliário, com as réguas do chão de sul a norte.</figcaption></figure>
+        <figure class="larga ver"><img width="2000" height="631" src="img/corte-longitudinal.jpg" loading="lazy" decoding="async" alt="Corte longitudinal pela sala, pelo degrau e pelo hall."><figcaption><b>Corte longitudinal.</b> Da sala ao quarto 1, com o degrau e os níveis.</figcaption></figure>
+        <figure class="larga ver"><img width="2000" height="678" src="img/corte-transversal.jpg" loading="lazy" decoding="async" alt="Corte transversal pela cozinha, pelo arco e pela sala."><figcaption><b>Corte transversal.</b> Cozinha, arco e sala.</figcaption></figure>
+        <figure class="ver"><img width="2000" height="1650" src="img/planta-do-teto-focos.jpg" loading="lazy" decoding="async" alt="Planta de teto com a grelha dos focos."><figcaption><b>Teto e iluminação.</b> Vinte focos numa só grelha.</figcaption></figure>
+        <figure class="ver"><img width="2400" height="1810" src="img/bancada-lareira.jpg" loading="lazy" decoding="async" alt="Alçado cotado da bancada da lareira."><figcaption><b>Sala, alçado sul.</b> A bancada da lareira, cotada.</figcaption></figure>
+      </div>
+      <div class="docs-grupos ver">
+        <div><h3 class="docs-t">Para consultar no site</h3><ul class="docs">
+          <li><a href="cozinha.html"><strong>Cozinha em pormenor</strong><em>Planta, alçados cotados e pontos de água e eletricidade.</em><span class="seta">Abrir <svg class="ph seta-i" viewBox="0 0 256 256" aria-hidden="true"><path d="M220.24,132.24l-72,72a6,6,0,0,1-8.48-8.48L201.51,134H40a6,6,0,0,1,0-12H201.51L139.76,60.24a6,6,0,0,1,8.48-8.48l72,72A6,6,0,0,1,220.24,132.24Z"/></svg></span></a></li>
+          <li><a href="quartos.html"><strong>Móveis dos quartos</strong><em>Desenhos dos roupeiros, do nicho da cabeceira e da bicama.</em><span class="seta">Abrir <svg class="ph seta-i" viewBox="0 0 256 256" aria-hidden="true"><path d="M220.24,132.24l-72,72a6,6,0,0,1-8.48-8.48L201.51,134H40a6,6,0,0,1,0-12H201.51L139.76,60.24a6,6,0,0,1,8.48-8.48l72,72A6,6,0,0,1,220.24,132.24Z"/></svg></span></a></li>
+          <li><a href="passeio/index.html"><strong>A casa em 3D</strong><em>Planta que se ergue, divisões por dentro e cores para escolher.</em><span class="seta">Abrir <svg class="ph seta-i" viewBox="0 0 256 256" aria-hidden="true"><path d="M220.24,132.24l-72,72a6,6,0,0,1-8.48-8.48L201.51,134H40a6,6,0,0,1,0-12H201.51L139.76,60.24a6,6,0,0,1,8.48-8.48l72,72A6,6,0,0,1,220.24,132.24Z"/></svg></span></a></li>
+        </ul></div>
+        <div><h3 class="docs-t">Ficheiros para descarregar</h3><ul class="docs">
+          <li><a href="doc/casa-da-serra-estudo-previo.html"><strong>Estudo prévio</strong><em>19 folhas em A3: plantas, cortes, vistas e mapa de acabamentos.</em><span class="seta">Ver · 19 folhas <svg class="ph seta-i" viewBox="0 0 256 256" aria-hidden="true"><path d="M220.24,132.24l-72,72a6,6,0,0,1-8.48-8.48L201.51,134H40a6,6,0,0,1,0-12H201.51L139.76,60.24a6,6,0,0,1,8.48-8.48l72,72A6,6,0,0,1,220.24,132.24Z"/></svg></span></a></li>
+          <li><a href="doc/casa-de-chas-de-egua.html"><strong>A casa por dentro</strong><em>As vistas interiores em página inteira.</em><span class="seta">Ver · 15 folhas <svg class="ph seta-i" viewBox="0 0 256 256" aria-hidden="true"><path d="M220.24,132.24l-72,72a6,6,0,0,1-8.48-8.48L201.51,134H40a6,6,0,0,1,0-12H201.51L139.76,60.24a6,6,0,0,1,8.48-8.48l72,72A6,6,0,0,1,220.24,132.24Z"/></svg></span></a></li>
+          <li><a href="doc/frentes-cozinha-para-o-carpinteiro.html"><strong>Frentes da cozinha</strong><em>Lista de frentes e puxadores para orçamento.</em><span class="seta">Ver · 1 folha <svg class="ph seta-i" viewBox="0 0 256 256" aria-hidden="true"><path d="M220.24,132.24l-72,72a6,6,0,0,1-8.48-8.48L201.51,134H40a6,6,0,0,1,0-12H201.51L139.76,60.24a6,6,0,0,1,8.48-8.48l72,72A6,6,0,0,1,220.24,132.24Z"/></svg></span></a></li>
+          <li><a href="img/planta-existente.svg"><strong>Planta do existente</strong><em>Levantamento em metros. O DXF para CAD envia-se a pedido.</em><span class="seta">Ver planta <svg class="ph seta-i" viewBox="0 0 256 256" aria-hidden="true"><path d="M220.24,132.24l-72,72a6,6,0,0,1-8.48-8.48L201.51,134H40a6,6,0,0,1,0-12H201.51L139.76,60.24a6,6,0,0,1,8.48-8.48l72,72A6,6,0,0,1,220.24,132.24Z"/></svg></span></a></li>
+        </ul></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="desenhos" id="falta">
+    <div class="dentro">
+      <div class="cab ver"><div></div><div><h2>O que falta definir</h2><p>Este é um estudo prévio. As medidas vêm do levantamento de julho de 2026 e confirmam-se na casa antes de qualquer encomenda.</p></div></div>
+      <div class="pend ver"><div class="ft-col"><h3>Confirmar no local</h3><ul><li>Comprimento da parede norte da cozinha</li><li>Larguras do arco entre a sala e a cozinha</li><li>Área da casa de banho</li><li>Altura dos degraus da sala ao hall e da passagem</li><li>Alturas e peitoris de todos os vãos</li></ul></div><div class="ft-col"><h3>Desenhar</h3><ul><li>Telhado e alçados exteriores</li><li>As duas varandas dos quartos</li><li>Portadas novas, em vez das de alumínio</li></ul></div><div class="ft-col"><h3>Preparar para obra</h3><ul><li>Planta de alterações</li><li>Tomadas e redes de água</li><li>Mapa de quantidades</li><li>Planta de localização</li></ul></div></div>
+    </div>
+  </section>
+
+  <section class="fecho" id="fecho">
+    <div class="dentro">
+      <div class="fecho-lado">
+        <p class="fecho-t ver">Explore o interior da casa em 3D.</p>
+        <div class="fecho-acoes ver"><a class="botao escuro" href="#documentos">Desenhos e documentos</a><a class="volta" href="#topo">Voltar ao início</a></div>
+      </div>
+      <a class="fecho-porta" href="passeio/index.html" aria-label="Entrar na casa em 3D"><img width="3200" height="2134" src="img/entrada.jpg" loading="lazy" decoding="async" alt=""><span class="fecho-selo" aria-hidden="true"><svg class="ph c-ic" viewBox="0 0 256 256" aria-hidden="true"><path d="M222.72,67.9l-88-48.17a13.9,13.9,0,0,0-13.44,0l-88,48.18A14,14,0,0,0,26,80.18v95.64a14,14,0,0,0,7.28,12.27l88,48.18a13.92,13.92,0,0,0,13.44,0l88-48.18A14,14,0,0,0,230,175.82V80.18A14,14,0,0,0,222.72,67.9ZM127,30.25a2,2,0,0,1,1.92,0L212.51,76,128,122.24,43.49,76ZM39,177.57a2,2,0,0,1-1-1.75V86.66l84,46V223Zm177.92,0L134,223V132.64l84-46v89.16A2,2,0,0,1,217,177.57Z"/></svg>Explorar em 3D</span></a>
+    </div>
+  </section>
+
+</main>
+
+<nav class="guia" id="guia" aria-label="Planta: ir para uma divisão"><span class="guia-t">Está aqui</span><button type="button" class="guia-x" aria-label="Fechar a planta">×</button><svg class="planta-guia" viewBox="-2 -2 127 96" role="img" aria-label="Planta da casa, com a divisão que está a ver marcada"><path class="mur" d="M65.2,92.1 L0.0,92.1 L0.0,6.8 L65.2,6.8 L65.2,0.0 L123.4,0.0 L123.4,59.4 L70.2,59.4 L70.2,92.1 Z"/><polygon class="div-sala" data-d="sala" points="50.0,87.1 5.0,87.1 5.0,36.5 65.2,36.5 65.2,54.9 50.0,54.9"/><polygon class="div-cozinha" data-d="cozinha" points="65.2,35.9 5.0,35.9 5.0,11.8 65.2,11.8"/><polygon class="div-wc" data-d="wc" points="65.2,87.1 51.2,87.1 51.2,56.1 65.2,56.1"/><g class="div-quartos" data-d="quartos"><polygon points="118.4,54.4 85.4,54.4 85.4,26.2 118.4,26.2"/><polygon points="118.4,25.0 70.2,25.0 70.2,5.0 118.4,5.0"/></g><polygon class="hall" points="84.2,54.4 70.2,54.4 70.2,26.2 84.2,26.2"/><text x="29.4" y="62.1" data-l="sala">Sala</text><text x="35.1" y="23.6" data-l="cozinha">Cozinha</text><text x="58.2" y="72.1" data-l="wc">WC</text><text x="101.9" y="40.1" data-l="quartos">Q1</text><text x="94.4" y="14.6" data-l="quartos">Q2</text></svg></nav>
+<footer><div class="dentro"><span class="assin"><svg class="marca ph" viewBox="0 0 256 256" aria-hidden="true"><path d="M240,210H222V131.17l5.76,5.76a6,6,0,0,0,8.48-8.49L137.9,30.09a14,14,0,0,0-19.8,0L19.76,128.44a6,6,0,0,0,8.48,8.49L34,131.17V210H16a6,6,0,0,0,0,12H240a6,6,0,0,0,0-12ZM46,119.17l80.58-80.59a2,2,0,0,1,2.84,0L210,119.17V210H158V152a6,6,0,0,0-6-6H104a6,6,0,0,0-6,6v58H46ZM146,210H110V158h36Z"/></svg>Casa Chãs d’Égua · Arganil · Estudo prévio de interiores de 10 de novembro de 2026</span><span> Não substitui projeto licenciado.</span></div></footer>
+
+<dialog id="menu" aria-label="Menu">
+  <div class="topo"><span><img class="logo" src="marca/logo.svg" alt="Casa Chãs d’Égua" width="48" height="50"></span><button type="button" class="fecha" id="fecha-menu">Fechar</button></div>
+  <nav aria-label="Secções"><a href="#lugar"><span><svg class="ic ph" viewBox="0 0 256 256" aria-hidden="true"><path d="M240,210H222V131.17l5.76,5.76a6,6,0,0,0,8.48-8.49L137.9,30.09a14,14,0,0,0-19.8,0L19.76,128.44a6,6,0,0,0,8.48,8.49L34,131.17V210H16a6,6,0,0,0,0,12H240a6,6,0,0,0,0-12ZM46,119.17l80.58-80.59a2,2,0,0,1,2.84,0L210,119.17V210H158V152a6,6,0,0,0-6-6H104a6,6,0,0,0-6,6v58H46ZM146,210H110V158h36Z"/></svg>A casa e a aldeia</span></a><a href="#planta"><span><svg class="ic ph" viewBox="0 0 256 256" aria-hidden="true"><path d="M232,58H70V40a6,6,0,0,0-6-6H48A30,30,0,0,0,18,64V176a30,30,0,0,0,30,30H232a6,6,0,0,0,6-6V64A6,6,0,0,0,232,58ZM30,64A18,18,0,0,1,48,46H58V146H48a29.87,29.87,0,0,0-18,6ZM226,194H48a18,18,0,0,1,0-36H64a6,6,0,0,0,6-6V70H226ZM104,138a6,6,0,0,0,0,12h18v10a6,6,0,0,0,12,0V150h28v10a6,6,0,0,0,12,0V150h18a6,6,0,0,0,0-12H174V118h18a6,6,0,0,0,0-12H174V96a6,6,0,0,0-12,0v10H134V96a6,6,0,0,0-12,0v10H104a6,6,0,0,0,0,12h18v20Zm30-20h28v20H134Z"/></svg>Planta</span></a><a href="#divisoes"><span><svg class="ic ph" viewBox="0 0 256 256" aria-hidden="true"><path d="M232,218H206V40a14,14,0,0,0-14-14H64A14,14,0,0,0,50,40V218H24a6,6,0,0,0,0,12H232a6,6,0,0,0,0-12ZM194,40V218H174V38h18A2,2,0,0,1,194,40ZM62,40a2,2,0,0,1,2-2h98V218H62Zm80,92a10,10,0,1,1-10-10A10,10,0,0,1,142,132Z"/></svg>Divisões</span></a><a href="#materiais"><span><svg class="ic ph" viewBox="0 0 256 256" aria-hidden="true"><path d="M86,180a10,10,0,1,1-10-10A10,10,0,0,1,86,180Zm152-23.81V208a14,14,0,0,1-14,14H76a44.18,44.18,0,0,1-7.58-.65,42,42,0,0,1-33.81-48.64l25-143.13A13.94,13.94,0,0,1,75.82,18.22l54.67,9.72a14,14,0,0,1,11.3,16.21l-12.67,72.44,71-25.75a14,14,0,0,1,17.89,8.32l19.09,52.22A15.66,15.66,0,0,1,238,156.19Zm-133.07,29L130,42.08a2,2,0,0,0-1.58-2.32L73.72,30l-.34,0a1.84,1.84,0,0,0-1.07.35,2,2,0,0,0-.82,1.3l-25,143.13a30,30,0,0,0,24.09,34.76,29.25,29.25,0,0,0,22-4.89,29.81,29.81,0,0,0,12.33-19.44Zm8.25,13.17L224.71,158a2,2,0,0,0,1.11-1,1.86,1.86,0,0,0,.06-1.46l-19.09-52.21a2,2,0,0,0-2.53-1.17l-77.53,28.09-10,57.07A41.9,41.9,0,0,1,113.18,198.38ZM226,170.27,116.35,210H224a2,2,0,0,0,2-2Z"/></svg>Materiais</span></a><a href="#ficha"><span><svg class="ic ph" viewBox="0 0 256 256" aria-hidden="true"><path d="M222,128a6,6,0,0,1-6,6H128a6,6,0,0,1,0-12h88A6,6,0,0,1,222,128ZM128,70h88a6,6,0,0,0,0-12H128a6,6,0,0,0,0,12Zm88,116H128a6,6,0,0,0,0,12h88a6,6,0,0,0,0-12ZM83.76,43.76,56,71.51,44.24,59.76a6,6,0,0,0-8.48,8.48l16,16a6,6,0,0,0,8.48,0l32-32a6,6,0,0,0-8.48-8.48Zm0,64L56,135.51,44.24,123.76a6,6,0,1,0-8.48,8.48l16,16a6,6,0,0,0,8.48,0l32-32a6,6,0,0,0-8.48-8.48Zm0,64L56,199.51,44.24,187.76a6,6,0,0,0-8.48,8.48l16,16a6,6,0,0,0,8.48,0l32-32a6,6,0,0,0-8.48-8.48Z"/></svg>Ficha técnica</span></a><a href="#documentos"><span><svg class="ic ph" viewBox="0 0 256 256" aria-hidden="true"><path d="M212.24,83.76l-56-56A6,6,0,0,0,152,26H56A14,14,0,0,0,42,40V216a14,14,0,0,0,14,14H200a14,14,0,0,0,14-14V88A6,6,0,0,0,212.24,83.76ZM158,46.48,193.52,82H158ZM200,218H56a2,2,0,0,1-2-2V40a2,2,0,0,1,2-2h90V88a6,6,0,0,0,6,6h50V216A2,2,0,0,1,200,218Zm-34-82a6,6,0,0,1-6,6H96a6,6,0,0,1,0-12h64A6,6,0,0,1,166,136Zm0,32a6,6,0,0,1-6,6H96a6,6,0,0,1,0-12h64A6,6,0,0,1,166,168Z"/></svg>Documentos</span></a></nav>
+  <div class="fim"><a class="tres3d" href="passeio/index.html"><svg class="ph c-ic" viewBox="0 0 256 256" aria-hidden="true"><path d="M222.72,67.9l-88-48.17a13.9,13.9,0,0,0-13.44,0l-88,48.18A14,14,0,0,0,26,80.18v95.64a14,14,0,0,0,7.28,12.27l88,48.18a13.92,13.92,0,0,0,13.44,0l88-48.18A14,14,0,0,0,230,175.82V80.18A14,14,0,0,0,222.72,67.9ZM127,30.25a2,2,0,0,1,1.92,0L212.51,76,128,122.24,43.49,76ZM39,177.57a2,2,0,0,1-1-1.75V86.66l84,46V223Zm177.92,0L134,223V132.64l84-46v89.16A2,2,0,0,1,217,177.57Z"/></svg>Entrar na casa em 3D</a><p class="sitio">Chãs d’Égua, Arganil · Estudo de interiores, 2026</p></div>
+</dialog>
+
+<div id="avanco" aria-hidden="true"></div><div id="segue" aria-hidden="true">Ver em grande</div>
+<dialog id="grande" aria-label="Imagem em grande"><button type="button" id="fechar">Fechar</button><button type="button" id="perto" aria-pressed="false"><svg class="ph mais" viewBox="0 0 256 256" aria-hidden="true"><path d="M150,112a6,6,0,0,1-6,6H118v26a6,6,0,0,1-12,0V118H80a6,6,0,0,1,0-12h26V80a6,6,0,0,1,12,0v26h26A6,6,0,0,1,150,112Zm78.24,116.24a6,6,0,0,1-8.48,0l-51.38-51.38a86.15,86.15,0,1,1,8.48-8.48l51.38,51.38A6,6,0,0,1,228.24,228.24ZM112,186a74,74,0,1,0-74-74A74.09,74.09,0,0,0,112,186Z"/></svg><svg class="ph menos" viewBox="0 0 256 256" aria-hidden="true"><path d="M150,112a6,6,0,0,1-6,6H80a6,6,0,0,1,0-12h64A6,6,0,0,1,150,112Zm78.24,116.24a6,6,0,0,1-8.48,0l-51.38-51.38a86.15,86.15,0,1,1,8.48-8.48l51.38,51.38A6,6,0,0,1,228.24,228.24ZM112,186a74,74,0,1,0-74-74A74.09,74.09,0,0,0,112,186Z"/></svg><span>Ampliar</span></button><button type="button" class="passa" id="anterior" aria-label="Imagem anterior"><svg class="ph" width="22" height="22" viewBox="0 0 256 256" aria-hidden="true"><path d="M164.24,203.76a6,6,0,1,1-8.48,8.48l-80-80a6,6,0,0,1,0-8.48l80-80a6,6,0,0,1,8.48,8.48L88.49,128Z"/></svg></button><button type="button" class="passa" id="seguinte" aria-label="Imagem seguinte"><svg class="ph" width="22" height="22" viewBox="0 0 256 256" aria-hidden="true"><path d="M180.24,132.24l-80,80a6,6,0,0,1-8.48-8.48L167.51,128,91.76,52.24a6,6,0,0,1,8.48-8.48l80,80A6,6,0,0,1,180.24,132.24Z"/></svg></button><p class="legenda" id="legenda" aria-live="polite"></p><p class="conta" id="conta" aria-hidden="true"></p></dialog>
+
+<script>const barra = document.getElementById("barra"), capa = document.querySelector(".capa");
+const poe = () => barra.classList.toggle("fixa", scrollY > 24);
+addEventListener("scroll", poe, { passive: true });
+poe();
+const io = new IntersectionObserver((es) => es.forEach((e) => {
+  if (e.isIntersecting) {
+    e.target.classList.add("visto");
+    io.unobserve(e.target);
+  }
+}), { rootMargin: "0px 0px -8% 0px" });
+document.querySelectorAll(".ver").forEach((el) => io.observe(el));
+document.querySelectorAll("#divisoes .div .txt").forEach((s) => {
+  const g = document.createElement("div");
+  g.className = "carrossel";
+  let n = s.nextElementSibling;
+  s.after(g);
+  while (n && !n.classList.contains("fim") && !n.classList.contains("sub")) {
+    const prox = n.nextElementSibling;
+    g.append(n);
+    n = prox;
+  }
+});
+const ligs = [...document.querySelectorAll(".barra nav a")], alvo = (id) => ligs.forEach((l) => l.getAttribute("href") === "#" + id ? l.setAttribute("aria-current", "true") : l.removeAttribute("aria-current"));
+const mapa = { topo: null, lugar: "lugar", planta: "planta", divisoes: "divisoes", materiais: "materiais", ficha: "ficha", documentos: "documentos", falta: "documentos", fecho: "documentos" };
+const vis = new IntersectionObserver((es) => es.forEach((e) => {
+  if (e.isIntersecting) alvo(mapa[e.target.id] || "");
+}), { rootMargin: "-45% 0px -50% 0px" });
+Object.keys(mapa).forEach((id) => {
+  const s = id === "topo" ? capa : document.getElementById(id);
+  if (s) vis.observe(s);
+});
+const menu = document.getElementById("menu");
+document.getElementById("abre-menu").addEventListener("click", () => menu.showModal());
+document.getElementById("fecha-menu").addEventListener("click", () => menu.close());
+menu.querySelectorAll("nav a").forEach((a) => a.addEventListener("click", () => menu.close()));
+document.querySelectorAll(".compara input").forEach((i) => {
+  const j = i.parentElement, poe2 = () => j.style.setProperty("--x", i.value + "%");
+  i.addEventListener("input", poe2);
+  poe2();
+  let arr = null;
+  const leva = (e) => {
+    const r = j.getBoundingClientRect();
+    i.value = Math.max(0, Math.min(100, (e.clientX - r.left) / r.width * 100));
+    poe2();
+  };
+  j.addEventListener("pointerdown", (e) => {
+    arr = { x: e.clientX, y: e.clientY, h: false };
+  });
+  j.addEventListener("pointermove", (e) => {
+    if (!arr) return;
+    if (!arr.h && Math.abs(e.clientX - arr.x) > Math.abs(e.clientY - arr.y) && Math.abs(e.clientX - arr.x) > 4) arr.h = true;
+    if (arr.h) {
+      e.preventDefault();
+      leva(e);
+    }
+  });
+  const solta = (e) => {
+    if (arr && !arr.h && e.type === "pointerup" && Math.hypot(e.clientX - arr.x, e.clientY - arr.y) < 6) leva(e);
+    arr = null;
+  };
+  j.addEventListener("pointerup", solta);
+  j.addEventListener("pointercancel", () => {
+    arr = null;
+  });
+});
+const dlg = document.getElementById("grande"), grande = dlg.appendChild(Object.assign(document.createElement("img"), { alt: "" }));
+let origem = null, atual = 0;
+const lista = [...document.querySelectorAll(".ideia figure, .hoje-fora figure, .div figure:not(.compara), .folhas figure")].filter((f) => !f.classList.contains("aldeia")), legenda = document.getElementById("legenda");
+const mostra = (i) => {
+  dlg.classList.remove("so-uma");
+  if (typeof perto === "function") perto(false);
+  atual = (i + lista.length) % lista.length;
+  const f = lista[atual], im = f.querySelector("img"), fc = f.querySelector("figcaption:not(.etq)");
+  grande.src = im.currentSrc || im.src;
+  grande.alt = im.alt;
+  document.getElementById("conta").textContent = atual + 1 + " / " + lista.length;
+  legenda.innerHTML = "";
+  if (fc) legenda.append(...[...fc.childNodes].map((n) => n.cloneNode(true)));
+  else legenda.textContent = im.alt;
+};
+const hero = document.querySelector(".capa > img"), verHero = document.getElementById("ver-hero");
+const abreHero = () => {
+  origem = verHero || hero;
+  grande.src = hero.currentSrc || hero.src;
+  grande.alt = hero.alt;
+  legenda.textContent = "Vista da sala para a cozinha";
+  document.getElementById("conta").textContent = "";
+  dlg.classList.add("so-uma");
+  dlg.showModal();
+};
+verHero?.addEventListener("click", abreHero);
+hero.addEventListener("click", () => {
+  if (matchMedia("(max-width: 860px)").matches) abreHero();
+});
+lista.forEach((f, i) => {
+  const im = f.querySelector("img");
+  f.tabIndex = 0;
+  f.setAttribute("role", "button");
+  f.setAttribute("aria-label", "Ver em grande: " + im.alt);
+  const abre = () => {
+    origem = f;
+    mostra(i);
+    dlg.showModal();
+  };
+  f.addEventListener("click", abre);
+  f.addEventListener("keydown", (e) => {
+    if (e.key === "Enter" || e.key === " ") {
+      e.preventDefault();
+      abre();
+    }
+  });
+});
+document.getElementById("anterior").addEventListener("click", () => mostra(atual - 1));
+document.getElementById("seguinte").addEventListener("click", () => mostra(atual + 1));
+dlg.addEventListener("keydown", (e) => {
+  if (e.key === "ArrowLeft") mostra(atual - 1);
+  if (e.key === "ArrowRight") mostra(atual + 1);
+});
+let x0 = null;
+dlg.addEventListener("touchstart", (e) => {
+  x0 = e.touches[0].clientX;
+}, { passive: true });
+dlg.addEventListener("touchend", (e) => {
+  if (x0 === null) return;
+  const dx = e.changedTouches[0].clientX - x0;
+  x0 = null;
+  if (Math.abs(dx) > 50) mostra(atual + (dx < 0 ? 1 : -1));
+});
+const bPerto = document.getElementById("perto");
+const perto = (on, e) => {
+  dlg.classList.toggle("perto", on);
+  bPerto.setAttribute("aria-pressed", String(on));
+  bPerto.querySelector("span").textContent = on ? "Reduzir" : "Ampliar";
+  if (!on) {
+    grande.style.width = "";
+    return;
+  }
+  const vec = /\.svg($|\?)/.test(grande.src), w = vec ? dlg.clientWidth * 3 : Math.max(dlg.clientWidth * 1.6, grande.naturalWidth);
+  const r = grande.getBoundingClientRect(), fx = e ? (e.clientX - r.left) / r.width : 0.5, fy = e ? (e.clientY - r.top) / r.height : 0.5;
+  grande.style.width = Math.round(w) + "px";
+  const centra = () => {
+    dlg.scrollLeft = fx * grande.offsetWidth - dlg.clientWidth / 2;
+    dlg.scrollTop = fy * grande.offsetHeight - dlg.clientHeight / 2;
+  };
+  requestAnimationFrame(() => requestAnimationFrame(centra));
+  setTimeout(centra, 120);
+};
+bPerto.addEventListener("click", () => perto(!dlg.classList.contains("perto")));
+grande.addEventListener("click", (e) => perto(!dlg.classList.contains("perto"), e));
+dlg.addEventListener("keydown", (e) => {
+  if (e.key === "+" || e.key === "=") perto(true);
+  if (e.key === "-") perto(false);
+});
+dlg.addEventListener("close", () => {
+  perto(false);
+  if (origem && document.activeElement === document.body) origem.focus();
+});
+const fecha = () => {
+  dlg.close();
+  if (origem) origem.focus();
+};
+dlg.addEventListener("click", (e) => {
+  if (e.target === dlg) fecha();
+});
+document.getElementById("fechar").addEventListener("click", fecha);
+</script>
+
+<script>(() => {
+  const guia = document.getElementById("guia");
+  if (!guia) return;
+  const chaves = { "Sala": "sala", "Cozinha": "cozinha", "Casa de banho": "wc", "Quartos": "quartos" };
+  const subs = [...document.querySelectorAll("#divisoes .sub")].filter((s) => chaves[s.querySelector("h3")?.textContent.trim()]);
+  const svg = guia.querySelector("svg");
+  const marca = (raiz, k) => {
+    raiz.querySelectorAll("[data-d],[data-l]").forEach((el) => el.classList.toggle("ativa", (el.dataset.d || el.dataset.l) === k));
+  };
+  subs.forEach((s) => {
+    const k = chaves[s.querySelector("h3").textContent.trim()];
+    s.id = "div-" + k;
+    s.dataset.k = k;
+    s.style.scrollMarginTop = "90px";
+    const m = svg.cloneNode(true);
+    m.classList.add("planta-mini");
+    m.setAttribute("aria-hidden", "true");
+    m.removeAttribute("role");
+    marca(m, k);
+    s.appendChild(m);
+  });
+  svg.querySelectorAll("[data-d]").forEach((el) => {
+    el.setAttribute("tabindex", "0");
+    el.setAttribute("role", "link");
+    el.setAttribute("aria-label", "Ir para " + { sala: "a sala", cozinha: "a cozinha", wc: "a casa de banho", quartos: "os quartos" }[el.dataset.d]);
+  });
+  svg.addEventListener("keydown", (e) => {
+    if (e.key === "Enter" || e.key === " ") {
+      e.preventDefault();
+      e.target.closest("[data-d]")?.dispatchEvent(new MouseEvent("click", { bubbles: true }));
+    }
+  });
+  svg.addEventListener("click", (e) => {
+    const el = e.target.closest("[data-d]");
+    if (el) document.getElementById("div-" + el.dataset.d)?.scrollIntoView({ behavior: matchMedia("(prefers-reduced-motion: reduce)").matches ? "auto" : "smooth" });
+  });
+  const sec = document.getElementById("divisoes");
+  const mostra = () => {
+    const r = sec.getBoundingClientRect();
+    guia.classList.toggle("on", !guia.dataset.fechada && r.top < innerHeight * 0.8 && r.bottom > innerHeight * 0.75);
+  };
+  addEventListener("scroll", mostra, { passive: true });
+  mostra();
+  const fixo = () => {
+    let k = subs[0]?.dataset.k;
+    for (const s of subs) if (s.getBoundingClientRect().top < innerHeight * 0.45) k = s.dataset.k;
+    marca(svg, k);
+  };
+  addEventListener("scroll", fixo, { passive: true });
+  fixo();
+})();
+</script>
+
+<script>(() => {
+  const tabs = [...document.querySelectorAll(".vistas button")], figs = [...document.querySelectorAll(".comparas.uma .compara")];
+  const escolhe = (v) => {
+    tabs.forEach((t) => t.setAttribute("aria-pressed", t.dataset.vista === v ? "true" : "false"));
+    figs.forEach((g) => {
+      g.hidden = g.dataset.vista !== v;
+      if (!g.hidden) g.classList.add("visto");
+    });
+  };
+  tabs.forEach((t) => t.addEventListener("click", () => escolhe(t.dataset.vista)));
+})();
+</script>
+<script>(() => {
+  const raiz = document.documentElement, capa = document.querySelector(".capa");
+  let marcado = false;
+  const mede = () => {
+    marcado = false;
+    const y = scrollY, h = Math.max(1, raiz.scrollHeight - innerHeight);
+    raiz.style.setProperty("--p", Math.min(1, y / h).toFixed(4));
+  };
+  addEventListener("scroll", () => {
+    if (!marcado) {
+      marcado = true;
+      requestAnimationFrame(mede);
+    }
+  }, { passive: true });
+  addEventListener("resize", mede);
+  mede();
+  const foto = capa.querySelector(":scope > img");
+  const abre = () => requestAnimationFrame(() => requestAnimationFrame(() => {
+    if (false) foto.animate([{ clipPath: "inset(0 50% 0 50%)" }, { clipPath: "inset(0 0% 0 0%)" }], { duration: 1100, easing: "cubic-bezier(.16, 1, .3, 1)" });
+  }));
+  if (foto && foto.animate && !matchMedia("(prefers-reduced-motion: reduce)").matches) {
+    if (foto.complete && foto.naturalWidth) abre();
+    else foto.addEventListener("load", abre, { once: true });
+  }
+  const segue = document.getElementById("segue");
+  if (segue && matchMedia("(hover: hover) and (pointer: fine)").matches) {
+    let x = 0, y = 0, tx = 0, ty = 0, anda = false;
+    const passo = () => {
+      x += (tx - x) * 0.22;
+      y += (ty - y) * 0.22;
+      segue.style.transform = `translate(${x + 16}px, ${y + 18}px)`;
+      if (Math.abs(tx - x) + Math.abs(ty - y) > 0.3) requestAnimationFrame(passo);
+      else anda = false;
+    };
+    addEventListener("pointermove", (e) => {
+      const f = e.target.closest && e.target.closest('figure[role="button"]');
+      segue.classList.toggle("on", !!f);
+      if (!f) return;
+      tx = e.clientX;
+      ty = e.clientY;
+      if (!segue.dataset.posto) {
+        x = tx;
+        y = ty;
+        segue.dataset.posto = "1";
+      }
+      if (!anda) {
+        anda = true;
+        requestAnimationFrame(passo);
+      }
+    }, { passive: true });
+    addEventListener("scroll", () => segue.classList.remove("on"), { passive: true });
+  }
+})();
+</script>
+<script>(() => {
+  const g = document.getElementById("guia");
+  if (!g) return;
+  let pedido = false;
+  const ve = () => {
+    pedido = false;
+    if (!g.classList.contains("on")) {
+      g.classList.remove("tapa");
+      return;
+    }
+    const r = g.getBoundingClientRect(), pts = [[r.left + 8, r.top + 8], [r.right - 8, r.top + 8], [r.left + r.width / 2, r.top + r.height / 2], [r.left + 8, r.bottom - 8], [r.right - 8, r.bottom - 8]];
+    const tapa = pts.some(([x, y]) => document.elementsFromPoint(x, y).some((e) => !g.contains(e) && e.closest && e.closest("#divisoes figure, .antes-depois")));
+    g.classList.remove("tapa");
+  };
+  addEventListener("scroll", () => {
+    if (!pedido) {
+      pedido = true;
+      requestAnimationFrame(ve);
+    }
+  }, { passive: true });
+  addEventListener("resize", ve);
+  ve();
+})();
+</script>
+<script>(() => {
+  document.querySelectorAll(".carrossel, .hoje-fora").forEach((c) => {
+    const f = [...c.querySelectorAll(":scope > figure")];
+    if (f.length < 2) return;
+    const d = document.createElement("div");
+    d.className = "pontos";
+    d.setAttribute("aria-hidden", "true");
+    d.innerHTML = f.map(() => "<i></i>").join("") + "<span></span>";
+    c.after(d);
+    const b = [...d.querySelectorAll("i")], t = d.querySelector("span");
+    const up = () => {
+      const w = f[1].offsetLeft - f[0].offsetLeft || 1;
+      const k = Math.min(f.length - 1, Math.round(c.scrollLeft / w));
+      b.forEach((x, i) => x.classList.toggle("on", i === k));
+      t.textContent = k + 1 + " de " + f.length + (k < f.length - 1 ? " · deslize para o lado" : "");
+    };
+    c.addEventListener("scroll", up, { passive: true });
+    addEventListener("resize", up);
+    up();
+    b.forEach((x, i) => x.addEventListener("click", () => c.scrollTo({ left: f[i].offsetLeft - f[0].offsetLeft, behavior: "smooth" })));
+  });
+})();
+</script>
+<script>(() => {
+  const L = document.getElementById("lugar");
+  if (!L) return;
+  const b = [...L.querySelectorAll(".lugar-lista button")], im = [...L.querySelectorAll(".lugar-palco img")];
+  const leg = L.querySelector(".lugar-leg");
+  const vai = (k) => {
+    b.forEach((x) => {
+      x.setAttribute("aria-pressed", String(x.dataset.k === k));
+      if (x.dataset.k === k && leg) leg.textContent = x.dataset.leg;
+    });
+    const ct = L.querySelector(".lugar-conta");
+    if (ct) ct.textContent = b.findIndex((x) => x.dataset.k === k) + 1 + " de " + b.length;
+    im.forEach((i) => {
+      if (i.dataset.k === k) i.loading = "eager";
+      i.classList.toggle("on", i.dataset.k === k);
+    });
+  };
+  b.forEach((x) => {
+    x.addEventListener("click", () => vai(x.dataset.k));
+    x.addEventListener("pointerenter", (e) => {
+      if (e.pointerType === "mouse") vai(x.dataset.k);
+    });
+    x.addEventListener("focus", () => vai(x.dataset.k));
+    x.addEventListener("keydown", (e) => {
+      if (e.key === "Enter" || e.key === " ") {
+        e.preventDefault();
+        vai(x.dataset.k);
+      }
+    });
+  });
+  b.forEach((x) => x.tabIndex = 0);
+})();
+</script>
+<script>(() => {
+  const g = document.getElementById("guia");
+  const x = g && g.querySelector(".guia-x");
+  if (!x) return;
+  let f = false;
+  try {
+    f = sessionStorage.getItem("guia-fechada") === "1";
+  } catch (e) {
+  }
+  if (f) {
+    g.dataset.fechada = "1";
+    g.classList.remove("on");
+  }
+  x.addEventListener("click", (e) => {
+    e.stopPropagation();
+    g.dataset.fechada = "1";
+    g.classList.remove("on");
+    try {
+      sessionStorage.setItem("guia-fechada", "1");
+    } catch (e2) {
+    }
+  });
+})();
+</script>
+</body>
+</html>

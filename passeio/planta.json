@@ -1,0 +1,494 @@
+{
+ "nota": "x cresce para poente, y cresce para norte (na folha, o norte fica em baixo). Metros.",
+ "paredes_exteriores": {
+  "sala_sul": [
+   5.82,
+   12.34,
+   0.0,
+   0.5
+  ],
+  "sala_norte": [
+   5.82,
+   12.34,
+   8.03,
+   8.53
+  ],
+  "sala_poente": [
+   11.84,
+   12.34,
+   0.5,
+   8.03
+  ],
+  "comum": [
+   5.32,
+   5.82,
+   0.0,
+   9.209
+  ],
+  "quartos_sul": [
+   0.0,
+   5.32,
+   3.27,
+   3.77
+  ],
+  "quartos_norte": [
+   0.0,
+   5.32,
+   8.709,
+   9.209
+  ],
+  "quartos_nascente": [
+   0.0,
+   0.5,
+   3.27,
+   9.209
+  ]
+ },
+ "divisorias": {
+  "arco_nascente": [
+   5.82,
+   6.4,
+   5.559,
+   5.62
+  ],
+  "arco_poente": [
+   11.329,
+   11.84,
+   5.559,
+   5.62
+  ],
+  "wc_poente": [
+   7.22,
+   7.34,
+   0.5,
+   3.72
+  ],
+  "wc_norte": [
+   5.82,
+   7.34,
+   3.6,
+   3.72
+  ],
+  "q1_hall": [
+   3.8,
+   3.92,
+   3.77,
+   6.591
+  ],
+  "quartos_q2": [
+   0.5,
+   5.32,
+   6.591,
+   6.709
+  ]
+ },
+ "vaos": [
+  {
+   "id": "J1",
+   "tipo": "janela",
+   "parede": "sala_sul",
+   "de": 10.0403,
+   "a": 10.8203,
+   "texto": "0,78",
+   "onde": "sala, sul"
+  },
+  {
+   "id": "J2",
+   "tipo": "janela",
+   "parede": "sala_poente",
+   "de": 1.741,
+   "a": 2.791,
+   "texto": "1,05",
+   "onde": "sala, poente"
+  },
+  {
+   "id": "P1",
+   "tipo": "porta",
+   "parede": "sala_poente",
+   "de": 4.5,
+   "a": 5.559,
+   "texto": "1,06",
+   "onde": "porta da rua",
+   "dobradica": "a",
+   "lado": -1
+  },
+  {
+   "id": "J3",
+   "tipo": "janela",
+   "parede": "sala_poente",
+   "de": 6.47,
+   "a": 7.12,
+   "texto": "0,65",
+   "onde": "cozinha, poente"
+  },
+  {
+   "id": "J4",
+   "tipo": "janela",
+   "parede": "comum",
+   "de": 1.938,
+   "a": 2.875,
+   "texto": "0,94",
+   "onde": "WC, nascente"
+  },
+  {
+   "id": "V1",
+   "tipo": "passagem",
+   "parede": "comum",
+   "de": 3.809,
+   "a": 4.53,
+   "texto": "0,72",
+   "onde": "sala → hall"
+  },
+  {
+   "id": "J5",
+   "tipo": "janela",
+   "parede": "quartos_nascente",
+   "de": 5.28,
+   "a": 6.54,
+   "texto": "1,26",
+   "onde": "quarto 1, nascente, junto ao canto norte"
+  },
+  {
+   "id": "J6",
+   "tipo": "janela",
+   "parede": "quartos_norte",
+   "de": 1.45,
+   "a": 2.9,
+   "texto": "1,45",
+   "onde": "quarto 2, norte"
+  },
+  {
+   "id": "P2",
+   "tipo": "porta",
+   "parede": "quartos_sul",
+   "de": 4.1,
+   "a": 4.92,
+   "texto": "0,82",
+   "onde": "porta do terraço",
+   "dobradica": "de",
+   "lado": 1
+  },
+  {
+   "id": "P3",
+   "tipo": "porta",
+   "parede": "wc_norte",
+   "de": 5.906,
+   "a": 6.616,
+   "texto": "0,71",
+   "onde": "WC",
+   "dobradica": "de",
+   "lado": -1
+  },
+  {
+   "id": "P4",
+   "tipo": "porta",
+   "parede": "q1_hall",
+   "de": 5.78,
+   "a": 6.59,
+   "texto": "0,81",
+   "onde": "quarto 1",
+   "dobradica": "a",
+   "lado": -1
+  },
+  {
+   "id": "P5",
+   "tipo": "porta",
+   "parede": "quartos_q2",
+   "de": 4.1,
+   "a": 4.92,
+   "texto": "0,82",
+   "onde": "quarto 2",
+   "dobradica": "de",
+   "lado": 1
+  }
+ ],
+ "divisoes": [
+  {
+   "nome": "SALA",
+   "area": "25,8 m²",
+   "cota": "±0,00",
+   "x": 9.59,
+   "y": 3.156
+  },
+  {
+   "nome": "COZINHA",
+   "area": "14,5 m²",
+   "cota": "±0,00",
+   "x": 8.83,
+   "y": 6.906
+  },
+  {
+   "nome": "WC",
+   "area": "4,3 m²",
+   "cota": "±0,00",
+   "x": 6.516,
+   "y": 1.75
+  },
+  {
+   "nome": "HALL",
+   "area": "3,9 m²",
+   "cota": "−0,60 ?",
+   "x": 4.609,
+   "y": 5.844
+  },
+  {
+   "nome": "QUARTO 1",
+   "area": "9,3 m²",
+   "cota": "−0,60 ?",
+   "x": 2.141,
+   "y": 5.266
+  },
+  {
+   "nome": "QUARTO 2",
+   "area": "9,6 m²",
+   "cota": "−0,60 ?",
+   "x": 2.688,
+   "y": 7.766
+  }
+ ],
+ "elementos": {
+  "lareira": [
+   [
+    11.042,
+    0.5
+   ],
+   [
+    11.84,
+    0.5
+   ],
+   [
+    11.84,
+    1.298
+   ]
+  ],
+  "degraus_hall": {
+   "x0": 5.32,
+   "x1": 5.82,
+   "y0": 3.8094,
+   "y1": 4.5297,
+   "linhas_x": [
+    5.82
+   ],
+   "hall": {
+    "x0": 3.92,
+    "x1": 5.32,
+    "linhas_y": [
+     4.5297,
+     4.8297
+    ]
+   },
+   "nota": "degrau da sala para a passagem; patamar do hall à frente da porta do terraço; dois degraus para norte; espelhos de 0,20"
+  }
+ },
+ "cotas": [
+  {
+   "eixo": "x",
+   "y": -0.9,
+   "tracos": [
+    [
+     5.82,
+     11.84,
+     "6,02",
+     ""
+    ]
+   ]
+  },
+  {
+   "eixo": "x",
+   "y": 8.979999999999999,
+   "tracos": [
+    [
+     5.82,
+     11.84,
+     "6,02",
+     "A"
+    ]
+   ]
+  },
+  {
+   "eixo": "x",
+   "y": -0.45,
+   "tracos": [
+    [
+     5.8203,
+     7.2203,
+     "1,40",
+     ""
+    ],
+    [
+     7.3398,
+     10.0403,
+     "2,70",
+     ""
+    ],
+    [
+     10.0403,
+     10.8203,
+     "0,78",
+     ""
+    ],
+    [
+     10.8203,
+     11.8403,
+     "1,02",
+     "B"
+    ]
+   ]
+  },
+  {
+   "eixo": "y",
+   "x": 13.43,
+   "tracos": [
+    [
+     0.5,
+     8.03,
+     "7,53",
+     ""
+    ]
+   ]
+  },
+  {
+   "eixo": "y",
+   "x": 13.06,
+   "tracos": [
+    [
+     0.5,
+     5.559,
+     "5,00",
+     ""
+    ],
+    [
+     5.62,
+     8.03,
+     "2,41",
+     ""
+    ]
+   ]
+  },
+  {
+   "eixo": "x",
+   "y": 9.658999999999999,
+   "tracos": [
+    [
+     0.5,
+     5.32,
+     "4,82",
+     ""
+    ]
+   ]
+  },
+  {
+   "eixo": "y",
+   "x": -0.4,
+   "tracos": [
+    [
+     3.77,
+     6.591,
+     "2,82",
+     ""
+    ],
+    [
+     6.709,
+     8.709,
+     "2,00",
+     ""
+    ]
+   ]
+  },
+  {
+   "eixo": "x",
+   "y": 2.82,
+   "tracos": [
+    [
+     0.5,
+     3.8,
+     "3,30",
+     ""
+    ],
+    [
+     3.92,
+     5.32,
+     "1,40",
+     ""
+    ]
+   ]
+  },
+  {
+   "eixo": "x",
+   "y": 4.562,
+   "tracos": [
+    [
+     7.34,
+     11.84,
+     "4,50",
+     ""
+    ]
+   ],
+   "interior": true
+  },
+  {
+   "eixo": "x",
+   "y": 5.969,
+   "tracos": [
+    [
+     6.4,
+     11.329,
+     "4,93",
+     "C"
+    ]
+   ],
+   "interior": true
+  },
+  {
+   "eixo": "y",
+   "x": 7.094,
+   "tracos": [
+    [
+     0.5,
+     3.6,
+     "3,10",
+     "E"
+    ]
+   ],
+   "interior": true
+  },
+  {
+   "eixo": "y",
+   "x": 12.69,
+   "tracos": [
+    [
+     0.5,
+     1.7406,
+     "1,20",
+     ""
+    ],
+    [
+     1.7406,
+     2.7906,
+     "1,05",
+     ""
+    ],
+    [
+     2.7906,
+     4.5,
+     "1,70",
+     ""
+    ],
+    [
+     4.5,
+     5.5594,
+     "1,06",
+     ""
+    ]
+   ]
+  }
+ ],
+ "avisos": {
+  "A": "Cozinha: 3,64 na planta de julho. Por dentro, a fachada tem ≈ 6,02 (WC 1,40 + divisória 0,12 + sala 4,50). Medir a parede norte.",
+  "B": "Fachada sul: o 1,20 é na parede poente. A sul: 2,70 + 0,78 + ≈ 1,02 = 4,50, medido duas vezes.",
+  "C": "Arco: 4,81 nesta planta; o modelo dá 4,93 depois de alargar a sala (19.10); 4,23 e 3,08 noutras folhas. Medir.",
+  "E": "WC: 1,40 × 3,10 aqui; 1,46 × 3,16 na folha da casa de banho."
+ },
+ "pe_direito": "2,41 (sala e cozinha, ao teto de madeira)",
+ "fonte_medidas": "Planta-Casa_2026-07-07.key (pré-visualização em desenhos/planta-julho-2026-medidas.jpg)"
+}

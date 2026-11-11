@@ -1,0 +1,269 @@
+<!doctype html>
+<html lang="pt-PT">
+<head>
+<meta charset="utf-8">
+<link rel="icon" href="../icone.svg" type="image/svg+xml">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Casa em 3D · Casa Chãs d’Égua</title>
+<meta name="description" content="A planta da Casa Chãs d’Égua, em Arganil, ergue-se em casa e percorre-se por dentro.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..600;1,400&display=swap" rel="stylesheet">
+<style>
+  :root { --ease: cubic-bezier(.16, 1, .3, 1); }
+  
+  
+  :root {
+    color-scheme: light;
+    --papel: #ffffff;
+    --tinta: #1d1d1b;
+    --cinza: #67665f;      
+    --linha: #dcdbd5;
+    --azul: #3f5870;       
+    --fundo: #f5f3ee;      
+    --lado: 360px;
+    --margem: 36px;
+    --p: 0;                
+  }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; background: var(--papel); color: var(--tinta); }
+  body { font: 15px/1.45 "Instrument Sans", "Helvetica Neue", Helvetica, Arial, sans-serif; -webkit-font-smoothing: antialiased; }
+  a { color: var(--azul); text-underline-offset: 3px; text-decoration-thickness: 1px; }
+  h1, h2, p { margin: 0; }
+  h1 { font-size: 34px; font-weight: 500; letter-spacing: -.04em; line-height: 1; }
+  .sitio { color: var(--cinza); margin-top: 8px; font-size: 15px; }
+  ::selection { background: var(--azul); color: #fff; }
+  .nota { font-size: 13px; color: var(--cinza); }
+
+  
+  #cena { position: fixed; top: 0; left: var(--lado); width: calc(100% - var(--lado)); height: 100%; display: block; }
+  #rolo { height: 1500vh; }
+  aside {
+    position: fixed; top: 0; left: 0; bottom: 0; width: var(--lado); padding: var(--margem) var(--margem) 28px;
+    display: flex; flex-direction: column; background: var(--fundo); z-index: 2;
+  }
+  .voltar { align-self: flex-start; display: inline-flex; align-items: center; gap: 9px; height: 36px; padding: 0 15px 0 13px; margin-bottom: 26px; border-radius: 999px; background: #fff; color: var(--tinta); font-size: 14px; font-weight: 500; text-decoration: none; box-shadow: 0 1px 2px rgba(29, 29, 27, .08), 0 0 0 1px rgba(29, 29, 27, .06); transition: background .2s var(--ease), color .2s var(--ease); }
+  .voltar::before { content: ""; width: 18px; height: 18px; background: currentColor; -webkit-mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 256 256' fill='%23000'%3E%3Cpath d='M222,128a6,6,0,0,1-6,6H54.49l61.75,61.76a6,6,0,1,1-8.48,8.48l-72-72a6,6,0,0,1,0-8.48l72-72a6,6,0,0,1,8.48,8.48L54.49,122H216A6,6,0,0,1,222,128Z'/%3E%3C/svg%3E") center / contain no-repeat; mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 256 256' fill='%23000'%3E%3Cpath d='M222,128a6,6,0,0,1-6,6H54.49l61.75,61.76a6,6,0,1,1-8.48,8.48l-72-72a6,6,0,0,1,0-8.48l72-72a6,6,0,0,1,8.48,8.48L54.49,122H216A6,6,0,0,1,222,128Z'/%3E%3C/svg%3E") center / contain no-repeat; transition: transform .3s var(--ease); }   
+  .voltar:hover { background: var(--tinta); color: #fff; } .voltar:hover::before { transform: translateX(-3px); }
+  nav { margin-top: 40px; position: relative; padding-left: 20px; }
+  nav::before, nav::after { content: ""; position: absolute; left: 3px; top: 8px; bottom: 8px; width: 1.5px; background: var(--linha); transform-origin: top; }
+  nav::after { background: var(--azul); transform: scaleY(var(--p)); }
+  nav ol { list-style: none; margin: 0; padding: 0; }
+  nav button { all: unset; cursor: pointer; display: block; font-size: 15px; line-height: 32px; color: var(--cinza); transition: color .2s var(--ease), transform .3s var(--ease); }
+  nav button:hover { color: var(--tinta); transform: translateX(3px); }
+  nav button:focus-visible { outline: 2px solid var(--azul); outline-offset: 4px; border-radius: 2px; }
+  nav li { position: relative; }
+  nav li::before { content: ""; position: absolute; left: -20px; top: 13px; width: 7px; height: 7px; border-radius: 50%; background: var(--fundo); box-shadow: inset 0 0 0 1.5px var(--linha); z-index: 1; transition: background .3s var(--ease), box-shadow .3s var(--ease), transform .3s var(--ease); }
+  nav li.ativo::before { background: var(--azul); box-shadow: inset 0 0 0 1.5px var(--azul); transform: scale(1.35); }
+  nav li.ativo button { color: var(--tinta); font-weight: 600; }
+  .legenda { margin-top: auto; min-height: 190px; padding-top: 24px; }
+  .legenda h2 { font-size: clamp(26px, 2.1vw, 32px); font-weight: 500; line-height: 1.1; letter-spacing: -.035em; text-wrap: balance; }
+  .legenda p { color: var(--cinza); margin-top: 12px; font-size: 15.5px; line-height: 1.5; text-wrap: pretty; }
+  .rodape { margin-top: 26px; padding-top: 16px; border-top: 1px solid var(--linha); display: flex; justify-content: space-between; align-items: center; gap: 12px; }
+  .rodape a { color: var(--tinta); font-weight: 500; text-decoration: none; background: linear-gradient(currentColor, currentColor) 0 100% / 100% 1px no-repeat; padding-bottom: 2px; }
+  .rodape a:hover { color: var(--azul); }
+  
+  #avanco { position: fixed; top: 0; left: var(--lado); right: 0; height: 3px; background: var(--azul); transform: scaleX(var(--p)); transform-origin: left; z-index: 3; }
+  #corte { position: fixed; left: calc(var(--lado) + 24px); bottom: 24px; height: 34px; display: flex; align-items: center; padding: 0 14px; border-radius: 999px; background: rgba(255, 255, 255, .92); box-shadow: 0 1px 2px rgba(29, 29, 27, .08), 0 0 0 1px rgba(29, 29, 27, .06); font-size: 13px; color: var(--tinta); font-variant-numeric: tabular-nums; z-index: 2; }
+  #corte:empty { display: none; }
+  #desca { position: fixed; left: calc(var(--lado) + (100% - var(--lado)) / 2); bottom: 26px; transform: translateX(-50%); display: flex; align-items: center; gap: 12px; height: 40px; padding: 0 18px 0 16px; border-radius: 999px; background: var(--tinta); color: #fff; font-size: 14px; font-weight: 500; z-index: 2; pointer-events: none; opacity: calc(1 - var(--p) * 60); transition: opacity .3s var(--ease); }
+  #desca i { display: block; width: 1.5px; height: 16px; background: linear-gradient(#fff 50%, rgba(255, 255, 255, .25) 50%) 0 0 / 100% 200%; animation: desce 1.6s cubic-bezier(.16, 1, .3, 1) infinite; }
+  @keyframes desce { from { background-position: 0 100%; } to { background-position: 0 -100%; } }
+  #estado { position: fixed; top: 0; left: var(--lado); right: 0; bottom: 0; display: grid; place-items: center; align-content: center; gap: 14px; font-size: 15px; color: var(--cinza); z-index: 1; }
+  body:has(#estado:not(:empty)) #desca { visibility: hidden; }   
+  #estado::after { content: ""; width: 180px; height: 2px; border-radius: 2px; background: linear-gradient(var(--azul), var(--azul)) 0 0 / calc(var(--carga, 0) * 100%) 100% no-repeat, var(--linha); }   
+  #dica { position: fixed; top: 0; left: 0; z-index: 4; pointer-events: none; background: var(--tinta); color: var(--papel); font-size: 13px; font-weight: 500; line-height: 1; padding: 9px 13px; border-radius: 999px; white-space: nowrap; }
+  #dica[hidden] { display: none; }
+  .explorar #desca, .sem3d #desca, .sem3d #avanco { display: none; }
+  @media (max-width: 1100px) { :root { --lado: 300px; --margem: 28px; } }
+  @media (max-height: 720px) { nav { margin-top: 22px; } nav button { line-height: 27px; } nav li::before { top: 10px; } .legenda { min-height: 150px; } .voltar { margin-bottom: 16px; } }
+  .sem3d #cena, .sem3d aside, .sem3d #rolo, .sem3d #corte, .sem3d #estado { display: none; }
+
+  
+  #leve { display: none; max-width: 760px; margin: 0 auto; padding: 24px 16px 48px; }
+  .sem3d #leve { display: block; }
+  #leve header { margin-bottom: 24px; }
+  #leve figure { margin: 0 0 32px; }
+  #leve img, #leve video { width: 100%; height: auto; display: block; background: #f1f0ec; }
+  #leve figcaption { margin-top: 10px; }
+  #leve figcaption strong { font-weight: 600; display: block; }
+  #leve figcaption span { color: var(--cinza); }
+  .abrir3d { all: unset; cursor: pointer; display: inline-flex; align-items: center; height: 48px; margin: 0 0 28px; padding: 0 22px; background: var(--tinta); color: var(--papel); font-size: 15.5px; font-weight: 500; border-radius: 999px; }
+  .abrir3d:focus-visible { outline: 2px solid var(--tinta); outline-offset: 3px; }
+
+  
+  #escolhas {
+    position: fixed; top: 24px; right: 24px; width: 300px; max-height: calc(100% - 48px); overflow: auto; z-index: 3;
+    background: rgba(255, 255, 255, .96); border-radius: 20px; border: 1px solid var(--linha); padding: 0 22px 22px; scrollbar-width: thin; scrollbar-color: #c9c7bf transparent;
+  }
+  
+  .esc-cabeca { position: sticky; top: 0; z-index: 1; display: flex; justify-content: space-between; align-items: baseline; gap: 12px; padding: 16px 0 12px; background: inherit; }
+  .esc-cabeca h2 { font-size: 17px; font-weight: 600; letter-spacing: -.02em; }
+  .esc-cabeca button, .esc-voltar { all: unset; cursor: pointer; font-size: 12px; color: var(--cinza); text-decoration: underline; text-decoration-color: var(--linha); text-underline-offset: 3px; }
+  .esc-cabeca button:hover, .esc-voltar:hover { color: var(--tinta); }
+  #escolhas-corpo { display: grid; }
+  #escolhas.fechado { padding-bottom: 4px; }
+  #escolhas.fechado #escolhas-corpo { display: none; }
+  .esc-grupo { padding: 14px 0 16px; border-top: 1px solid var(--linha); }
+  .esc-grupo:last-child { padding-bottom: 0; }
+  .esc-grupo h3 { margin: 0 0 10px; font-size: 10.5px; font-weight: 600; letter-spacing: .1em; text-transform: uppercase; color: var(--cinza); }
+  
+  .esc-botoes { display: flex; flex-wrap: wrap; gap: 6px; }
+  .esc-botoes button {
+    all: unset; box-sizing: border-box; cursor: pointer; display: inline-flex; align-items: center; gap: 7px; height: 30px; font-size: 12.5px; line-height: 1; white-space: nowrap;
+    padding: 0 13px; border-radius: 999px; color: var(--tinta); background: var(--papel); box-shadow: inset 0 0 0 1px var(--linha);
+    transition: color .2s var(--ease), background .2s var(--ease), box-shadow .2s var(--ease);
+  }
+  .esc-botoes button:hover { box-shadow: inset 0 0 0 1px var(--cinza); }
+  .esc-botoes button:active { transform: scale(.97); }
+  .esc-botoes button[aria-pressed="true"] { color: var(--papel); background: var(--azul); box-shadow: inset 0 0 0 1px var(--azul); }
+  .esc-botoes button.decidida::after { content: ""; width: 5px; height: 5px; border-radius: 50%; background: currentColor; flex: none; opacity: .75; }
+  .esc-botoes button:focus-visible, .esc-cabeca button:focus-visible, .esc-voltar:focus-visible { outline: 2px solid var(--azul); outline-offset: 2px; }
+  
+  .esc-botoes.cores { gap: 9px; }
+  .esc-botoes.cores button { height: auto; padding: 3px; border-radius: 50%; background: none; box-shadow: 0 0 0 1px transparent; transition: box-shadow .2s var(--ease); }
+  .esc-botoes.cores button:hover { box-shadow: 0 0 0 1px var(--linha); }
+  .esc-botoes.cores button[aria-pressed="true"] { background: none; box-shadow: 0 0 0 1.5px var(--tinta); }
+  .esc-botoes.cores button.decidida::after { content: none; }
+  .amostra { display: block; width: 24px; height: 24px; border-radius: 50%; border: 1px solid rgba(0, 0, 0, .14); flex: none; }
+  .esc-nota { margin: 10px 0 0; font-size: 12px; line-height: 1.45; color: var(--cinza); }
+  .esc-nota strong { display: block; font-weight: 600; color: var(--tinta); margin-bottom: 2px; }
+  .esc-voltar { display: none; margin-top: 10px; }
+  .explorar .esc-voltar { display: inline-block; }
+  .tel3d.explorar .esc-voltar { display: none; }
+  .explorar #cena { cursor: grab; touch-action: none; }
+  .esc-cabeca .esc-fechar3d { display: none; }
+  .sem3d #escolhas { display: none; }
+
+  
+  .sem3d.tel3d #leve { display: none; }
+  .sem3d.tel3d #cena { display: block; left: 0; width: 100%; height: 56%; }
+  .sem3d.tel3d #estado { display: grid; left: 0; bottom: 44%; }
+  .sem3d.tel3d #corte { display: flex; left: auto; bottom: calc(44% + 10px); right: 16px; } .sem3d.tel3d #corte:empty { display: none; }
+  .sem3d.tel3d #escolhas {
+    display: grid; top: auto; bottom: 0; left: 0; right: 0; width: auto; height: 44%; max-height: none; border-width: 1px 0 0;
+    padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); padding-bottom: max(16px, env(safe-area-inset-bottom, 0px));
+  }
+  .tel3d .esc-cabeca .esc-fechar3d { display: inline; }
+  .tel3d .esc-cabeca .esc-recolher { display: none; }
+
+  
+  @media (max-width: 767px) {
+    html:not(.sem3d) { --faixa: 34svh; }
+    html:not(.sem3d) #cena { left: 0; width: 100%; height: calc(100svh - var(--faixa)); }
+    html:not(.sem3d) #rolo { height: 1100svh; }
+    html:not(.sem3d) aside { top: auto; bottom: 0; width: 100%; height: var(--faixa); padding: 14px max(16px, env(safe-area-inset-right, 0px)) max(14px, env(safe-area-inset-bottom, 0px)) max(16px, env(safe-area-inset-left, 0px)); border-top: 1px solid var(--linha); }
+    html:not(.sem3d) aside nav, html:not(.sem3d) aside .rodape, html:not(.sem3d) aside header h1, html:not(.sem3d) aside header .sitio { display: none; }
+    html:not(.sem3d) aside .voltar { margin-bottom: 10px; height: 34px; font-size: 13.5px; }
+    html:not(.sem3d) .legenda { margin-top: 0; min-height: 0; padding-top: 0; }
+    html:not(.sem3d) .legenda h2 { font-size: 21px; } html:not(.sem3d) .legenda p { font-size: 14.5px; margin-top: 6px; line-height: 1.4; }
+    html:not(.sem3d) #avanco { left: 0; top: auto; bottom: var(--faixa); }
+    html:not(.sem3d) #estado { left: 0; bottom: var(--faixa); }
+    html:not(.sem3d) #corte { left: 12px; bottom: calc(var(--faixa) + 12px); height: 30px; font-size: 12.5px; }
+    html:not(.sem3d) #desca { left: 50%; bottom: calc(var(--faixa) + 14px); height: 36px; font-size: 13.5px; white-space: nowrap; }
+    html:not(.sem3d) #escolhas { top: max(10px, env(safe-area-inset-top, 0px)); right: 10px; left: auto; width: min(300px, calc(100% - 20px)); max-height: calc(100svh - var(--faixa) - 20px); }
+    html:not(.sem3d) #escolhas.fechado { width: auto; padding: 0 16px 4px; }
+    html:not(.sem3d) #dica { display: none; }
+  }
+  @media (max-width: 900px) { #corte { bottom: 78px; } }   
+  
+  @media (max-width: 900px) {
+    html:not(.sem3d) #desca { bottom: calc(var(--faixa) + 56px) !important; }
+    html:not(.sem3d) #corte { bottom: calc(var(--faixa) + 12px) !important; }
+    .voltar { min-height: 44px; } .esc-recolher, .esc-fechar3d { min-height: 44px; min-width: 44px; }
+  }
+  h1 .logo { display: block; height: 56px; width: auto; }
+</style>
+<script defer src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/lenis@1.1.13/dist/lenis.min.js"></script>
+<script type="importmap">
+{ "imports": {
+  "three": "https://cdn.jsdelivr.net/npm/three@0.170.0/build/three.module.js",
+  "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.170.0/examples/jsm/"
+} }
+</script>
+</head>
+<body>
+<canvas id="cena" aria-label="A casa em 3D, da planta aos quartos"></canvas>
+<div id="estado" role="status">A carregar a casa em 3D…</div>
+
+<aside>
+  <header>
+    <a class="voltar" href="../index.html">Voltar ao projeto</a>
+    <h1><img class="logo" src="../marca/logo.svg" alt="Casa Chãs d’Égua" width="48" height="50"></h1>
+    <p class="sitio">Chãs d’Égua, Arganil</p>
+  </header>
+  <nav aria-label="Partes do passeio"><ol id="indice"></ol></nav>
+  <div class="legenda" aria-live="polite">
+    <h2 id="leg-titulo">A planta da casa, cortada a 1,20 m.</h2>
+    <p id="leg-texto">Desça a página para a ver erguer‑se e entrar em casa, ou toque numa divisão.</p>
+  </div>
+  <div class="rodape nota">
+    <span>Modelo de 10.11.2026</span>
+    <a href="passeio-da-sala-aos-quartos.mp4">Ver em vídeo</a>
+  </div>
+</aside>
+<div id="avanco" aria-hidden="true"></div>
+<div id="corte" aria-hidden="true"></div>
+<div id="desca" aria-hidden="true"><i></i>Desça a página para entrar</div>
+<section id="escolhas" aria-label="Escolhas" hidden>
+  <div class="esc-cabeca">
+    <h2>Escolher</h2>
+    <button type="button" class="esc-recolher" aria-expanded="true">Recolher</button>
+    <button type="button" class="esc-fechar3d">Fechar o 3D</button>
+  </div>
+  <div id="escolhas-corpo"></div>
+</section>
+<div id="rolo"></div>
+
+<main id="leve">
+  <header>
+    <a class="voltar" href="../index.html">Voltar ao projeto</a>
+    <h1><img class="logo" src="../marca/logo.svg" alt="Casa Chãs d’Égua" width="48" height="50"></h1>
+    <p class="sitio">Chãs d’Égua, Arganil</p>
+  </header>
+  <button type="button" class="abrir3d" id="abrir3d">Ver a casa em 3D e escolher cores</button>
+  <p class="nota" style="margin:-16px 0 28px">Abre a casa por divisões, com a caixilharia, a porta da rua, a cozinha e o chão para escolher. O passeio com a planta a erguer‑se abre num computador.</p>
+  <figure>
+    <img src="vista-de-cima.jpg" width="2000" height="1500" alt="A casa vista de cima, cortada a 1,20 m: sala, cozinha, casa de banho, hall e os dois quartos, com os materiais.">
+    <figcaption><strong>A casa vista de cima, cortada a 1,20 m.</strong><span>Sala, cozinha e casa de banho à cota da rua; hall e quartos cerca de 0,60 m abaixo.</span></figcaption>
+  </figure>
+  <figure>
+    <video src="passeio-da-sala-aos-quartos.mp4" poster="sala-lareira.jpg" controls playsinline preload="metadata"></video>
+    <figcaption><strong>Da entrada aos quartos, em 24 segundos.</strong><span>A lareira, a cozinha ao fundo, o corredor e os dois quartos, à altura dos olhos.</span></figcaption>
+  </figure>
+</main>
+
+<script type="module">const leve = matchMedia("(prefers-reduced-motion: reduce)").matches;
+const semTres = (motivo) => {
+  document.documentElement.classList.add("sem3d");
+  if (motivo) console.warn(motivo);
+};
+if (leve) semTres();
+else import("./casa.js?v=3").then((m) => m.iniciar()).catch((e) => semTres(e));
+document.getElementById("abrir3d").addEventListener("click", () => {
+  document.documentElement.classList.add("tel3d");
+  scrollTo(0, 0);
+  import("./casa.js?v=3").then((m) => m.iniciar({ explorar: true })).catch((e) => {
+    document.documentElement.classList.remove("tel3d");
+    console.warn(e);
+  });
+});
+document.querySelector(".esc-fechar3d").addEventListener("click", () => location.reload());
+const avanca = () => document.documentElement.style.setProperty("--p", Math.min(1, scrollY / Math.max(1, document.documentElement.scrollHeight - innerHeight)).toFixed(4));
+addEventListener("scroll", avanca, { passive: true });
+avanca();
+const esc = document.getElementById("escolhas"), rec = document.querySelector(".esc-recolher");
+rec.addEventListener("click", () => {
+  const f = esc.classList.toggle("fechado");
+  rec.textContent = f ? "Abrir" : "Recolher";
+  rec.setAttribute("aria-expanded", String(!f));
+});
+if (!leve) {
+  esc.classList.add("fechado");
+  rec.textContent = "Abrir";
+  rec.setAttribute("aria-expanded", "false");
+}
+</script>
+</body>
+</html>

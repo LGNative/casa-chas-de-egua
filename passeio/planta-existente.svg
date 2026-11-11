@@ -1,0 +1,383 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="420mm" height="297mm" viewBox="0 0 420 297"><defs><pattern id="xisto" width="1.2" height="1.2" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><rect width="1.2" height="1.2" fill="#ffffff"/><line x1="0" y1="0" x2="0" y2="1.2" stroke="#1d1d1b" stroke-width=".32"/></pattern></defs>
+<rect x="38.00" y="218.20" width="130.40" height="10.00" fill="#161616"/>
+<rect x="38.00" y="57.60" width="130.40" height="10.00" fill="#161616"/>
+<rect x="38.00" y="67.60" width="10.00" height="150.60" fill="#161616"/>
+<rect x="168.40" y="44.02" width="10.00" height="184.18" fill="#161616"/>
+<rect x="178.40" y="152.80" width="106.40" height="10.00" fill="#161616"/>
+<rect x="178.40" y="44.02" width="106.40" height="10.00" fill="#161616"/>
+<rect x="274.80" y="44.02" width="10.00" height="118.78" fill="#161616"/>
+<rect x="156.80" y="115.80" width="11.60" height="1.22" fill="#4a4a46"/>
+<rect x="48.00" y="115.80" width="10.22" height="1.22" fill="#4a4a46"/>
+<rect x="138.00" y="153.80" width="2.40" height="64.40" fill="#4a4a46"/>
+<rect x="138.00" y="153.80" width="30.40" height="2.40" fill="#4a4a46"/>
+<rect x="206.40" y="96.38" width="2.40" height="56.42" fill="#4a4a46"/>
+<rect x="178.40" y="94.02" width="96.40" height="2.36" fill="#4a4a46"/>
+<rect x="68.39" y="218.20" width="15.60" height="10.00" fill="#ffffff"/>
+<line x1="68.39" y1="218.20" x2="68.39" y2="228.20" stroke="#1d1d1b" stroke-width="0.5"/>
+<line x1="83.99" y1="218.20" x2="83.99" y2="228.20" stroke="#1d1d1b" stroke-width="0.5"/>
+<line x1="68.39" y1="221.20" x2="83.99" y2="221.20" stroke="#1d1d1b" stroke-width="0.13"/>
+<line x1="68.39" y1="223.20" x2="83.99" y2="223.20" stroke="#1d1d1b" stroke-width="0.25"/>
+<line x1="68.39" y1="225.20" x2="83.99" y2="225.20" stroke="#1d1d1b" stroke-width="0.13"/>
+<text x="76.19" y="231.40" font-size="1.9" font-weight="500" fill="#1d1d1b" text-anchor="middle" style="font-family:'IBM Plex Sans','Helvetica Neue',Helvetica,Arial,sans-serif;">J1 · 0,78</text>
+<rect x="38.00" y="172.38" width="10.00" height="21.00" fill="#ffffff"/>
+<line x1="38.00" y1="172.38" x2="48.00" y2="172.38" stroke="#1d1d1b" stroke-width="0.5"/>
+<line x1="38.00" y1="193.38" x2="48.00" y2="193.38" stroke="#1d1d1b" stroke-width="0.5"/>
+<line x1="41.00" y1="172.38" x2="41.00" y2="193.38" stroke="#1d1d1b" stroke-width="0.13"/>
+<line x1="43.00" y1="172.38" x2="43.00" y2="193.38" stroke="#1d1d1b" stroke-width="0.25"/>
+<line x1="45.00" y1="172.38" x2="45.00" y2="193.38" stroke="#1d1d1b" stroke-width="0.13"/>
+<text x="50.60" y="182.88" font-size="1.9" font-weight="500" fill="#1d1d1b" text-anchor="middle" transform="rotate(90 50.60 182.88)" style="font-family:'IBM Plex Sans','Helvetica Neue',Helvetica,Arial,sans-serif;">J2 · 1,05</text>
+<rect x="38.00" y="117.02" width="10.00" height="21.18" fill="#ffffff"/>
+<line x1="38.00" y1="117.02" x2="48.00" y2="117.02" stroke="#1d1d1b" stroke-width="0.5"/>
+<line x1="38.00" y1="138.20" x2="48.00" y2="138.20" stroke="#1d1d1b" stroke-width="0.5"/>
+<line x1="48.00" y1="117.02" x2="69.18" y2="117.02" stroke="#1d1d1b" stroke-width="0.35"/>
+<path d="M48.00 138.20 A21.18 21.18 0 0 0 69.18 117.02" fill="none" stroke="#1d1d1b" stroke-width=".13" stroke-dasharray=".8 .6"/>
+<text x="50.60" y="127.61" font-size="1.9" font-weight="500" fill="#1d1d1b" text-anchor="middle" transform="rotate(90 50.60 127.61)" style="font-family:'IBM Plex Sans','Helvetica Neue',Helvetica,Arial,sans-serif;">P1 · 1,06</text>
+<rect x="38.00" y="85.80" width="10.00" height="13.00" fill="#ffffff"/>
+<line x1="38.00" y1="85.80" x2="48.00" y2="85.80" stroke="#1d1d1b" stroke-width="0.5"/>
+<line x1="38.00" y1="98.80" x2="48.00" y2="98.80" stroke="#1d1d1b" stroke-width="0.5"/>
+<line x1="41.00" y1="85.80" x2="41.00" y2="98.80" stroke="#1d1d1b" stroke-width="0.13"/>
+<line x1="43.00" y1="85.80" x2="43.00" y2="98.80" stroke="#1d1d1b" stroke-width="0.25"/>
+<line x1="45.00" y1="85.80" x2="45.00" y2="98.80" stroke="#1d1d1b" stroke-width="0.13"/>
+<text x="50.60" y="92.30" font-size="1.9" font-weight="500" fill="#1d1d1b" text-anchor="middle" transform="rotate(90 50.60 92.30)" style="font-family:'IBM Plex Sans','Helvetica Neue',Helvetica,Arial,sans-serif;">J3 · 0,65</text>
+<rect x="168.40" y="170.70" width="10.00" height="18.74" fill="#ffffff"/>
+<line x1="168.40" y1="170.70" x2="178.40" y2="170.70" stroke="#1d1d1b" stroke-width="0.5"/>
+<line x1="168.40" y1="189.44" x2="178.40" y2="189.44" stroke="#1d1d1b" stroke-width="0.5"/>
+<line x1="171.40" y1="170.70" x2="171.40" y2="189.44" stroke="#1d1d1b" stroke-width="0.13"/>
+<line x1="173.40" y1="170.70" x2="173.40" y2="189.44" stroke="#1d1d1b" stroke-width="0.25"/>
+<line x1="175.40" y1="170.70" x2="175.40" y2="189.44" stroke="#1d1d1b" stroke-width="0.13"/>
+<text x="181.00" y="180.07" font-size="1.9" font-weight="500" fill="#1d1d1b" text-anchor="middle" transform="rotate(90 181.00 180.07)" style="font-family:'IBM Plex Sans','Helvetica Neue',Helvetica,Arial,sans-serif;">J4 · 0,94</text>
+<rect x="168.40" y="137.60" width="10.00" height="14.42" fill="#ffffff"/>
+<line x1="168.40" y1="137.60" x2="178.40" y2="137.60" stroke="#1d1d1b" stroke-width="0.5"/>
+<line x1="168.40" y1="152.02" x2="178.40" y2="152.02" stroke="#1d1d1b" stroke-width="0.5"/>
+<text x="165.80" y="144.81" font-size="1.9" font-weight="500" fill="#1d1d1b" text-anchor="middle" transform="rotate(-90 165.80 144.81)" style="font-family:'IBM Plex Sans','Helvetica Neue',Helvetica,Arial,sans-serif;">V1 · 0,72</text>
+<rect x="274.80" y="97.40" width="10.00" height="25.20" fill="#ffffff"/>
+<line x1="274.80" y1="97.40" x2="284.80" y2="97.40" stroke="#1d1d1b" stroke-width="0.5"/>
+<line x1="274.80" y1="122.60" x2="284.80" y2="122.60" stroke="#1d1d1b" stroke-width="0.5"/>
+<line x1="277.80" y1="97.40" x2="277.80" y2="122.60" stroke="#1d1d1b" stroke-width="0.13"/>
+<line x1="279.80" y1="97.40" x2="279.80" y2="122.60" stroke="#1d1d1b" stroke-width="0.25"/>
+<line x1="281.80" y1="97.40" x2="281.80" y2="122.60" stroke="#1d1d1b" stroke-width="0.13"/>
+<text x="287.40" y="110.00" font-size="1.9" font-weight="500" fill="#1d1d1b" text-anchor="middle" transform="rotate(90 287.40 110.00)" style="font-family:'IBM Plex Sans','Helvetica Neue',Helvetica,Arial,sans-serif;">J5 · 1,26</text>
+<rect x="226.80" y="44.02" width="29.00" height="10.00" fill="#ffffff"/>
+<line x1="226.80" y1="44.02" x2="226.80" y2="54.02" stroke="#1d1d1b" stroke-width="0.5"/>
+<line x1="255.80" y1="44.02" x2="255.80" y2="54.02" stroke="#1d1d1b" stroke-width="0.5"/>
+<line x1="226.80" y1="47.02" x2="255.80" y2="47.02" stroke="#1d1d1b" stroke-width="0.13"/>
+<line x1="226.80" y1="49.02" x2="255.80" y2="49.02" stroke="#1d1d1b" stroke-width="0.25"/>
+<line x1="226.80" y1="51.02" x2="255.80" y2="51.02" stroke="#1d1d1b" stroke-width="0.13"/>
+<text x="241.30" y="42.42" font-size="1.9" font-weight="500" fill="#1d1d1b" text-anchor="middle" style="font-family:'IBM Plex Sans','Helvetica Neue',Helvetica,Arial,sans-serif;">J6 · 1,45</text>
+<rect x="186.40" y="152.80" width="16.40" height="10.00" fill="#ffffff"/>
+<line x1="186.40" y1="152.80" x2="186.40" y2="162.80" stroke="#1d1d1b" stroke-width="0.5"/>
+<line x1="202.80" y1="152.80" x2="202.80" y2="162.80" stroke="#1d1d1b" stroke-width="0.5"/>
+<line x1="202.80" y1="152.80" x2="202.80" y2="136.40" stroke="#1d1d1b" stroke-width="0.35"/>
+<path d="M186.40 152.80 A16.40 16.40 0 0 1 202.80 136.40" fill="none" stroke="#1d1d1b" stroke-width=".13" stroke-dasharray=".8 .6"/>
+<text x="194.60" y="166.00" font-size="1.9" font-weight="500" fill="#1d1d1b" text-anchor="middle" style="font-family:'IBM Plex Sans','Helvetica Neue',Helvetica,Arial,sans-serif;">P2 · 0,82</text>
+<rect x="152.48" y="153.80" width="14.20" height="2.40" fill="#ffffff"/>
+<line x1="152.48" y1="153.80" x2="152.48" y2="156.20" stroke="#1d1d1b" stroke-width="0.5"/>
+<line x1="166.68" y1="153.80" x2="166.68" y2="156.20" stroke="#1d1d1b" stroke-width="0.5"/>
+<line x1="166.68" y1="156.20" x2="166.68" y2="170.40" stroke="#1d1d1b" stroke-width="0.35"/>
+<path d="M152.48 156.20 A14.20 14.20 0 0 0 166.68 170.40" fill="none" stroke="#1d1d1b" stroke-width=".13" stroke-dasharray=".8 .6"/>
+<text x="159.58" y="152.20" font-size="1.9" font-weight="500" fill="#1d1d1b" text-anchor="middle" style="font-family:'IBM Plex Sans','Helvetica Neue',Helvetica,Arial,sans-serif;">P3 · 0,71</text>
+<rect x="206.40" y="96.40" width="2.40" height="16.20" fill="#ffffff"/>
+<line x1="206.40" y1="96.40" x2="208.80" y2="96.40" stroke="#1d1d1b" stroke-width="0.5"/>
+<line x1="206.40" y1="112.60" x2="208.80" y2="112.60" stroke="#1d1d1b" stroke-width="0.5"/>
+<line x1="208.80" y1="96.40" x2="225.00" y2="96.40" stroke="#1d1d1b" stroke-width="0.35"/>
+<path d="M208.80 112.60 A16.20 16.20 0 0 0 225.00 96.40" fill="none" stroke="#1d1d1b" stroke-width=".13" stroke-dasharray=".8 .6"/>
+<text x="211.40" y="104.50" font-size="1.9" font-weight="500" fill="#1d1d1b" text-anchor="middle" transform="rotate(90 211.40 104.50)" style="font-family:'IBM Plex Sans','Helvetica Neue',Helvetica,Arial,sans-serif;">P4 · 0,81</text>
+<rect x="186.40" y="94.02" width="16.40" height="2.36" fill="#ffffff"/>
+<line x1="186.40" y1="94.02" x2="186.40" y2="96.38" stroke="#1d1d1b" stroke-width="0.5"/>
+<line x1="202.80" y1="94.02" x2="202.80" y2="96.38" stroke="#1d1d1b" stroke-width="0.5"/>
+<line x1="202.80" y1="94.02" x2="202.80" y2="77.62" stroke="#1d1d1b" stroke-width="0.35"/>
+<path d="M186.40 94.02 A16.40 16.40 0 0 1 202.80 77.62" fill="none" stroke="#1d1d1b" stroke-width=".13" stroke-dasharray=".8 .6"/>
+<text x="194.60" y="92.42" font-size="1.9" font-weight="500" fill="#1d1d1b" text-anchor="middle" style="font-family:'IBM Plex Sans','Helvetica Neue',Helvetica,Arial,sans-serif;">P5 · 0,82</text>
+<polygon points="63.96,218.20 48.00,218.20 48.00,202.24" fill="#e7e5df" stroke="#1d1d1b" stroke-width=".25"/>
+<text x="51.60" y="213.60" font-size="1.7" font-weight="400" fill="#8a8a84" text-anchor="middle" style="font-family:'IBM Plex Sans','Helvetica Neue',Helvetica,Arial,sans-serif;">lareira</text>
+<line x1="168.40" y1="152.01" x2="168.40" y2="137.61" stroke="#1d1d1b" stroke-width="0.25"/>
+<line x1="206.40" y1="137.61" x2="178.40" y2="137.61" stroke="#1d1d1b" stroke-width="0.25"/>
+<line x1="206.40" y1="131.61" x2="178.40" y2="131.61" stroke="#1d1d1b" stroke-width="0.25"/>
+<line x1="192.40" y1="146.20" x2="192.40" y2="124.61" stroke="#1d1d1b" stroke-width="0.13"/>
+<path d="M191.60 126.01 L192.40 124.61 L193.20 126.01" fill="none" stroke="#1d1d1b" stroke-width=".13"/>
+<text x="192.40" y="149.20" font-size="1.5" font-weight="400" fill="#8a8a84" text-anchor="middle" style="font-family:'IBM Plex Sans','Helvetica Neue',Helvetica,Arial,sans-serif;">patamar −0,20</text>
+<line x1="156.80" y1="117.02" x2="58.22" y2="117.02" stroke="#1d1d1b" stroke-width="0.18" stroke-dasharray="2 1"/>
+<line x1="156.80" y1="115.82" x2="58.22" y2="115.82" stroke="#1d1d1b" stroke-width="0.18" stroke-dasharray="2 1"/>
+<text x="93.00" y="165.08" font-size="2.6" font-weight="600" fill="#1d1d1b" text-anchor="middle" style="font-family:'IBM Plex Sans','Helvetica Neue',Helvetica,Arial,sans-serif;letter-spacing:.12px">SALA</text>
+<text x="93.00" y="168.28" font-size="2.1" font-weight="400" fill="#1d1d1b" text-anchor="middle" style="font-family:'IBM Plex Sans','Helvetica Neue',Helvetica,Arial,sans-serif;">25,8 m²</text>
+<path d="M86.80 170.08 l1.4 0 l-.7 1.1 z" fill="#1d1d1b"/>
+<text x="88.60" y="171.28" font-size="1.7" font-weight="400" fill="#8a8a84" text-anchor="start" style="font-family:'IBM Plex Sans','Helvetica Neue',Helvetica,Arial,sans-serif;">±0,00</text>
+<text x="108.20" y="90.08" font-size="2.6" font-weight="600" fill="#1d1d1b" text-anchor="middle" style="font-family:'IBM Plex Sans','Helvetica Neue',Helvetica,Arial,sans-serif;letter-spacing:.12px">COZINHA</text>
+<text x="108.20" y="93.28" font-size="2.1" font-weight="400" fill="#1d1d1b" text-anchor="middle" style="font-family:'IBM Plex Sans','Helvetica Neue',Helvetica,Arial,sans-serif;">14,5 m²</text>
+<path d="M102.00 95.08 l1.4 0 l-.7 1.1 z" fill="#1d1d1b"/>
+<text x="103.80" y="96.28" font-size="1.7" font-weight="400" fill="#8a8a84" text-anchor="start" style="font-family:'IBM Plex Sans','Helvetica Neue',Helvetica,Arial,sans-serif;">±0,00</text>
+<text x="154.48" y="193.20" font-size="2.6" font-weight="600" fill="#1d1d1b" text-anchor="middle" style="font-family:'IBM Plex Sans','Helvetica Neue',Helvetica,Arial,sans-serif;letter-spacing:.12px">WC</text>
+<text x="154.48" y="196.40" font-size="2.1" font-weight="400" fill="#1d1d1b" text-anchor="middle" style="font-family:'IBM Plex Sans','Helvetica Neue',Helvetica,Arial,sans-serif;">4,3 m²</text>
+<path d="M148.28 198.20 l1.4 0 l-.7 1.1 z" fill="#1d1d1b"/>
+<text x="150.08" y="199.40" font-size="1.7" font-weight="400" fill="#8a8a84" text-anchor="start" style="font-family:'IBM Plex Sans','Helvetica Neue',Helvetica,Arial,sans-serif;">±0,00</text>
+<text x="192.62" y="111.32" font-size="2.6" font-weight="600" fill="#1d1d1b" text-anchor="middle" style="font-family:'IBM Plex Sans','Helvetica Neue',Helvetica,Arial,sans-serif;letter-spacing:.12px">HALL</text>
+<text x="192.62" y="114.52" font-size="2.1" font-weight="400" fill="#1d1d1b" text-anchor="middle" style="font-family:'IBM Plex Sans','Helvetica Neue',Helvetica,Arial,sans-serif;">3,9 m²</text>
+<path d="M186.42 116.32 l1.4 0 l-.7 1.1 z" fill="#1d1d1b"/>
+<text x="188.22" y="117.52" font-size="1.7" font-weight="400" fill="#8a8a84" text-anchor="start" style="font-family:'IBM Plex Sans','Helvetica Neue',Helvetica,Arial,sans-serif;">−0,60 ?</text>
+<text x="241.98" y="122.88" font-size="2.6" font-weight="600" fill="#1d1d1b" text-anchor="middle" style="font-family:'IBM Plex Sans','Helvetica Neue',Helvetica,Arial,sans-serif;letter-spacing:.12px">QUARTO 1</text>
+<text x="241.98" y="126.08" font-size="2.1" font-weight="400" fill="#1d1d1b" text-anchor="middle" style="font-family:'IBM Plex Sans','Helvetica Neue',Helvetica,Arial,sans-serif;">9,3 m²</text>
+<path d="M235.78 127.88 l1.4 0 l-.7 1.1 z" fill="#1d1d1b"/>
+<text x="237.58" y="129.08" font-size="1.7" font-weight="400" fill="#8a8a84" text-anchor="start" style="font-family:'IBM Plex Sans','Helvetica Neue',Helvetica,Arial,sans-serif;">−0,60 ?</text>
+<text x="231.04" y="72.88" font-size="2.6" font-weight="600" fill="#1d1d1b" text-anchor="middle" style="font-family:'IBM Plex Sans','Helvetica Neue',Helvetica,Arial,sans-serif;letter-spacing:.12px">QUARTO 2</text>
+<text x="231.04" y="76.08" font-size="2.1" font-weight="400" fill="#1d1d1b" text-anchor="middle" style="font-family:'IBM Plex Sans','Helvetica Neue',Helvetica,Arial,sans-serif;">9,6 m²</text>
+<path d="M224.84 77.88 l1.4 0 l-.7 1.1 z" fill="#1d1d1b"/>
+<text x="226.64" y="79.08" font-size="1.7" font-weight="400" fill="#8a8a84" text-anchor="start" style="font-family:'IBM Plex Sans','Helvetica Neue',Helvetica,Arial,sans-serif;">−0,60 ?</text>
+<line x1="167.20" y1="246.20" x2="49.20" y2="246.20" stroke="#1d1d1b" stroke-width="0.18"/>
+<line x1="167.50" y1="247.10" x2="169.30" y2="245.30" stroke="#1d1d1b" stroke-width="0.35"/>
+<line x1="47.10" y1="247.10" x2="48.90" y2="245.30" stroke="#1d1d1b" stroke-width="0.35"/>
+<line x1="168.40" y1="245.00" x2="168.40" y2="247.40" stroke="#1d1d1b" stroke-width="0.13"/>
+<line x1="48.00" y1="245.00" x2="48.00" y2="247.40" stroke="#1d1d1b" stroke-width="0.13"/>
+<text x="108.20" y="245.30" font-size="2.0" font-weight="400" fill="#1d1d1b" text-anchor="middle" style="font-family:'IBM Plex Sans','Helvetica Neue',Helvetica,Arial,sans-serif;">6,02</text>
+<line x1="167.20" y1="48.60" x2="49.20" y2="48.60" stroke="#1d1d1b" stroke-width="0.18"/>
+<line x1="167.50" y1="49.50" x2="169.30" y2="47.70" stroke="#1d1d1b" stroke-width="0.35"/>
+<line x1="47.10" y1="49.50" x2="48.90" y2="47.70" stroke="#1d1d1b" stroke-width="0.35"/>
+<line x1="168.40" y1="47.40" x2="168.40" y2="49.80" stroke="#1d1d1b" stroke-width="0.13"/>
+<line x1="48.00" y1="47.40" x2="48.00" y2="49.80" stroke="#1d1d1b" stroke-width="0.13"/>
+<text x="108.20" y="47.70" font-size="2.0" font-weight="400" fill="#1d1d1b" text-anchor="middle" style="font-family:'IBM Plex Sans','Helvetica Neue',Helvetica,Arial,sans-serif;">6,02</text>
+<circle cx="113.40" cy="47.00" r="1.35" fill="none" stroke="#b4532a" stroke-width=".3"/>
+<text x="113.40" y="47.75" font-size="1.8" font-weight="700" fill="#b4532a" text-anchor="middle" style="font-family:'IBM Plex Sans','Helvetica Neue',Helvetica,Arial,sans-serif;">A</text>
+<line x1="167.19" y1="237.20" x2="141.59" y2="237.20" stroke="#1d1d1b" stroke-width="0.18"/>
+<line x1="167.49" y1="238.10" x2="169.29" y2="236.30" stroke="#1d1d1b" stroke-width="0.35"/>
+<line x1="139.49" y1="238.10" x2="141.29" y2="236.30" stroke="#1d1d1b" stroke-width="0.35"/>
+<line x1="168.39" y1="236.00" x2="168.39" y2="238.40" stroke="#1d1d1b" stroke-width="0.13"/>
+<line x1="140.39" y1="236.00" x2="140.39" y2="238.40" stroke="#1d1d1b" stroke-width="0.13"/>
+<text x="154.39" y="236.30" font-size="2.0" font-weight="400" fill="#1d1d1b" text-anchor="middle" style="font-family:'IBM Plex Sans','Helvetica Neue',Helvetica,Arial,sans-serif;">1,40</text>
+<line x1="136.80" y1="237.20" x2="85.19" y2="237.20" stroke="#1d1d1b" stroke-width="0.18"/>
+<line x1="137.10" y1="238.10" x2="138.90" y2="236.30" stroke="#1d1d1b" stroke-width="0.35"/>
+<line x1="83.09" y1="238.10" x2="84.89" y2="236.30" stroke="#1d1d1b" stroke-width="0.35"/>
+<line x1="138.00" y1="236.00" x2="138.00" y2="238.40" stroke="#1d1d1b" stroke-width="0.13"/>
+<line x1="83.99" y1="236.00" x2="83.99" y2="238.40" stroke="#1d1d1b" stroke-width="0.13"/>
+<text x="111.00" y="236.30" font-size="2.0" font-weight="400" fill="#1d1d1b" text-anchor="middle" style="font-family:'IBM Plex Sans','Helvetica Neue',Helvetica,Arial,sans-serif;">2,70</text>
+<line x1="82.79" y1="237.20" x2="69.59" y2="237.20" stroke="#1d1d1b" stroke-width="0.18"/>
+<line x1="83.09" y1="238.10" x2="84.89" y2="236.30" stroke="#1d1d1b" stroke-width="0.35"/>
+<line x1="67.49" y1="238.10" x2="69.29" y2="236.30" stroke="#1d1d1b" stroke-width="0.35"/>
+<line x1="83.99" y1="236.00" x2="83.99" y2="238.40" stroke="#1d1d1b" stroke-width="0.13"/>
+<line x1="68.39" y1="236.00" x2="68.39" y2="238.40" stroke="#1d1d1b" stroke-width="0.13"/>
+<text x="76.19" y="236.30" font-size="2.0" font-weight="400" fill="#1d1d1b" text-anchor="middle" style="font-family:'IBM Plex Sans','Helvetica Neue',Helvetica,Arial,sans-serif;">0,78</text>
+<line x1="67.19" y1="237.20" x2="49.19" y2="237.20" stroke="#1d1d1b" stroke-width="0.18"/>
+<line x1="67.49" y1="238.10" x2="69.29" y2="236.30" stroke="#1d1d1b" stroke-width="0.35"/>
+<line x1="47.09" y1="238.10" x2="48.89" y2="236.30" stroke="#1d1d1b" stroke-width="0.35"/>
+<line x1="68.39" y1="236.00" x2="68.39" y2="238.40" stroke="#1d1d1b" stroke-width="0.13"/>
+<line x1="47.99" y1="236.00" x2="47.99" y2="238.40" stroke="#1d1d1b" stroke-width="0.13"/>
+<text x="58.19" y="236.30" font-size="2.0" font-weight="400" fill="#1d1d1b" text-anchor="middle" style="font-family:'IBM Plex Sans','Helvetica Neue',Helvetica,Arial,sans-serif;">1,02</text>
+<circle cx="63.39" cy="235.60" r="1.35" fill="none" stroke="#b4532a" stroke-width=".3"/>
+<text x="63.39" y="236.35" font-size="1.8" font-weight="700" fill="#b4532a" text-anchor="middle" style="font-family:'IBM Plex Sans','Helvetica Neue',Helvetica,Arial,sans-serif;">B</text>
+<line x1="16.20" y1="217.00" x2="16.20" y2="68.80" stroke="#1d1d1b" stroke-width="0.18"/>
+<line x1="15.30" y1="219.10" x2="17.10" y2="217.30" stroke="#1d1d1b" stroke-width="0.35"/>
+<line x1="15.30" y1="68.50" x2="17.10" y2="66.70" stroke="#1d1d1b" stroke-width="0.35"/>
+<line x1="15.00" y1="218.20" x2="17.40" y2="218.20" stroke="#1d1d1b" stroke-width="0.13"/>
+<line x1="15.00" y1="67.60" x2="17.40" y2="67.60" stroke="#1d1d1b" stroke-width="0.13"/>
+<text x="15.30" y="142.90" font-size="2.0" font-weight="400" fill="#1d1d1b" text-anchor="middle" transform="rotate(-90 15.30 142.90)" style="font-family:'IBM Plex Sans','Helvetica Neue',Helvetica,Arial,sans-serif;">7,53</text>
+<line x1="23.60" y1="217.00" x2="23.60" y2="118.22" stroke="#1d1d1b" stroke-width="0.18"/>
+<line x1="22.70" y1="219.10" x2="24.50" y2="217.30" stroke="#1d1d1b" stroke-width="0.35"/>
+<line x1="22.70" y1="117.92" x2="24.50" y2="116.12" stroke="#1d1d1b" stroke-width="0.35"/>
+<line x1="22.40" y1="218.20" x2="24.80" y2="218.20" stroke="#1d1d1b" stroke-width="0.13"/>
+<line x1="22.40" y1="117.02" x2="24.80" y2="117.02" stroke="#1d1d1b" stroke-width="0.13"/>
+<text x="22.70" y="167.61" font-size="2.0" font-weight="400" fill="#1d1d1b" text-anchor="middle" transform="rotate(-90 22.70 167.61)" style="font-family:'IBM Plex Sans','Helvetica Neue',Helvetica,Arial,sans-serif;">5,00</text>
+<line x1="23.60" y1="114.60" x2="23.60" y2="68.80" stroke="#1d1d1b" stroke-width="0.18"/>
+<line x1="22.70" y1="116.70" x2="24.50" y2="114.90" stroke="#1d1d1b" stroke-width="0.35"/>
+<line x1="22.70" y1="68.50" x2="24.50" y2="66.70" stroke="#1d1d1b" stroke-width="0.35"/>
+<line x1="22.40" y1="115.80" x2="24.80" y2="115.80" stroke="#1d1d1b" stroke-width="0.13"/>
+<line x1="22.40" y1="67.60" x2="24.80" y2="67.60" stroke="#1d1d1b" stroke-width="0.13"/>
+<text x="22.70" y="91.70" font-size="2.0" font-weight="400" fill="#1d1d1b" text-anchor="middle" transform="rotate(-90 22.70 91.70)" style="font-family:'IBM Plex Sans','Helvetica Neue',Helvetica,Arial,sans-serif;">2,41</text>
+<line x1="273.60" y1="35.02" x2="179.60" y2="35.02" stroke="#1d1d1b" stroke-width="0.18"/>
+<line x1="273.90" y1="35.92" x2="275.70" y2="34.12" stroke="#1d1d1b" stroke-width="0.35"/>
+<line x1="177.50" y1="35.92" x2="179.30" y2="34.12" stroke="#1d1d1b" stroke-width="0.35"/>
+<line x1="274.80" y1="33.82" x2="274.80" y2="36.22" stroke="#1d1d1b" stroke-width="0.13"/>
+<line x1="178.40" y1="33.82" x2="178.40" y2="36.22" stroke="#1d1d1b" stroke-width="0.13"/>
+<text x="226.60" y="34.12" font-size="2.0" font-weight="400" fill="#1d1d1b" text-anchor="middle" style="font-family:'IBM Plex Sans','Helvetica Neue',Helvetica,Arial,sans-serif;">4,82</text>
+<line x1="292.80" y1="151.60" x2="292.80" y2="97.58" stroke="#1d1d1b" stroke-width="0.18"/>
+<line x1="291.90" y1="153.70" x2="293.70" y2="151.90" stroke="#1d1d1b" stroke-width="0.35"/>
+<line x1="291.90" y1="97.28" x2="293.70" y2="95.48" stroke="#1d1d1b" stroke-width="0.35"/>
+<line x1="291.60" y1="152.80" x2="294.00" y2="152.80" stroke="#1d1d1b" stroke-width="0.13"/>
+<line x1="291.60" y1="96.38" x2="294.00" y2="96.38" stroke="#1d1d1b" stroke-width="0.13"/>
+<text x="291.90" y="124.59" font-size="2.0" font-weight="400" fill="#1d1d1b" text-anchor="middle" transform="rotate(-90 291.90 124.59)" style="font-family:'IBM Plex Sans','Helvetica Neue',Helvetica,Arial,sans-serif;">2,82</text>
+<line x1="292.80" y1="92.82" x2="292.80" y2="55.22" stroke="#1d1d1b" stroke-width="0.18"/>
+<line x1="291.90" y1="94.92" x2="293.70" y2="93.12" stroke="#1d1d1b" stroke-width="0.35"/>
+<line x1="291.90" y1="54.92" x2="293.70" y2="53.12" stroke="#1d1d1b" stroke-width="0.35"/>
+<line x1="291.60" y1="94.02" x2="294.00" y2="94.02" stroke="#1d1d1b" stroke-width="0.13"/>
+<line x1="291.60" y1="54.02" x2="294.00" y2="54.02" stroke="#1d1d1b" stroke-width="0.13"/>
+<text x="291.90" y="74.02" font-size="2.0" font-weight="400" fill="#1d1d1b" text-anchor="middle" transform="rotate(-90 291.90 74.02)" style="font-family:'IBM Plex Sans','Helvetica Neue',Helvetica,Arial,sans-serif;">2,00</text>
+<line x1="273.60" y1="171.80" x2="210.00" y2="171.80" stroke="#1d1d1b" stroke-width="0.18"/>
+<line x1="273.90" y1="172.70" x2="275.70" y2="170.90" stroke="#1d1d1b" stroke-width="0.35"/>
+<line x1="207.90" y1="172.70" x2="209.70" y2="170.90" stroke="#1d1d1b" stroke-width="0.35"/>
+<line x1="274.80" y1="170.60" x2="274.80" y2="173.00" stroke="#1d1d1b" stroke-width="0.13"/>
+<line x1="208.80" y1="170.60" x2="208.80" y2="173.00" stroke="#1d1d1b" stroke-width="0.13"/>
+<text x="241.80" y="170.90" font-size="2.0" font-weight="400" fill="#1d1d1b" text-anchor="middle" style="font-family:'IBM Plex Sans','Helvetica Neue',Helvetica,Arial,sans-serif;">3,30</text>
+<line x1="205.20" y1="171.80" x2="179.60" y2="171.80" stroke="#1d1d1b" stroke-width="0.18"/>
+<line x1="205.50" y1="172.70" x2="207.30" y2="170.90" stroke="#1d1d1b" stroke-width="0.35"/>
+<line x1="177.50" y1="172.70" x2="179.30" y2="170.90" stroke="#1d1d1b" stroke-width="0.35"/>
+<line x1="206.40" y1="170.60" x2="206.40" y2="173.00" stroke="#1d1d1b" stroke-width="0.13"/>
+<line x1="178.40" y1="170.60" x2="178.40" y2="173.00" stroke="#1d1d1b" stroke-width="0.13"/>
+<text x="192.40" y="170.90" font-size="2.0" font-weight="400" fill="#1d1d1b" text-anchor="middle" style="font-family:'IBM Plex Sans','Helvetica Neue',Helvetica,Arial,sans-serif;">1,40</text>
+<line x1="136.80" y1="136.96" x2="49.20" y2="136.96" stroke="#1d1d1b" stroke-width="0.18"/>
+<line x1="137.10" y1="137.86" x2="138.90" y2="136.06" stroke="#1d1d1b" stroke-width="0.35"/>
+<line x1="47.10" y1="137.86" x2="48.90" y2="136.06" stroke="#1d1d1b" stroke-width="0.35"/>
+<text x="93.00" y="136.06" font-size="2.0" font-weight="400" fill="#1d1d1b" text-anchor="middle" style="font-family:'IBM Plex Sans','Helvetica Neue',Helvetica,Arial,sans-serif;">4,50</text>
+<line x1="155.60" y1="108.82" x2="59.42" y2="108.82" stroke="#1d1d1b" stroke-width="0.18"/>
+<line x1="155.90" y1="109.72" x2="157.70" y2="107.92" stroke="#1d1d1b" stroke-width="0.35"/>
+<line x1="57.32" y1="109.72" x2="59.12" y2="107.92" stroke="#1d1d1b" stroke-width="0.35"/>
+<text x="107.51" y="107.92" font-size="2.0" font-weight="400" fill="#1d1d1b" text-anchor="middle" style="font-family:'IBM Plex Sans','Helvetica Neue',Helvetica,Arial,sans-serif;">4,93</text>
+<circle cx="112.71" cy="107.22" r="1.35" fill="none" stroke="#b4532a" stroke-width=".3"/>
+<text x="112.71" y="107.97" font-size="1.8" font-weight="700" fill="#b4532a" text-anchor="middle" style="font-family:'IBM Plex Sans','Helvetica Neue',Helvetica,Arial,sans-serif;">C</text>
+<line x1="142.92" y1="217.00" x2="142.92" y2="157.40" stroke="#1d1d1b" stroke-width="0.18"/>
+<line x1="142.02" y1="219.10" x2="143.82" y2="217.30" stroke="#1d1d1b" stroke-width="0.35"/>
+<line x1="142.02" y1="157.10" x2="143.82" y2="155.30" stroke="#1d1d1b" stroke-width="0.35"/>
+<text x="142.02" y="187.20" font-size="2.0" font-weight="400" fill="#1d1d1b" text-anchor="middle" transform="rotate(-90 142.02 187.20)" style="font-family:'IBM Plex Sans','Helvetica Neue',Helvetica,Arial,sans-serif;">3,10</text>
+<circle cx="141.32" cy="181.80" r="1.35" fill="none" stroke="#b4532a" stroke-width=".3"/>
+<text x="141.32" y="182.55" font-size="1.8" font-weight="700" fill="#b4532a" text-anchor="middle" style="font-family:'IBM Plex Sans','Helvetica Neue',Helvetica,Arial,sans-serif;">E</text>
+<line x1="31.00" y1="217.00" x2="31.00" y2="194.59" stroke="#1d1d1b" stroke-width="0.18"/>
+<line x1="30.10" y1="219.10" x2="31.90" y2="217.30" stroke="#1d1d1b" stroke-width="0.35"/>
+<line x1="30.10" y1="194.29" x2="31.90" y2="192.49" stroke="#1d1d1b" stroke-width="0.35"/>
+<line x1="29.80" y1="218.20" x2="32.20" y2="218.20" stroke="#1d1d1b" stroke-width="0.13"/>
+<line x1="29.80" y1="193.39" x2="32.20" y2="193.39" stroke="#1d1d1b" stroke-width="0.13"/>
+<text x="30.10" y="205.79" font-size="2.0" font-weight="400" fill="#1d1d1b" text-anchor="middle" transform="rotate(-90 30.10 205.79)" style="font-family:'IBM Plex Sans','Helvetica Neue',Helvetica,Arial,sans-serif;">1,20</text>
+<line x1="31.00" y1="192.19" x2="31.00" y2="173.59" stroke="#1d1d1b" stroke-width="0.18"/>
+<line x1="30.10" y1="194.29" x2="31.90" y2="192.49" stroke="#1d1d1b" stroke-width="0.35"/>
+<line x1="30.10" y1="173.29" x2="31.90" y2="171.49" stroke="#1d1d1b" stroke-width="0.35"/>
+<line x1="29.80" y1="193.39" x2="32.20" y2="193.39" stroke="#1d1d1b" stroke-width="0.13"/>
+<line x1="29.80" y1="172.39" x2="32.20" y2="172.39" stroke="#1d1d1b" stroke-width="0.13"/>
+<text x="30.10" y="182.89" font-size="2.0" font-weight="400" fill="#1d1d1b" text-anchor="middle" transform="rotate(-90 30.10 182.89)" style="font-family:'IBM Plex Sans','Helvetica Neue',Helvetica,Arial,sans-serif;">1,05</text>
+<line x1="31.00" y1="171.19" x2="31.00" y2="139.40" stroke="#1d1d1b" stroke-width="0.18"/>
+<line x1="30.10" y1="173.29" x2="31.90" y2="171.49" stroke="#1d1d1b" stroke-width="0.35"/>
+<line x1="30.10" y1="139.10" x2="31.90" y2="137.30" stroke="#1d1d1b" stroke-width="0.35"/>
+<line x1="29.80" y1="172.39" x2="32.20" y2="172.39" stroke="#1d1d1b" stroke-width="0.13"/>
+<line x1="29.80" y1="138.20" x2="32.20" y2="138.20" stroke="#1d1d1b" stroke-width="0.13"/>
+<text x="30.10" y="155.29" font-size="2.0" font-weight="400" fill="#1d1d1b" text-anchor="middle" transform="rotate(-90 30.10 155.29)" style="font-family:'IBM Plex Sans','Helvetica Neue',Helvetica,Arial,sans-serif;">1,70</text>
+<line x1="31.00" y1="137.00" x2="31.00" y2="118.21" stroke="#1d1d1b" stroke-width="0.18"/>
+<line x1="30.10" y1="139.10" x2="31.90" y2="137.30" stroke="#1d1d1b" stroke-width="0.35"/>
+<line x1="30.10" y1="117.91" x2="31.90" y2="116.11" stroke="#1d1d1b" stroke-width="0.35"/>
+<line x1="29.80" y1="138.20" x2="32.20" y2="138.20" stroke="#1d1d1b" stroke-width="0.13"/>
+<line x1="29.80" y1="117.01" x2="32.20" y2="117.01" stroke="#1d1d1b" stroke-width="0.13"/>
+<text x="30.10" y="127.61" font-size="2.0" font-weight="400" fill="#1d1d1b" text-anchor="middle" transform="rotate(-90 30.10 127.61)" style="font-family:'IBM Plex Sans','Helvetica Neue',Helvetica,Arial,sans-serif;">1,06</text>
+<text x="108.80" y="258.20" font-size="1.8" font-weight="400" fill="#8a8a84" text-anchor="middle" style="font-family:'IBM Plex Sans','Helvetica Neue',Helvetica,Arial,sans-serif;letter-spacing:.3px">SUL</text>
+<text x="226.80" y="26.20" font-size="1.8" font-weight="400" fill="#8a8a84" text-anchor="middle" style="font-family:'IBM Plex Sans','Helvetica Neue',Helvetica,Arial,sans-serif;letter-spacing:.3px">NORTE</text>
+<line x1="296.00" y1="12.00" x2="296.00" y2="285.00" stroke="#1d1d1b" stroke-width="0.25"/>
+<text x="302.00" y="22.00" font-size="5.0" font-weight="600" fill="#1d1d1b" text-anchor="start" style="font-family:'IBM Plex Sans','Helvetica Neue',Helvetica,Arial,sans-serif;letter-spacing:.4px">CASA NA SERRA</text>
+<text x="302.00" y="28.50" font-size="2.4" font-weight="400" fill="#8a8a84" text-anchor="start" style="font-family:'IBM Plex Sans','Helvetica Neue',Helvetica,Arial,sans-serif;">Chãs d’Égua · Eira da Bouça · Arganil</text>
+<text x="302.00" y="39.50" font-size="3.4" font-weight="600" fill="#1d1d1b" text-anchor="start" style="font-family:'IBM Plex Sans','Helvetica Neue',Helvetica,Arial,sans-serif;">Levantamento do existente</text>
+<text x="302.00" y="44.50" font-size="2.6" font-weight="400" fill="#1d1d1b" text-anchor="start" style="font-family:'IBM Plex Sans','Helvetica Neue',Helvetica,Arial,sans-serif;">Planta do piso térreo</text>
+<circle cx="392" cy="34" r="6" fill="none" stroke="#1d1d1b" stroke-width=".25"/>
+<path d="M392 29 L389.8 37.5 L392 35.8 L394.2 37.5 Z" fill="#1d1d1b"/>
+<text x="392.00" y="43.60" font-size="2.6" font-weight="600" fill="#1d1d1b" text-anchor="middle" style="font-family:'IBM Plex Sans','Helvetica Neue',Helvetica,Arial,sans-serif;">N</text>
+<text x="302.00" y="53.50" font-size="1.9" font-weight="600" fill="#8a8a84" text-anchor="start" style="font-family:'IBM Plex Sans','Helvetica Neue',Helvetica,Arial,sans-serif;letter-spacing:.3px">ESCALA 1:50 · A3</text>
+<rect x="302.00" y="57.00" width="20.00" height="1.4" fill="#1d1d1b" stroke="#1d1d1b" stroke-width=".2"/>
+<text x="302.00" y="61.20" font-size="1.8" font-weight="400" fill="#1d1d1b" text-anchor="middle" style="font-family:'IBM Plex Sans','Helvetica Neue',Helvetica,Arial,sans-serif;">0</text>
+<rect x="322.00" y="57.00" width="20.00" height="1.4" fill="#ffffff" stroke="#1d1d1b" stroke-width=".2"/>
+<text x="322.00" y="61.20" font-size="1.8" font-weight="400" fill="#1d1d1b" text-anchor="middle" style="font-family:'IBM Plex Sans','Helvetica Neue',Helvetica,Arial,sans-serif;">1</text>
+<rect x="342.00" y="57.00" width="20.00" height="1.4" fill="#1d1d1b" stroke="#1d1d1b" stroke-width=".2"/>
+<text x="342.00" y="61.20" font-size="1.8" font-weight="400" fill="#1d1d1b" text-anchor="middle" style="font-family:'IBM Plex Sans','Helvetica Neue',Helvetica,Arial,sans-serif;">2</text>
+<rect x="362.00" y="57.00" width="20.00" height="1.4" fill="#ffffff" stroke="#1d1d1b" stroke-width=".2"/>
+<text x="362.00" y="61.20" font-size="1.8" font-weight="400" fill="#1d1d1b" text-anchor="middle" style="font-family:'IBM Plex Sans','Helvetica Neue',Helvetica,Arial,sans-serif;">3</text>
+<rect x="382.00" y="57.00" width="20.00" height="1.4" fill="#1d1d1b" stroke="#1d1d1b" stroke-width=".2"/>
+<text x="382.00" y="61.20" font-size="1.8" font-weight="400" fill="#1d1d1b" text-anchor="middle" style="font-family:'IBM Plex Sans','Helvetica Neue',Helvetica,Arial,sans-serif;">4</text>
+<text x="402.00" y="61.20" font-size="1.8" font-weight="400" fill="#1d1d1b" text-anchor="middle" style="font-family:'IBM Plex Sans','Helvetica Neue',Helvetica,Arial,sans-serif;">5 m</text>
+<text x="302.00" y="70.00" font-size="1.9" font-weight="600" fill="#8a8a84" text-anchor="start" style="font-family:'IBM Plex Sans','Helvetica Neue',Helvetica,Arial,sans-serif;letter-spacing:.3px">VÃOS · LARGURA EM METROS</text>
+<line x1="302.00" y1="72.00" x2="402.00" y2="72.00" stroke="#1d1d1b" stroke-width="0.25"/>
+<text x="302.00" y="75.60" font-size="2.0" font-weight="600" fill="#1d1d1b" text-anchor="start" style="font-family:'IBM Plex Sans','Helvetica Neue',Helvetica,Arial,sans-serif;">J1</text>
+<text x="312.00" y="75.60" font-size="2.0" font-weight="400" fill="#1d1d1b" text-anchor="start" style="font-family:'IBM Plex Sans','Helvetica Neue',Helvetica,Arial,sans-serif;">sala, sul</text>
+<text x="402.00" y="75.60" font-size="2.0" font-weight="400" fill="#1d1d1b" text-anchor="end" style="font-family:'IBM Plex Sans','Helvetica Neue',Helvetica,Arial,sans-serif;">0,78</text>
+<line x1="302.00" y1="77.00" x2="402.00" y2="77.00" stroke="#d6d4cc" stroke-width="0.1"/>
+<text x="302.00" y="80.10" font-size="2.0" font-weight="600" fill="#1d1d1b" text-anchor="start" style="font-family:'IBM Plex Sans','Helvetica Neue',Helvetica,Arial,sans-serif;">J2</text>
+<text x="312.00" y="80.10" font-size="2.0" font-weight="400" fill="#1d1d1b" text-anchor="start" style="font-family:'IBM Plex Sans','Helvetica Neue',Helvetica,Arial,sans-serif;">sala, poente</text>
+<text x="402.00" y="80.10" font-size="2.0" font-weight="400" fill="#1d1d1b" text-anchor="end" style="font-family:'IBM Plex Sans','Helvetica Neue',Helvetica,Arial,sans-serif;">1,05</text>
+<line x1="302.00" y1="81.50" x2="402.00" y2="81.50" stroke="#d6d4cc" stroke-width="0.1"/>
+<text x="302.00" y="84.60" font-size="2.0" font-weight="600" fill="#1d1d1b" text-anchor="start" style="font-family:'IBM Plex Sans','Helvetica Neue',Helvetica,Arial,sans-serif;">P1</text>
+<text x="312.00" y="84.60" font-size="2.0" font-weight="400" fill="#1d1d1b" text-anchor="start" style="font-family:'IBM Plex Sans','Helvetica Neue',Helvetica,Arial,sans-serif;">porta da rua</text>
+<text x="402.00" y="84.60" font-size="2.0" font-weight="400" fill="#1d1d1b" text-anchor="end" style="font-family:'IBM Plex Sans','Helvetica Neue',Helvetica,Arial,sans-serif;">1,06</text>
+<line x1="302.00" y1="86.00" x2="402.00" y2="86.00" stroke="#d6d4cc" stroke-width="0.1"/>
+<text x="302.00" y="89.10" font-size="2.0" font-weight="600" fill="#1d1d1b" text-anchor="start" style="font-family:'IBM Plex Sans','Helvetica Neue',Helvetica,Arial,sans-serif;">J3</text>
+<text x="312.00" y="89.10" font-size="2.0" font-weight="400" fill="#1d1d1b" text-anchor="start" style="font-family:'IBM Plex Sans','Helvetica Neue',Helvetica,Arial,sans-serif;">cozinha, poente</text>
+<text x="402.00" y="89.10" font-size="2.0" font-weight="400" fill="#1d1d1b" text-anchor="end" style="font-family:'IBM Plex Sans','Helvetica Neue',Helvetica,Arial,sans-serif;">0,65</text>
+<line x1="302.00" y1="90.50" x2="402.00" y2="90.50" stroke="#d6d4cc" stroke-width="0.1"/>
+<text x="302.00" y="93.60" font-size="2.0" font-weight="600" fill="#1d1d1b" text-anchor="start" style="font-family:'IBM Plex Sans','Helvetica Neue',Helvetica,Arial,sans-serif;">J4</text>
+<text x="312.00" y="93.60" font-size="2.0" font-weight="400" fill="#1d1d1b" text-anchor="start" style="font-family:'IBM Plex Sans','Helvetica Neue',Helvetica,Arial,sans-serif;">WC, nascente</text>
+<text x="402.00" y="93.60" font-size="2.0" font-weight="400" fill="#1d1d1b" text-anchor="end" style="font-family:'IBM Plex Sans','Helvetica Neue',Helvetica,Arial,sans-serif;">0,94</text>
+<line x1="302.00" y1="95.00" x2="402.00" y2="95.00" stroke="#d6d4cc" stroke-width="0.1"/>
+<text x="302.00" y="98.10" font-size="2.0" font-weight="600" fill="#1d1d1b" text-anchor="start" style="font-family:'IBM Plex Sans','Helvetica Neue',Helvetica,Arial,sans-serif;">V1</text>
+<text x="312.00" y="98.10" font-size="2.0" font-weight="400" fill="#1d1d1b" text-anchor="start" style="font-family:'IBM Plex Sans','Helvetica Neue',Helvetica,Arial,sans-serif;">sala → hall</text>
+<text x="402.00" y="98.10" font-size="2.0" font-weight="400" fill="#1d1d1b" text-anchor="end" style="font-family:'IBM Plex Sans','Helvetica Neue',Helvetica,Arial,sans-serif;">0,72</text>
+<line x1="302.00" y1="99.50" x2="402.00" y2="99.50" stroke="#d6d4cc" stroke-width="0.1"/>
+<text x="302.00" y="102.60" font-size="2.0" font-weight="600" fill="#1d1d1b" text-anchor="start" style="font-family:'IBM Plex Sans','Helvetica Neue',Helvetica,Arial,sans-serif;">J5</text>
+<text x="312.00" y="102.60" font-size="2.0" font-weight="400" fill="#1d1d1b" text-anchor="start" style="font-family:'IBM Plex Sans','Helvetica Neue',Helvetica,Arial,sans-serif;">quarto 1, nascente, junto ao canto norte</text>
+<text x="402.00" y="102.60" font-size="2.0" font-weight="400" fill="#1d1d1b" text-anchor="end" style="font-family:'IBM Plex Sans','Helvetica Neue',Helvetica,Arial,sans-serif;">1,26</text>
+<line x1="302.00" y1="104.00" x2="402.00" y2="104.00" stroke="#d6d4cc" stroke-width="0.1"/>
+<text x="302.00" y="107.10" font-size="2.0" font-weight="600" fill="#1d1d1b" text-anchor="start" style="font-family:'IBM Plex Sans','Helvetica Neue',Helvetica,Arial,sans-serif;">J6</text>
+<text x="312.00" y="107.10" font-size="2.0" font-weight="400" fill="#1d1d1b" text-anchor="start" style="font-family:'IBM Plex Sans','Helvetica Neue',Helvetica,Arial,sans-serif;">quarto 2, norte</text>
+<text x="402.00" y="107.10" font-size="2.0" font-weight="400" fill="#1d1d1b" text-anchor="end" style="font-family:'IBM Plex Sans','Helvetica Neue',Helvetica,Arial,sans-serif;">1,45</text>
+<line x1="302.00" y1="108.50" x2="402.00" y2="108.50" stroke="#d6d4cc" stroke-width="0.1"/>
+<text x="302.00" y="111.60" font-size="2.0" font-weight="600" fill="#1d1d1b" text-anchor="start" style="font-family:'IBM Plex Sans','Helvetica Neue',Helvetica,Arial,sans-serif;">P2</text>
+<text x="312.00" y="111.60" font-size="2.0" font-weight="400" fill="#1d1d1b" text-anchor="start" style="font-family:'IBM Plex Sans','Helvetica Neue',Helvetica,Arial,sans-serif;">porta do terraço</text>
+<text x="402.00" y="111.60" font-size="2.0" font-weight="400" fill="#1d1d1b" text-anchor="end" style="font-family:'IBM Plex Sans','Helvetica Neue',Helvetica,Arial,sans-serif;">0,82</text>
+<line x1="302.00" y1="113.00" x2="402.00" y2="113.00" stroke="#d6d4cc" stroke-width="0.1"/>
+<text x="302.00" y="116.10" font-size="2.0" font-weight="600" fill="#1d1d1b" text-anchor="start" style="font-family:'IBM Plex Sans','Helvetica Neue',Helvetica,Arial,sans-serif;">P3</text>
+<text x="312.00" y="116.10" font-size="2.0" font-weight="400" fill="#1d1d1b" text-anchor="start" style="font-family:'IBM Plex Sans','Helvetica Neue',Helvetica,Arial,sans-serif;">WC</text>
+<text x="402.00" y="116.10" font-size="2.0" font-weight="400" fill="#1d1d1b" text-anchor="end" style="font-family:'IBM Plex Sans','Helvetica Neue',Helvetica,Arial,sans-serif;">0,71</text>
+<line x1="302.00" y1="117.50" x2="402.00" y2="117.50" stroke="#d6d4cc" stroke-width="0.1"/>
+<text x="302.00" y="120.60" font-size="2.0" font-weight="600" fill="#1d1d1b" text-anchor="start" style="font-family:'IBM Plex Sans','Helvetica Neue',Helvetica,Arial,sans-serif;">P4</text>
+<text x="312.00" y="120.60" font-size="2.0" font-weight="400" fill="#1d1d1b" text-anchor="start" style="font-family:'IBM Plex Sans','Helvetica Neue',Helvetica,Arial,sans-serif;">quarto 1</text>
+<text x="402.00" y="120.60" font-size="2.0" font-weight="400" fill="#1d1d1b" text-anchor="end" style="font-family:'IBM Plex Sans','Helvetica Neue',Helvetica,Arial,sans-serif;">0,81</text>
+<line x1="302.00" y1="122.00" x2="402.00" y2="122.00" stroke="#d6d4cc" stroke-width="0.1"/>
+<text x="302.00" y="125.10" font-size="2.0" font-weight="600" fill="#1d1d1b" text-anchor="start" style="font-family:'IBM Plex Sans','Helvetica Neue',Helvetica,Arial,sans-serif;">P5</text>
+<text x="312.00" y="125.10" font-size="2.0" font-weight="400" fill="#1d1d1b" text-anchor="start" style="font-family:'IBM Plex Sans','Helvetica Neue',Helvetica,Arial,sans-serif;">quarto 2</text>
+<text x="402.00" y="125.10" font-size="2.0" font-weight="400" fill="#1d1d1b" text-anchor="end" style="font-family:'IBM Plex Sans','Helvetica Neue',Helvetica,Arial,sans-serif;">0,82</text>
+<line x1="302.00" y1="126.50" x2="402.00" y2="126.50" stroke="#d6d4cc" stroke-width="0.1"/>
+<text x="302.00" y="133.60" font-size="1.9" font-weight="600" fill="#8a8a84" text-anchor="start" style="font-family:'IBM Plex Sans','Helvetica Neue',Helvetica,Arial,sans-serif;letter-spacing:.3px">ÁREAS ÚTEIS</text>
+<line x1="302.00" y1="135.60" x2="402.00" y2="135.60" stroke="#1d1d1b" stroke-width="0.25"/>
+<text x="302.00" y="139.20" font-size="2.0" font-weight="400" fill="#1d1d1b" text-anchor="start" style="font-family:'IBM Plex Sans','Helvetica Neue',Helvetica,Arial,sans-serif;">Sala</text>
+<text x="402.00" y="139.20" font-size="2.0" font-weight="400" fill="#1d1d1b" text-anchor="end" style="font-family:'IBM Plex Sans','Helvetica Neue',Helvetica,Arial,sans-serif;">25,8 m²</text>
+<line x1="302.00" y1="140.60" x2="402.00" y2="140.60" stroke="#d6d4cc" stroke-width="0.1"/>
+<text x="302.00" y="143.70" font-size="2.0" font-weight="400" fill="#1d1d1b" text-anchor="start" style="font-family:'IBM Plex Sans','Helvetica Neue',Helvetica,Arial,sans-serif;">Cozinha</text>
+<text x="402.00" y="143.70" font-size="2.0" font-weight="400" fill="#1d1d1b" text-anchor="end" style="font-family:'IBM Plex Sans','Helvetica Neue',Helvetica,Arial,sans-serif;">14,5 m²</text>
+<line x1="302.00" y1="145.10" x2="402.00" y2="145.10" stroke="#d6d4cc" stroke-width="0.1"/>
+<text x="302.00" y="148.20" font-size="2.0" font-weight="400" fill="#1d1d1b" text-anchor="start" style="font-family:'IBM Plex Sans','Helvetica Neue',Helvetica,Arial,sans-serif;">WC</text>
+<text x="402.00" y="148.20" font-size="2.0" font-weight="400" fill="#1d1d1b" text-anchor="end" style="font-family:'IBM Plex Sans','Helvetica Neue',Helvetica,Arial,sans-serif;">4,3 m²</text>
+<line x1="302.00" y1="149.60" x2="402.00" y2="149.60" stroke="#d6d4cc" stroke-width="0.1"/>
+<text x="302.00" y="152.70" font-size="2.0" font-weight="400" fill="#1d1d1b" text-anchor="start" style="font-family:'IBM Plex Sans','Helvetica Neue',Helvetica,Arial,sans-serif;">Hall</text>
+<text x="402.00" y="152.70" font-size="2.0" font-weight="400" fill="#1d1d1b" text-anchor="end" style="font-family:'IBM Plex Sans','Helvetica Neue',Helvetica,Arial,sans-serif;">3,9 m²</text>
+<line x1="302.00" y1="154.10" x2="402.00" y2="154.10" stroke="#d6d4cc" stroke-width="0.1"/>
+<text x="302.00" y="157.20" font-size="2.0" font-weight="400" fill="#1d1d1b" text-anchor="start" style="font-family:'IBM Plex Sans','Helvetica Neue',Helvetica,Arial,sans-serif;">Quarto 1</text>
+<text x="402.00" y="157.20" font-size="2.0" font-weight="400" fill="#1d1d1b" text-anchor="end" style="font-family:'IBM Plex Sans','Helvetica Neue',Helvetica,Arial,sans-serif;">9,3 m²</text>
+<line x1="302.00" y1="158.60" x2="402.00" y2="158.60" stroke="#d6d4cc" stroke-width="0.1"/>
+<text x="302.00" y="161.70" font-size="2.0" font-weight="400" fill="#1d1d1b" text-anchor="start" style="font-family:'IBM Plex Sans','Helvetica Neue',Helvetica,Arial,sans-serif;">Quarto 2</text>
+<text x="402.00" y="161.70" font-size="2.0" font-weight="400" fill="#1d1d1b" text-anchor="end" style="font-family:'IBM Plex Sans','Helvetica Neue',Helvetica,Arial,sans-serif;">9,6 m²</text>
+<line x1="302.00" y1="163.10" x2="402.00" y2="163.10" stroke="#d6d4cc" stroke-width="0.1"/>
+<text x="302.00" y="166.20" font-size="2.0" font-weight="600" fill="#1d1d1b" text-anchor="start" style="font-family:'IBM Plex Sans','Helvetica Neue',Helvetica,Arial,sans-serif;">Total</text>
+<text x="402.00" y="166.20" font-size="2.0" font-weight="600" fill="#1d1d1b" text-anchor="end" style="font-family:'IBM Plex Sans','Helvetica Neue',Helvetica,Arial,sans-serif;">67,4 m²</text>
+<text x="302.00" y="170.70" font-size="1.9" font-weight="400" fill="#8a8a84" text-anchor="start" style="font-family:'IBM Plex Sans','Helvetica Neue',Helvetica,Arial,sans-serif;">Pé-direito: 2,41 (sala e cozinha, ao teto de madeira)</text>
+<text x="302.00" y="179.70" font-size="1.9" font-weight="600" fill="#b4532a" text-anchor="start" style="font-family:'IBM Plex Sans','Helvetica Neue',Helvetica,Arial,sans-serif;letter-spacing:.3px">A CONFIRMAR IN LOCO</text>
+<line x1="302.00" y1="181.70" x2="402.00" y2="181.70" stroke="#b4532a" stroke-width="0.25"/>
+<circle cx="303.40" cy="184.95" r="1.35" fill="none" stroke="#b4532a" stroke-width=".3"/>
+<text x="303.40" y="185.70" font-size="1.8" font-weight="700" fill="#b4532a" text-anchor="middle" style="font-family:'IBM Plex Sans','Helvetica Neue',Helvetica,Arial,sans-serif;">A</text>
+<text x="307.00" y="185.70" font-size="1.85" font-weight="400" fill="#1d1d1b" text-anchor="start" style="font-family:'IBM Plex Sans','Helvetica Neue',Helvetica,Arial,sans-serif;">Cozinha: 3,64 na planta de julho. Por dentro, a fachada tem ≈ 6,02 (WC 1,40 +</text>
+<text x="307.00" y="188.70" font-size="1.85" font-weight="400" fill="#1d1d1b" text-anchor="start" style="font-family:'IBM Plex Sans','Helvetica Neue',Helvetica,Arial,sans-serif;">divisória 0,12 + sala 4,50). Medir a parede norte.</text>
+<circle cx="303.40" cy="192.55" r="1.35" fill="none" stroke="#b4532a" stroke-width=".3"/>
+<text x="303.40" y="193.30" font-size="1.8" font-weight="700" fill="#b4532a" text-anchor="middle" style="font-family:'IBM Plex Sans','Helvetica Neue',Helvetica,Arial,sans-serif;">B</text>
+<text x="307.00" y="193.30" font-size="1.85" font-weight="400" fill="#1d1d1b" text-anchor="start" style="font-family:'IBM Plex Sans','Helvetica Neue',Helvetica,Arial,sans-serif;">Fachada sul: o 1,20 é na parede poente. A sul: 2,70 + 0,78 + ≈ 1,02 = 4,50, medido</text>
+<text x="307.00" y="196.30" font-size="1.85" font-weight="400" fill="#1d1d1b" text-anchor="start" style="font-family:'IBM Plex Sans','Helvetica Neue',Helvetica,Arial,sans-serif;">duas vezes.</text>
+<circle cx="303.40" cy="200.15" r="1.35" fill="none" stroke="#b4532a" stroke-width=".3"/>
+<text x="303.40" y="200.90" font-size="1.8" font-weight="700" fill="#b4532a" text-anchor="middle" style="font-family:'IBM Plex Sans','Helvetica Neue',Helvetica,Arial,sans-serif;">C</text>
+<text x="307.00" y="200.90" font-size="1.85" font-weight="400" fill="#1d1d1b" text-anchor="start" style="font-family:'IBM Plex Sans','Helvetica Neue',Helvetica,Arial,sans-serif;">Arco: 4,81 nesta planta; o modelo dá 4,93 depois de alargar a sala (19.10); 4,23 e</text>
+<text x="307.00" y="203.90" font-size="1.85" font-weight="400" fill="#1d1d1b" text-anchor="start" style="font-family:'IBM Plex Sans','Helvetica Neue',Helvetica,Arial,sans-serif;">3,08 noutras folhas. Medir.</text>
+<circle cx="303.40" cy="207.75" r="1.35" fill="none" stroke="#b4532a" stroke-width=".3"/>
+<text x="303.40" y="208.50" font-size="1.8" font-weight="700" fill="#b4532a" text-anchor="middle" style="font-family:'IBM Plex Sans','Helvetica Neue',Helvetica,Arial,sans-serif;">E</text>
+<text x="307.00" y="208.50" font-size="1.85" font-weight="400" fill="#1d1d1b" text-anchor="start" style="font-family:'IBM Plex Sans','Helvetica Neue',Helvetica,Arial,sans-serif;">WC: 1,40 × 3,10 aqui; 1,46 × 3,16 na folha da casa de banho.</text>
+<text x="302.00" y="216.10" font-size="1.9" font-weight="600" fill="#8a8a84" text-anchor="start" style="font-family:'IBM Plex Sans','Helvetica Neue',Helvetica,Arial,sans-serif;letter-spacing:.3px">LEGENDA</text>
+<line x1="302.00" y1="218.10" x2="402.00" y2="218.10" stroke="#1d1d1b" stroke-width="0.25"/>
+<rect x="302" y="220.59999999999997" width="8" height="3" fill="#161616"/>
+<text x="313.00" y="222.90" font-size="1.9" font-weight="400" fill="#1d1d1b" text-anchor="start" style="font-family:'IBM Plex Sans','Helvetica Neue',Helvetica,Arial,sans-serif;">parede de xisto, ≈ 0,50</text>
+<rect x="302" y="225.99999999999997" width="8" height="1.4" fill="#4a4a46"/>
+<text x="313.00" y="227.50" font-size="1.9" font-weight="400" fill="#1d1d1b" text-anchor="start" style="font-family:'IBM Plex Sans','Helvetica Neue',Helvetica,Arial,sans-serif;">divisória</text>
+<line x1="302.00" y1="230.70" x2="310.00" y2="230.70" stroke="#1d1d1b" stroke-width="0.13"/>
+<line x1="302.00" y1="231.30" x2="310.00" y2="231.30" stroke="#1d1d1b" stroke-width="0.25"/>
+<line x1="302.00" y1="231.90" x2="310.00" y2="231.90" stroke="#1d1d1b" stroke-width="0.13"/>
+<text x="313.00" y="232.10" font-size="1.9" font-weight="400" fill="#1d1d1b" text-anchor="start" style="font-family:'IBM Plex Sans','Helvetica Neue',Helvetica,Arial,sans-serif;">janela</text>
+<line x1="302.00" y1="235.90" x2="310.00" y2="235.90" stroke="#1d1d1b" stroke-width="0.18" stroke-dasharray="2 1"/>
+<text x="313.00" y="236.70" font-size="1.9" font-weight="400" fill="#1d1d1b" text-anchor="start" style="font-family:'IBM Plex Sans','Helvetica Neue',Helvetica,Arial,sans-serif;">verga do arco, por cima</text>
+<path d="M302.6 242.09999999999994 l1.4 0 l-.7 1.1 z" fill="#1d1d1b"/>
+<text x="313.00" y="242.30" font-size="1.9" font-weight="400" fill="#1d1d1b" text-anchor="start" style="font-family:'IBM Plex Sans','Helvetica Neue',Helvetica,Arial,sans-serif;">cota do piso, em metros</text>
+<line x1="296.00" y1="268.00" x2="408.00" y2="268.00" stroke="#1d1d1b" stroke-width="0.25"/>
+<text x="302.00" y="274.00" font-size="2.0" font-weight="600" fill="#1d1d1b" text-anchor="start" style="font-family:'IBM Plex Sans','Helvetica Neue',Helvetica,Arial,sans-serif;">Desenho 01 · revisão B · 10.11.2026</text>
+<text x="302.00" y="278.50" font-size="1.8" font-weight="400" fill="#8a8a84" text-anchor="start" style="font-family:'IBM Plex Sans','Helvetica Neue',Helvetica,Arial,sans-serif;">Luís Gonçalves · estudo prévio, não substitui projeto licenciado</text>
+<text x="302.00" y="282.60" font-size="1.8" font-weight="400" fill="#8a8a84" text-anchor="start" style="font-family:'IBM Plex Sans','Helvetica Neue',Helvetica,Arial,sans-serif;">Fonte: levantamento de julho de 2026 · cotas em metros</text>
+<rect x="12" y="12" width="396" height="273" fill="none" stroke="#1d1d1b" stroke-width=".35"/></svg>
