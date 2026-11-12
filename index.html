@@ -1170,7 +1170,7 @@ document.querySelectorAll(".compara input").forEach((i) => {
     poe2();
   };
   j.addEventListener("pointerdown", (e) => {
-    if (e.button > 0) return;
+    if (e.button > 0 || e.pointerType === "touch") return;
     arr = { x: e.clientX, y: e.clientY, h: false, id: e.pointerId };
     if (e.pointerType === "mouse") {
       arr.h = true;
@@ -1210,6 +1210,24 @@ document.querySelectorAll(".compara input").forEach((i) => {
   });
   j.addEventListener("lostpointercapture", () => {
     arr = null;
+  });
+  let t0 = null;
+  j.addEventListener("touchstart", (e) => {
+    const t = e.touches[0];
+    t0 = { x: t.clientX, y: t.clientY, lado: null };
+  }, { passive: true });
+  j.addEventListener("touchmove", (e) => {
+    if (!t0) return;
+    const t = e.touches[0], dx = t.clientX - t0.x, dy = t.clientY - t0.y;
+    if (t0.lado === null && Math.hypot(dx, dy) > 6) t0.lado = Math.abs(dx) > Math.abs(dy);
+    if (t0.lado) {
+      e.preventDefault();
+      leva(t);
+    }
+  }, { passive: false });
+  j.addEventListener("touchend", (e) => {
+    if (t0 && t0.lado === null) leva(e.changedTouches[0]);
+    t0 = null;
   });
 });
 const dlg = document.getElementById("grande"), grande = dlg.appendChild(Object.assign(document.createElement("img"), { alt: "" }));
