@@ -1539,6 +1539,50 @@ document.getElementById("fechar").addEventListener("click", fecha);
   f.addEventListener("scroll", () => requestAnimationFrame(mostra), { passive: true });
   addEventListener("resize", mostra);
   mostra();
+  let t0 = null;
+  const pos = (i) => fs[i].offsetLeft - fs[0].offsetLeft;
+  f.addEventListener("touchstart", (e) => {
+    if (e.touches.length > 1) {
+      t0 = null;
+      return;
+    }
+    const t = e.touches[0];
+    t0 = { x: t.clientX, y: t.clientY, s: f.scrollLeft, i: atual(), lado: null, t: performance.now(), vx: 0, ux: t.clientX, ut: performance.now() };
+  }, { passive: true });
+  f.addEventListener("touchmove", (e) => {
+    if (!t0) return;
+    const t = e.touches[0], dx = t.clientX - t0.x, dy = t.clientY - t0.y;
+    if (!t0.lado) {
+      if (Math.abs(dx) < 6 && Math.abs(dy) < 6) return;
+      t0.lado = Math.abs(dx) > Math.abs(dy) * 0.6 ? "x" : "y";
+      if (t0.lado === "x") f.style.scrollSnapType = "none";
+    }
+    if (t0.lado !== "x") return;
+    e.preventDefault();
+    const agora = performance.now();
+    t0.vx = (t.clientX - t0.ux) / Math.max(1, agora - t0.ut);
+    t0.ux = t.clientX;
+    t0.ut = agora;
+    f.scrollLeft = t0.s - dx;
+  }, { passive: false });
+  const solta = (e) => {
+    if (!t0 || t0.lado !== "x") {
+      t0 = null;
+      return;
+    }
+    const dx = t0.ux - t0.x;
+    let i = t0.i;
+    if (dx < -40 || t0.vx < -0.35) i++;
+    else if (dx > 40 || t0.vx > 0.35) i--;
+    i = Math.max(0, Math.min(fs.length - 1, i));
+    t0 = null;
+    f.scrollTo({ left: pos(i), behavior: matchMedia("(prefers-reduced-motion: reduce)").matches ? "auto" : "smooth" });
+    setTimeout(() => {
+      f.style.scrollSnapType = "";
+    }, 450);
+  };
+  f.addEventListener("touchend", solta);
+  f.addEventListener("touchcancel", solta);
 })();
 </script>
 <script>(() => {
