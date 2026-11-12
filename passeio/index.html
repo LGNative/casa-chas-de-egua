@@ -270,11 +270,11 @@ const semTres = (motivo) => {
   if (motivo) console.warn(motivo);
 };
 if (leve) semTres();
-else import("./casa.js?v=17").then((m) => m.iniciar()).catch((e) => semTres(e));
+else import("./casa.js?v=18").then((m) => m.iniciar()).catch((e) => semTres(e));
 document.getElementById("abrir3d").addEventListener("click", () => {
   document.documentElement.classList.add("tel3d");
   scrollTo(0, 0);
-  import("./casa.js?v=17").then((m) => m.iniciar({ explorar: true })).catch((e) => {
+  import("./casa.js?v=18").then((m) => m.iniciar({ explorar: true })).catch((e) => {
     document.documentElement.classList.remove("tel3d");
     console.warn(e);
   });
