@@ -959,6 +959,16 @@ html body img.logo{background:none!important;box-shadow:none!important;border:0!
   .lugar-nav .lugar-n { margin: 0 auto 0 0; min-width: 4.5em; }
   .lugar-nav button.ant, .lugar-nav button.seg { width: 56px; height: 56px; }
   @media (max-width: 860px) { .lugar-pontos { max-width: none; } .lugar-nav .lugar-n { margin: 0; } .lugar .lugar-fita { scroll-snap-stop: always; } .lugar-fita figure { scroll-snap-stop: always; } }
+  
+  @media (hover: hover) and (pointer: fine) {
+    .lugar-fita, .lugar-fita * { cursor: none !important; }
+    .lugar-cursor { position: fixed; left: -44px; top: -44px; z-index: 40; width: 88px; height: 88px; border-radius: 50%; display: grid; place-items: center; background: rgba(255,255,255,.92); color: var(--tinta); box-shadow: 0 8px 28px rgba(27,28,29,.18); pointer-events: none; opacity: 0; scale: .4; transition: opacity .25s var(--ease), scale .35s var(--ease); }
+    .lugar-cursor.on { opacity: 1; scale: 1; } .lugar-cursor.agarra { scale: .78; } .lugar-cursor.fim { opacity: .45; }
+    .lugar-cursor svg { width: 26px; height: 26px; fill: currentColor; transition: rotate .35s var(--ease); } .lugar-cursor.esq svg { rotate: 180deg; }
+  }
+  .lugar-fita figure { transition: opacity .5s var(--ease); }
+  .lugar-fita figure.fora { opacity: .45; }
+  @media (prefers-reduced-motion: reduce) { .lugar-cursor, .lugar-cursor svg, .lugar-fita figure { transition: none; } }
 </style>
 </head>
 <body><a class="saltar" href="#lugar">Saltar para o conteúdo</a>
@@ -1550,6 +1560,7 @@ document.getElementById("fechar").addEventListener("click", fecha);
   const mostra = () => {
     const i = atual();
     [...P.children].forEach((b, j) => b.setAttribute("aria-current", j === i ? "true" : "false"));
+    fs.forEach((fg, j) => fg.classList.toggle("fora", matchMedia("(min-width: 861px)").matches && j !== i));
     n.textContent = i + 1 + " de " + fs.length;
     L.querySelector(".ant").disabled = f.scrollLeft < 4;
     L.querySelector(".seg").disabled = f.scrollLeft + f.clientWidth >= f.scrollWidth - 4;
@@ -1626,11 +1637,57 @@ document.getElementById("fechar").addEventListener("click", fecha);
       arrastou = false;
       return;
     }
+    if (matchMedia("(pointer: fine)").matches) {
+      const r = f.getBoundingClientRect();
+      vai(e.clientX < r.left + r.width * 0.35 ? -1 : 1);
+      return;
+    }
     const fig = e.target.closest("figure");
     if (!fig) return;
     const j = fs.indexOf(fig);
     if (j > -1 && j !== atual()) f.scrollTo({ left: pos(j), behavior: suave() });
   }, true);
+  if (matchMedia("(hover: hover) and (pointer: fine)").matches) {
+    const c = document.createElement("div");
+    c.className = "lugar-cursor";
+    c.setAttribute("aria-hidden", "true");
+    c.innerHTML = '<svg viewBox="0 0 256 256"><path d="M220.24,132.24l-72,72a6,6,0,0,1-8.48-8.48L201.51,134H40a6,6,0,0,1,0-12H201.51L139.76,60.24a6,6,0,0,1,8.48-8.48l72,72A6,6,0,0,1,220.24,132.24Z"/></svg>';
+    document.body.appendChild(c);
+    let cx = 0, cy = 0, tx = 0, ty = 0, on = false, raf = 0;
+    const anda = () => {
+      cx += (tx - cx) * 0.22;
+      cy += (ty - cy) * 0.22;
+      c.style.transform = `translate(${cx}px,${cy}px)`;
+      raf = Math.abs(tx - cx) + Math.abs(ty - cy) > 0.3 ? requestAnimationFrame(anda) : 0;
+    };
+    f.addEventListener("pointermove", (e) => {
+      if (e.pointerType !== "mouse") return;
+      tx = e.clientX;
+      ty = e.clientY;
+      if (!on) {
+        cx = tx;
+        cy = ty;
+        on = true;
+        c.classList.add("on");
+      }
+      const r = f.getBoundingClientRect();
+      const esq = e.clientX < r.left + r.width * 0.35;
+      c.classList.toggle("esq", esq);
+      c.classList.toggle("fim", esq ? f.scrollLeft < 4 : f.scrollLeft + f.clientWidth >= f.scrollWidth - 4);
+      c.classList.toggle("agarra", !!(m0 && m0.vai));
+      if (!raf) raf = requestAnimationFrame(anda);
+    });
+    f.addEventListener("pointerleave", () => {
+      on = false;
+      c.classList.remove("on");
+    });
+    f.addEventListener("scroll", () => {
+      if (on) {
+        const r = f.getBoundingClientRect();
+        c.classList.toggle("fim", c.classList.contains("esq") ? f.scrollLeft < 4 : f.scrollLeft + f.clientWidth >= f.scrollWidth - 4);
+      }
+    }, { passive: true });
+  }
 })();
 </script>
 <script>(() => {
