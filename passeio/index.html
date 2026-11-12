@@ -148,11 +148,11 @@
 
   
   @media (max-width: 767px) {
-    html:not(.sem3d) { --faixa: 34svh; }
+    html:not(.sem3d) { --faixa: 30svh; }
     html:not(.sem3d) #cena { left: 0; width: 100%; height: calc(100svh - var(--faixa)); }
-    html:not(.sem3d) #rolo { height: 1100svh; }
+    html:not(.sem3d) #rolo { height: 1900svh; }   
     html:not(.sem3d) aside { top: auto; bottom: 0; width: 100%; height: var(--faixa); padding: 14px max(16px, env(safe-area-inset-right, 0px)) max(14px, env(safe-area-inset-bottom, 0px)) max(16px, env(safe-area-inset-left, 0px)); border-top: 1px solid var(--linha); }
-    html:not(.sem3d) aside nav, html:not(.sem3d) aside .rodape, html:not(.sem3d) aside header h1, html:not(.sem3d) aside header .sitio { display: none; }
+    html:not(.sem3d) aside .rodape, html:not(.sem3d) aside header h1, html:not(.sem3d) aside header .sitio { display: none; }
     html:not(.sem3d) aside .voltar { margin-bottom: 10px; height: 34px; font-size: 13.5px; }
     html:not(.sem3d) .legenda { margin-top: 0; min-height: 0; padding-top: 0; }
     html:not(.sem3d) .legenda h2 { font-size: 21px; } html:not(.sem3d) .legenda p { font-size: 14.5px; margin-top: 6px; line-height: 1.4; }
@@ -172,6 +172,35 @@
     .voltar { min-height: 44px; } .esc-recolher, .esc-fechar3d { min-height: 44px; min-width: 44px; }
   }
   h1 .logo { display: block; height: 68px; width: auto; }
+
+  
+  #desca .mao, #desca .dedo { display: none; }
+  @media (pointer: coarse) {
+    #desca i, #desca .rato { display: none; } #desca .dedo { display: inline; }
+    #desca .mao { display: block; width: 20px; height: 20px; animation: dedo 1.8s cubic-bezier(.45, 0, .2, 1) infinite; }
+  }
+  @keyframes dedo { 0% { transform: translateY(5px); opacity: 0; } 25% { opacity: 1; } 70% { transform: translateY(-6px); opacity: 1; } 100% { transform: translateY(-8px); opacity: 0; } }
+  @media (prefers-reduced-motion: reduce) { #desca .mao { animation: none; } }
+
+  
+  @media (max-width: 767px) {
+    html:not(.sem3d) aside { display: flex; flex-direction: column; gap: 10px; }
+    html:not(.sem3d) aside header { display: contents; }
+    
+    html:not(.sem3d) aside .voltar { position: fixed; top: max(10px, env(safe-area-inset-top, 0px)); left: 10px; z-index: 6; margin: 0; height: 44px; width: 44px; padding: 0; justify-content: center; font-size: 0; gap: 0; box-shadow: 0 1px 2px rgba(0,0,0,.08); }   
+    html:not(.sem3d) aside { justify-content: flex-start; padding-top: 12px; gap: 20px; }   
+    html:not(.sem3d) .legenda h2 { font-size: 20px; line-height: 1.18; letter-spacing: -.01em; text-wrap: balance; }
+    html:not(.sem3d) .legenda p { font-size: 14.5px; line-height: 1.45; margin-top: 6px; color: var(--cinza); text-wrap: pretty; }
+    html:not(.sem3d) aside .legenda { order: 2; }
+    
+    html:not(.sem3d) aside nav { order: 1; margin: 0 calc(-1 * max(16px, env(safe-area-inset-left, 0px))); padding: 0 max(16px, env(safe-area-inset-left, 0px)); overflow-x: auto; scrollbar-width: none; -webkit-overflow-scrolling: touch; }
+    html:not(.sem3d) aside nav::-webkit-scrollbar { display: none; }
+    html:not(.sem3d) #indice { display: flex; gap: 6px; margin: 0; padding: 0; width: max-content; }
+    html:not(.sem3d) #indice li { margin: 0; padding: 0; }
+    html:not(.sem3d) #indice li::before { display: none; }
+    html:not(.sem3d) #indice button { min-height: 40px; padding: 0 14px; border-radius: 999px; border: 1px solid var(--linha); background: #fff; font-size: 14px; white-space: nowrap; color: var(--tinta); }
+    html:not(.sem3d) #indice li.ativo button { background: var(--tinta); border-color: var(--tinta); color: #fff; font-weight: 500; }
+  }
 </style>
 <script defer src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
 <script defer src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
@@ -196,7 +225,7 @@
   <nav aria-label="Partes do passeio"><ol id="indice"></ol></nav>
   <div class="legenda" aria-live="polite">
     <h2 id="leg-titulo">A planta da casa, cortada a 1,20 m.</h2>
-    <p id="leg-texto">Desça a página para a ver erguer‑se e entrar em casa, ou toque numa divisão.</p>
+    <p id="leg-texto">Levantamento de julho de 2026, com a sala a 4,50 m por dentro.</p>
   </div>
   <div class="rodape nota">
     <span>Modelo de 10.11.2026</span>
@@ -205,7 +234,7 @@
 </aside>
 <div id="avanco" aria-hidden="true"></div>
 <div id="corte" aria-hidden="true"></div>
-<div id="desca" aria-hidden="true"><i></i>Desça a página para entrar</div>
+<div id="desca" aria-hidden="true"><i></i><svg class="mao" viewBox="0 0 256 256" fill="currentColor" aria-hidden="true"><path d="M196,90a25.87,25.87,0,0,0-14.59,4.49A26,26,0,0,0,142,78.1V44a26,26,0,0,0-52,0v87l-7.53-12.1a26,26,0,0,0-45,26.07l4.67,8.25c34,60,48.07,84.77,93.860,84.77a86.1,86.1,0,0,0,86-86V116A26,26,0,0,0,196,90Zm14,62a74.09,74.09,0,0,1-74,74c-38.8,0-50-19.830-83.42-78.69L47.89,139l0,0A14,14,0,0,1,53,119.88,13.87,13.87,0,0,1,60,118a14,14,0,0,1,12.15,7l.1.17,18.680,30A6,6,0,0,0,102,152V44a14,14,0,0,1,28,0v68a6,6,0,0,0,12,0V100a14,14,0,0,1,28,0v20a6,6,0,0,0,12,0v-4a14,14,0,0,1,28,0Z"/></svg><span class="rato">Desça a página para entrar</span><span class="dedo">Deslize para cima para entrar</span></div>
 <section id="escolhas" aria-label="Mudar elementos" hidden>
   <div class="esc-cabeca">
     <h2>Mudar elementos</h2>
@@ -240,11 +269,11 @@ const semTres = (motivo) => {
   if (motivo) console.warn(motivo);
 };
 if (leve) semTres();
-else import("./casa.js?v=6").then((m) => m.iniciar()).catch((e) => semTres(e));
+else import("./casa.js?v=9").then((m) => m.iniciar()).catch((e) => semTres(e));
 document.getElementById("abrir3d").addEventListener("click", () => {
   document.documentElement.classList.add("tel3d");
   scrollTo(0, 0);
-  import("./casa.js?v=6").then((m) => m.iniciar({ explorar: true })).catch((e) => {
+  import("./casa.js?v=9").then((m) => m.iniciar({ explorar: true })).catch((e) => {
     document.documentElement.classList.remove("tel3d");
     console.warn(e);
   });
