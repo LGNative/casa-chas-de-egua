@@ -927,6 +927,13 @@ html body img.logo{background:none!important;box-shadow:none!important;border:0!
     .lugar-fita figcaption { flex-direction: column; gap: 2px; font-size: 15px; }
     .lugar-nav button { display: none; }
   }
+  
+  @media (max-width: 600px) {
+    .comparas.uma { margin-inline: calc(-1 * var(--margem)); }
+    .comparas.uma .compara .janela { aspect-ratio: 4 / 5; max-height: 74svh; }
+    .compara .fio::after { width: 52px; height: 52px; }
+    .vistas button { font-size: 15px !important; padding-inline: 6px !important; }
+  }
 </style>
 </head>
 <body><a class="saltar" href="#lugar">Saltar para o conteúdo</a>
