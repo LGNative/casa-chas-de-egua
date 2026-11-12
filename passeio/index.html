@@ -3,6 +3,7 @@
 <head>
 <meta charset="utf-8">
 <link rel="icon" href="../icone.svg" type="image/svg+xml">
+<meta name="theme-color" content="#f5f3ee">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Casa em 3D · Casa Chãs d’Égua</title>
 <meta name="description" content="A planta da Casa Chãs d’Égua, em Arganil, ergue-se em casa e percorre-se por dentro.">
@@ -14,7 +15,7 @@
   
   :root {
     color-scheme: light;
-    --papel: #ffffff;
+    --papel: #f5f3ee;
     --tinta: #1d1d1b;
     --cinza: #67665f;      
     --linha: #dcdbd5;
@@ -269,11 +270,11 @@ const semTres = (motivo) => {
   if (motivo) console.warn(motivo);
 };
 if (leve) semTres();
-else import("./casa.js?v=16").then((m) => m.iniciar()).catch((e) => semTres(e));
+else import("./casa.js?v=17").then((m) => m.iniciar()).catch((e) => semTres(e));
 document.getElementById("abrir3d").addEventListener("click", () => {
   document.documentElement.classList.add("tel3d");
   scrollTo(0, 0);
-  import("./casa.js?v=16").then((m) => m.iniciar({ explorar: true })).catch((e) => {
+  import("./casa.js?v=17").then((m) => m.iniciar({ explorar: true })).catch((e) => {
     document.documentElement.classList.remove("tel3d");
     console.warn(e);
   });
