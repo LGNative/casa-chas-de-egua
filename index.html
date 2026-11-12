@@ -947,6 +947,7 @@ html body img.logo{background:none!important;box-shadow:none!important;border:0!
   
   @media (max-width: 860px) { .lugar .lugar-fita { padding: 0 8%; scroll-padding: 0; gap: 10px; } .lugar-fita figure { flex-basis: 84%; scroll-snap-align: center; } }
   @media (hover: none) { .lugar-fita:focus, .lugar-fita:focus-visible { outline: none; } }
+  @media (hover: hover) and (pointer: fine) { .lugar-fita { cursor: grab; } .lugar-fita.a-arrastar { cursor: grabbing; user-select: none; } .lugar-fita img { -webkit-user-drag: none; user-select: none; } .lugar-fita.a-arrastar figure { pointer-events: none; } }
 </style>
 </head>
 <body><a class="saltar" href="#lugar">Saltar para o conteúdo</a>
@@ -1596,6 +1597,63 @@ document.getElementById("fechar").addEventListener("click", fecha);
   };
   f.addEventListener("touchend", solta);
   f.addEventListener("touchcancel", solta);
+  const suave = () => matchMedia("(prefers-reduced-motion: reduce)").matches ? "auto" : "smooth";
+  let m0 = null, arrastou = false;
+  f.addEventListener("dragstart", (e) => e.preventDefault());
+  f.addEventListener("pointerdown", (e) => {
+    if (e.pointerType !== "mouse" || e.button !== 0) return;
+    m0 = { x: e.clientX, s: f.scrollLeft, i: atual(), vx: 0, ux: e.clientX, ut: performance.now(), id: e.pointerId, vai: false };
+    arrastou = false;
+  });
+  addEventListener("pointermove", (e) => {
+    if (!m0 || e.pointerId !== m0.id) return;
+    const dx = e.clientX - m0.x;
+    if (!m0.vai) {
+      if (Math.abs(dx) < 5) return;
+      m0.vai = true;
+      arrastou = true;
+      f.setPointerCapture(e.pointerId);
+      f.style.scrollSnapType = "none";
+      f.style.scrollBehavior = "auto";
+      f.classList.add("a-arrastar");
+    }
+    const agora = performance.now();
+    m0.vx = 0.7 * m0.vx + 0.3 * (e.clientX - m0.ux) / Math.max(1, agora - m0.ut);
+    m0.ux = e.clientX;
+    m0.ut = agora;
+    f.scrollLeft = m0.s - dx;
+  });
+  const largar = (e) => {
+    if (!m0 || e && e.pointerId !== m0.id) return;
+    const r = m0;
+    m0 = null;
+    if (!r.vai) return;
+    f.classList.remove("a-arrastar");
+    const dx = r.ux - r.x, lado = dx < 0 ? 1 : -1;
+    let i = atual();
+    if (Math.abs(dx) > 24 && Math.abs(r.vx) > 0.3 && Math.sign(-r.vx) === lado && (pos(i) - f.scrollLeft) * lado < 0) i += lado;
+    if (i === r.i && Math.abs(dx) > 40) i += lado;
+    i = Math.max(0, Math.min(fs.length - 1, i));
+    f.style.scrollBehavior = "";
+    f.scrollTo({ left: pos(i), behavior: suave() });
+    setTimeout(() => {
+      if (!m0) f.style.scrollSnapType = "";
+    }, 500);
+  };
+  addEventListener("pointerup", largar);
+  addEventListener("pointercancel", largar);
+  f.addEventListener("click", (e) => {
+    if (arrastou) {
+      e.preventDefault();
+      e.stopPropagation();
+      arrastou = false;
+      return;
+    }
+    const fig = e.target.closest("figure");
+    if (!fig) return;
+    const j = fs.indexOf(fig);
+    if (j > -1 && j !== atual()) f.scrollTo({ left: pos(j), behavior: suave() });
+  }, true);
 })();
 </script>
 <script>(() => {
