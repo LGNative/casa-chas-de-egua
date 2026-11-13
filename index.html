@@ -969,6 +969,26 @@ html body img.logo{background:none!important;box-shadow:none!important;border:0!
   .lugar-fita figure { transition: opacity .5s var(--ease); }
   .lugar-fita figure.fora { opacity: .45; }
   @media (prefers-reduced-motion: reduce) { .lugar-cursor, .lugar-cursor svg, .lugar-fita figure { transition: none; } }
+  
+  @supports (animation-timeline: view()) { @media (prefers-reduced-motion: no-preference) {
+    @media (min-width: 861px) {
+      .capa { view-timeline: --capa block; }
+      .capa > img { animation: capa-foto linear both; animation-timeline: --capa; animation-range: exit 0% exit 100%; }
+      .capa .carimbo { animation: capa-texto linear both; animation-timeline: --capa; animation-range: exit 0% exit 70%; }
+      @keyframes capa-foto { from { transform: scale(1.04); filter: brightness(1); } to { transform: scale(1.16) translateY(6%); filter: brightness(.55); } }
+      @keyframes capa-texto { from { transform: none; opacity: 1; } to { transform: translateY(-14vh); opacity: 0; } }
+    }
+    main > section:not(.passagem):not(.fecho):not(.lugar) > .dentro { border-top-color: transparent; background: linear-gradient(var(--tinta), var(--tinta)) left top / 100% 1px no-repeat;
+      animation: traco linear both; animation-timeline: view(); animation-range: entry 5% cover 28%; }
+    @keyframes traco { from { background-size: 0% 1px; } to { background-size: 100% 1px; } }
+    body .cab h2, body .ft-cab h2, body .lema { animation: titulo linear both; animation-timeline: view(); animation-range: entry 10% cover 26%; }
+    @keyframes titulo { from { clip-path: inset(0 0 100% 0); transform: translateY(.35em); } to { clip-path: inset(0 0 -.2em 0); transform: none; } }
+  } }
+  
+  @media (min-width: 861px) {
+    .div .pilha { height: 0; min-height: 100%; align-self: stretch; display: grid; grid-template-rows: 1fr 1fr; }
+    .div .pilha figure { min-height: 0; } .div .pilha img { height: 100%; aspect-ratio: auto; object-fit: cover; }
+  }
 </style>
 </head>
 <body><a class="saltar" href="#lugar">Saltar para o conteúdo</a>
