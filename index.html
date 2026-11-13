@@ -999,6 +999,7 @@ html body img.logo{background:none!important;box-shadow:none!important;border:0!
   } }
   @media (max-width: 860px) { .faixa img { height: 62svh; } }
   #falta { background: var(--papel); padding-bottom: clamp(56px, 7vw, 104px); }
+  
 </style>
 </head>
 <body><a class="saltar" href="#lugar">Saltar para o conteúdo</a>
@@ -1620,6 +1621,26 @@ document.getElementById("fechar").addEventListener("click", fecha);
   const suave = () => matchMedia("(prefers-reduced-motion: reduce)").matches ? "auto" : "smooth";
   let m0 = null, arrastou = false;
   f.addEventListener("dragstart", (e) => e.preventDefault());
+  let rodaAc = 0, rodaFim = 0, rodaT = 0;
+  f.addEventListener("wheel", (e) => {
+    if (Math.abs(e.deltaX) <= Math.abs(e.deltaY) || e.ctrlKey) return;
+    e.preventDefault();
+    const agora = performance.now();
+    if (agora < rodaFim) {
+      rodaFim = Math.max(rodaFim, agora + 110);
+      return;
+    }
+    rodaAc += e.deltaX;
+    clearTimeout(rodaT);
+    rodaT = setTimeout(() => {
+      rodaAc = 0;
+    }, 160);
+    if (Math.abs(rodaAc) >= 24) {
+      vai(rodaAc > 0 ? 1 : -1);
+      rodaAc = 0;
+      rodaFim = agora + 420;
+    }
+  }, { passive: false });
   f.addEventListener("pointerdown", (e) => {
     if (e.pointerType !== "mouse" || e.button !== 0) return;
     m0 = { x: e.clientX, s: f.scrollLeft, i: atual(), vx: 0, ux: e.clientX, ut: performance.now(), id: e.pointerId, vai: false };
