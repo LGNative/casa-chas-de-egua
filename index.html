@@ -1059,6 +1059,9 @@ html body img.logo{background:none!important;box-shadow:none!important;border:0!
   .lugar .lugar-fita:focus-visible ~ .lugar-nav .lugar-pontos { outline: 2px solid var(--azul); outline-offset: 6px; border-radius: 2px; }
   .lugar-cursor svg { transition: none !important; rotate: none !important; }
   .lugar-cursor.esq svg { rotate: none !important; transform: scaleX(-1); }
+  
+  .fecho .botao.so3d { gap: 10px; } .fecho .botao.so3d::after { content: none; }
+  .fecho .botao.so3d svg { width: 20px; height: 20px; fill: currentColor; flex: none; }
 </style>
 </head>
 <body><a class="saltar" href="#lugar">Saltar para o conteúdo</a>
@@ -1225,7 +1228,7 @@ html body img.logo{background:none!important;box-shadow:none!important;border:0!
     <div class="dentro">
       <div class="fecho-lado">
         <p class="fecho-t ver">Explore o interior da casa em 3D.</p>
-        <div class="fecho-acoes ver"><a class="botao escuro" href="passeio/index.html">Casa 3D</a><a class="volta" href="#documentos">Desenhos e documentos</a></div>
+        <div class="fecho-acoes ver"><a class="botao escuro so3d" href="passeio/index.html"><svg class="ph c-ic" viewBox="0 0 256 256" aria-hidden="true"><path d="M222.72,67.9l-88-48.17a13.9,13.9,0,0,0-13.44,0l-88,48.18A14,14,0,0,0,26,80.18v95.64a14,14,0,0,0,7.28,12.27l88,48.18a13.92,13.92,0,0,0,13.44,0l88-48.18A14,14,0,0,0,230,175.82V80.18A14,14,0,0,0,222.72,67.9ZM127,30.25a2,2,0,0,1,1.92,0L212.51,76,128,122.24,43.49,76ZM39,177.57a2,2,0,0,1-1-1.75V86.66l84,46V223Zm177.92,0L134,223V132.64l84-46v89.16A2,2,0,0,1,217,177.57Z"/></svg>Casa 3D</a><a class="volta" href="#documentos">Desenhos e documentos</a></div>
       </div>
       <a class="fecho-porta" href="passeio/index.html" aria-label="Entrar na casa em 3D"><img width="3200" height="2134" src="img/entrada.jpg" loading="lazy" decoding="async" alt=""><span class="fecho-selo" aria-hidden="true"><svg class="ph c-ic" viewBox="0 0 256 256" aria-hidden="true"><path d="M222.72,67.9l-88-48.17a13.9,13.9,0,0,0-13.44,0l-88,48.18A14,14,0,0,0,26,80.18v95.64a14,14,0,0,0,7.28,12.27l88,48.18a13.92,13.92,0,0,0,13.44,0l88-48.18A14,14,0,0,0,230,175.82V80.18A14,14,0,0,0,222.72,67.9ZM127,30.25a2,2,0,0,1,1.92,0L212.51,76,128,122.24,43.49,76ZM39,177.57a2,2,0,0,1-1-1.75V86.66l84,46V223Zm177.92,0L134,223V132.64l84-46v89.16A2,2,0,0,1,217,177.57Z"/></svg>Casa 3D</span></a>
     </div>
