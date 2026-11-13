@@ -93,7 +93,7 @@
 
   
   #escolhas {
-    position: fixed; top: 24px; right: 24px; width: 300px; max-height: calc(100% - 48px); overflow: auto; z-index: 3;
+    position: fixed; top: 24px; right: 24px; width: 300px; max-height: calc(100% - 48px); overflow: auto; overscroll-behavior: contain; z-index: 3;
     background: rgba(255, 255, 255, .96); border-radius: 20px; border: 1px solid var(--linha); padding: 0 22px 22px; scrollbar-width: thin; scrollbar-color: #c9c7bf transparent;
   }
   
@@ -236,7 +236,7 @@
 <div id="avanco" aria-hidden="true"></div>
 <div id="corte" aria-hidden="true"></div>
 <div id="desca" aria-hidden="true"><i></i><svg class="mao" viewBox="0 0 256 256" fill="currentColor" aria-hidden="true"><path d="M196,90a25.87,25.87,0,0,0-14.59,4.49A26,26,0,0,0,142,78.1V44a26,26,0,0,0-52,0v87l-7.53-12.1a26,26,0,0,0-45,26.07l4.67,8.25c34,60,48.07,84.77,93.860,84.77a86.1,86.1,0,0,0,86-86V116A26,26,0,0,0,196,90Zm14,62a74.09,74.09,0,0,1-74,74c-38.8,0-50-19.830-83.42-78.69L47.89,139l0,0A14,14,0,0,1,53,119.88,13.87,13.87,0,0,1,60,118a14,14,0,0,1,12.15,7l.1.17,18.680,30A6,6,0,0,0,102,152V44a14,14,0,0,1,28,0v68a6,6,0,0,0,12,0V100a14,14,0,0,1,28,0v20a6,6,0,0,0,12,0v-4a14,14,0,0,1,28,0Z"/></svg><span class="rato">Desça a página para entrar</span><span class="dedo">Deslize para cima para entrar</span></div>
-<section id="escolhas" aria-label="Mudar elementos" hidden>
+<section id="escolhas" aria-label="Mudar elementos" data-lenis-prevent hidden>
   <div class="esc-cabeca">
     <h2>Mudar elementos</h2>
     <button type="button" class="esc-recolher" aria-expanded="true">Recolher</button>
@@ -270,11 +270,11 @@ const semTres = (motivo) => {
   if (motivo) console.warn(motivo);
 };
 if (leve) semTres();
-else import("./casa.js?v=20").then((m) => m.iniciar()).catch((e) => semTres(e));
+else import("./casa.js?v=25").then((m) => m.iniciar()).catch((e) => semTres(e));
 document.getElementById("abrir3d").addEventListener("click", () => {
   document.documentElement.classList.add("tel3d");
   scrollTo(0, 0);
-  import("./casa.js?v=20").then((m) => m.iniciar({ explorar: true })).catch((e) => {
+  import("./casa.js?v=25").then((m) => m.iniciar({ explorar: true })).catch((e) => {
     document.documentElement.classList.remove("tel3d");
     console.warn(e);
   });
