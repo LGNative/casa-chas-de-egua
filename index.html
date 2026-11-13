@@ -1054,6 +1054,11 @@ html body img.logo{background:none!important;box-shadow:none!important;border:0!
   .lugar-fita:not(:hover) ~ .lugar-cursor { opacity: 0 !important; scale: .4 !important; visibility: hidden; }
   
   .lugar-fita figure.fora:hover { opacity: 1; }
+  
+  .lugar .lugar-fita:focus, .lugar .lugar-fita:focus-visible { outline: none; }
+  .lugar .lugar-fita:focus-visible ~ .lugar-nav .lugar-pontos { outline: 2px solid var(--azul); outline-offset: 6px; border-radius: 2px; }
+  .lugar-cursor svg { transition: none !important; rotate: none !important; }
+  .lugar-cursor.esq svg { rotate: none !important; transform: scaleX(-1); }
 </style>
 </head>
 <body><a class="saltar" href="#lugar">Saltar para o conteúdo</a>
