@@ -1074,6 +1074,26 @@ html body img.logo{background:none!important;box-shadow:none!important;border:0!
     html body .carimbo { padding: 24px 26px !important; }
   }
 </style>
+<script>(() => {
+  try {
+    history.scrollRestoration = "manual";
+  } catch (e) {
+  }
+  const daqui = document.referrer && new URL(document.referrer).origin === location.origin && /\/doc\//.test(new URL(document.referrer).pathname);
+  if (location.hash && !daqui) {
+    history.replaceState(null, "", location.pathname + location.search);
+    scrollTo(0, 0);
+    addEventListener("load", () => scrollTo(0, 0));
+  } else if (location.hash) {
+    addEventListener("load", () => {
+      const el = document.querySelector(location.hash);
+      if (el) el.scrollIntoView({ behavior: "instant" });
+    });
+  } else {
+    scrollTo(0, 0);
+  }
+})();
+</script>
 </head>
 <body><a class="saltar" href="#lugar">Saltar para o conteúdo</a>
 
