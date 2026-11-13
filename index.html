@@ -1782,14 +1782,25 @@ document.getElementById("fechar").addEventListener("click", fecha);
       on = false;
       c.classList.remove("on");
     });
+    const some = () => {
+      on = false;
+      c.classList.remove("on");
+    };
     const esconde = () => {
       if (!on) return;
-      const r = f.getBoundingClientRect();
-      if (tx < r.left || tx > r.right || ty < r.top || ty > r.bottom) {
-        on = false;
-        c.classList.remove("on");
-      }
+      const el = document.elementFromPoint(tx, ty);
+      if (!el || !f.contains(el)) some();
     };
+    document.addEventListener("pointermove", (e) => {
+      if (on && !f.contains(e.target)) some();
+    }, { passive: true });
+    document.addEventListener("pointerdown", (e) => {
+      if (on && !f.contains(e.target)) some();
+    }, { passive: true });
+    document.addEventListener("visibilitychange", some);
+    addEventListener("pagehide", some);
+    addEventListener("resize", some);
+    setInterval(esconde, 400);
     addEventListener("scroll", esconde, { passive: true });
     addEventListener("blur", () => {
       on = false;
