@@ -1715,24 +1715,35 @@ document.getElementById("fechar").addEventListener("click", fecha);
   const suave = () => matchMedia("(prefers-reduced-motion: reduce)").matches ? "auto" : "smooth";
   let m0 = null, arrastou = false;
   f.addEventListener("dragstart", (e) => e.preventDefault());
-  let rodaAc = 0, rodaFim = 0, rodaT = 0;
+  let rodaAc = 0, rodaT = 0, rodaUlt = 0, rodaPico = 0, rodaBloq = false, rodaFeito = 0;
   f.addEventListener("wheel", (e) => {
-    if (Math.abs(e.deltaX) <= Math.abs(e.deltaY) || e.ctrlKey) return;
+    const dx = e.deltaMode === 1 ? e.deltaX * 16 : e.deltaX, dy = e.deltaMode === 1 ? e.deltaY * 16 : e.deltaY;
+    if (e.ctrlKey || Math.abs(dx) < Math.abs(dy) * 0.6 || Math.abs(dx) < 1) return;
     e.preventDefault();
-    const agora = performance.now();
-    if (agora < rodaFim) {
-      rodaFim = Math.max(rodaFim, agora + 110);
-      return;
-    }
-    rodaAc += e.deltaX;
-    clearTimeout(rodaT);
-    rodaT = setTimeout(() => {
+    const agora = performance.now(), m = Math.abs(dx);
+    if (agora - rodaUlt > 120) {
+      rodaBloq = false;
       rodaAc = 0;
-    }, 160);
-    if (Math.abs(rodaAc) >= 24) {
+      rodaPico = 0;
+    }
+    rodaUlt = agora;
+    if (rodaBloq) {
+      if (agora - rodaFeito > 260 && m > rodaPico * 1.6 && m > 8) {
+        rodaBloq = false;
+        rodaAc = 0;
+      } else {
+        rodaPico = Math.min(rodaPico, m) || m;
+        return;
+      }
+    }
+    rodaAc += dx;
+    rodaPico = Math.max(rodaPico, m);
+    if (Math.abs(rodaAc) >= 18) {
       vai(rodaAc > 0 ? 1 : -1);
       rodaAc = 0;
-      rodaFim = agora + 420;
+      rodaBloq = true;
+      rodaFeito = agora;
+      rodaPico = m;
     }
   }, { passive: false });
   f.addEventListener("pointerdown", (e) => {
