@@ -1050,6 +1050,10 @@ html body img.logo{background:none!important;box-shadow:none!important;border:0!
   .ft-num.roda .nf-c { transform: translateY(calc(var(--d) * -1em)); }
   
   @media (min-width: 861px) { .lugar .lugar-fita::after { content: ""; flex: 0 0 calc(100% - min(64vw, 920px)); } }
+  
+  .lugar-fita:not(:hover) ~ .lugar-cursor { opacity: 0 !important; scale: .4 !important; visibility: hidden; }
+  
+  .lugar-fita figure.fora:hover { opacity: 1; }
 </style>
 </head>
 <body><a class="saltar" href="#lugar">Saltar para o conteúdo</a>
@@ -1621,6 +1625,7 @@ document.getElementById("fechar").addEventListener("click", fecha);
   if (!L) return;
   const f = L.querySelector(".lugar-fita"), fs = [...f.children], n = L.querySelector(".lugar-n");
   const atual = () => {
+    if (f.scrollLeft > 4 && f.scrollLeft + f.clientWidth >= f.scrollWidth - 6) return fs.length - 1;
     const x = f.scrollLeft;
     let i = 0, d = 1e9;
     fs.forEach((e, j) => {
@@ -1755,7 +1760,7 @@ document.getElementById("fechar").addEventListener("click", fecha);
     c.className = "lugar-cursor";
     c.setAttribute("aria-hidden", "true");
     c.innerHTML = '<svg viewBox="0 0 256 256"><path d="M220.24,132.24l-72,72a6,6,0,0,1-8.48-8.48L201.51,134H40a6,6,0,0,1,0-12H201.51L139.76,60.24a6,6,0,0,1,8.48-8.48l72,72A6,6,0,0,1,220.24,132.24Z"/></svg>';
-    document.body.appendChild(c);
+    f.after(c);
     let cx = 0, cy = 0, tx = 0, ty = 0, on = false, raf = 0;
     const anda = () => {
       cx += (tx - cx) * 0.22;
