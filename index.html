@@ -1028,6 +1028,9 @@ html body img.logo{background:none!important;box-shadow:none!important;border:0!
     .pe-nome { animation: titulo linear both; animation-timeline: view(); animation-range: entry 0% cover 30%; }
   } }
   @media (max-width: 700px) { .pe-cols { grid-template-columns: 1fr 1fr; } .pe-sobre { grid-column: 1 / -1; } .pe-nome { font-size: clamp(44px, 15vw, 72px); } }
+  
+  @media (min-width: 601px) and (max-width: 1100px) { .mats.frases { grid-template-columns: repeat(3, minmax(0, 1fr)); } .mats.frases i { aspect-ratio: 4 / 3; } }
+  @media (max-width: 600px) { .mats.frases i { aspect-ratio: 3 / 2; } }
 </style>
 </head>
 <body><a class="saltar" href="#lugar">Saltar para o conteúdo</a>
