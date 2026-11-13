@@ -1073,6 +1073,10 @@ html body img.logo{background:none!important;box-shadow:none!important;border:0!
     html body .carimbo .c-resumo { margin-bottom: 18px; }
     html body .carimbo { padding: 24px 26px !important; }
   }
+  @media (min-width: 861px) { .lugar .lugar-fita figure { scroll-snap-stop: always; } }
+  
+  html body .lugar-cursor { display: none !important; }
+  @media (hover: hover) and (pointer: fine) { html body .lugar-fita, html body .lugar-fita * { cursor: grab !important; } html body .lugar-fita figure:not(.fora) img { cursor: zoom-in !important; } html body .lugar-fita.a-arrastar, html body .lugar-fita.a-arrastar * { cursor: grabbing !important; } }
 </style>
 <script>(() => {
   try {
@@ -1715,36 +1719,18 @@ document.getElementById("fechar").addEventListener("click", fecha);
   const suave = () => matchMedia("(prefers-reduced-motion: reduce)").matches ? "auto" : "smooth";
   let m0 = null, arrastou = false;
   f.addEventListener("dragstart", (e) => e.preventDefault());
-  let rodaAc = 0, rodaT = 0, rodaUlt = 0, rodaPico = 0, rodaBloq = false, rodaFeito = 0;
+  let rodaUlt = 0, rodaFeito = 0;
   f.addEventListener("wheel", (e) => {
-    const dx = e.deltaMode === 1 ? e.deltaX * 16 : e.deltaX, dy = e.deltaMode === 1 ? e.deltaY * 16 : e.deltaY;
-    if (e.ctrlKey || Math.abs(dx) < Math.abs(dy) * 0.6 || Math.abs(dx) < 1) return;
-    e.preventDefault();
-    const agora = performance.now(), m = Math.abs(dx);
-    if (agora - rodaUlt > 120) {
-      rodaBloq = false;
-      rodaAc = 0;
-      rodaPico = 0;
-    }
+    const dx = e.deltaMode === 1 ? e.deltaX * 16 : e.deltaX, dy = e.deltaMode === 1 ? e.deltaY * 16 : e.deltaY, agora = performance.now();
+    const parado = agora - rodaUlt;
     rodaUlt = agora;
-    if (rodaBloq) {
-      if (agora - rodaFeito > 260 && m > rodaPico * 1.6 && m > 8) {
-        rodaBloq = false;
-        rodaAc = 0;
-      } else {
-        rodaPico = Math.min(rodaPico, m) || m;
-        return;
-      }
-    }
-    rodaAc += dx;
-    rodaPico = Math.max(rodaPico, m);
-    if (Math.abs(rodaAc) >= 18) {
-      vai(rodaAc > 0 ? 1 : -1);
-      rodaAc = 0;
-      rodaBloq = true;
-      rodaFeito = agora;
-      rodaPico = m;
-    }
+    if (e.ctrlKey || Math.abs(dx) < Math.abs(dy)) return;
+    const salto = e.deltaMode !== 0 || Math.abs(dx) >= 30 && parado > 60;
+    if (!salto) return;
+    e.preventDefault();
+    if (agora - rodaFeito < 180) return;
+    rodaFeito = agora;
+    vai(dx > 0 ? 1 : -1);
   }, { passive: false });
   f.addEventListener("pointerdown", (e) => {
     if (e.pointerType !== "mouse" || e.button !== 0) return;
@@ -1795,15 +1781,14 @@ document.getElementById("fechar").addEventListener("click", fecha);
       arrastou = false;
       return;
     }
-    if (matchMedia("(pointer: fine)").matches) {
-      const r = f.getBoundingClientRect();
-      vai(e.clientX < r.left + r.width * 0.35 ? -1 : 1);
-      return;
-    }
     const fig = e.target.closest("figure");
     if (!fig) return;
     const j = fs.indexOf(fig);
-    if (j > -1 && j !== atual()) f.scrollTo({ left: pos(j), behavior: suave() });
+    if (j > -1 && j !== atual()) {
+      e.preventDefault();
+      e.stopPropagation();
+      f.scrollTo({ left: pos(j), behavior: suave() });
+    }
   }, true);
   if (matchMedia("(hover: hover) and (pointer: fine)").matches) {
     const c = document.createElement("div");
