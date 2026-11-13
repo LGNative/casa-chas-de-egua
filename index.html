@@ -1681,6 +1681,23 @@ document.getElementById("fechar").addEventListener("click", fecha);
       on = false;
       c.classList.remove("on");
     });
+    const esconde = () => {
+      if (!on) return;
+      const r = f.getBoundingClientRect();
+      if (tx < r.left || tx > r.right || ty < r.top || ty > r.bottom) {
+        on = false;
+        c.classList.remove("on");
+      }
+    };
+    addEventListener("scroll", esconde, { passive: true });
+    addEventListener("blur", () => {
+      on = false;
+      c.classList.remove("on");
+    });
+    document.addEventListener("mouseleave", () => {
+      on = false;
+      c.classList.remove("on");
+    });
     f.addEventListener("scroll", () => {
       if (on) {
         const r = f.getBoundingClientRect();
