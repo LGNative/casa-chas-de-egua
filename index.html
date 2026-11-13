@@ -1042,6 +1042,12 @@ html body img.logo{background:none!important;box-shadow:none!important;border:0!
   html body .fecho-selo { background: var(--acao) !important; color: #fff !important; }
   @media (max-width: 860px) { html body .barra .abre-menu { background: #fff; color: var(--tinta); box-shadow: inset 0 0 0 1px var(--linha); } }
   html body .barra .entrar:focus-visible, html body .c-b.c-b-cheio:focus-visible, html body #menu .tres3d:focus-visible { outline: 2px solid var(--tinta); outline-offset: 3px; }
+  
+  .ft-num dd { font-variant-numeric: tabular-nums; }
+  .ft-num .nf { display: inline-block; height: 1em; line-height: 1; overflow: hidden; vertical-align: -.08em; }
+  .ft-num .nf-c { display: block; transform: translateY(0); transition: transform 1.1s cubic-bezier(.16, 1, .3, 1); transition-delay: calc(var(--i) * 70ms); }
+  .ft-num .nf-c span { display: block; height: 1em; }
+  .ft-num.roda .nf-c { transform: translateY(calc(var(--d) * -1em)); }
 </style>
 </head>
 <body><a class="saltar" href="#lugar">Saltar para o conteúdo</a>
@@ -1824,6 +1830,44 @@ document.getElementById("fechar").addEventListener("click", fecha);
     } catch (e2) {
     }
   });
+})();
+</script>
+<script>(() => {
+  const L = document.querySelector(".ft-num");
+  if (!L || matchMedia("(prefers-reduced-motion: reduce)").matches || !("IntersectionObserver" in window)) return;
+  let i = 0;
+  L.querySelectorAll("dd").forEach((dd) => {
+    const t = dd.firstChild;
+    if (!t || t.nodeType !== 3) return;
+    const v = t.textContent;
+    dd.setAttribute("aria-label", dd.textContent.replace(/(\d)(m)/, "$1 $2"));
+    const f = document.createDocumentFragment();
+    [...v].forEach((c) => {
+      const s = document.createElement("span");
+      s.setAttribute("aria-hidden", "true");
+      if (/\d/.test(c)) {
+        s.className = "nf";
+        const col = document.createElement("span");
+        col.className = "nf-c";
+        col.style.setProperty("--d", c);
+        col.style.setProperty("--i", i++);
+        for (let k = 0; k <= 9; k++) {
+          const n = document.createElement("span");
+          n.textContent = k;
+          col.appendChild(n);
+        }
+        s.appendChild(col);
+      } else s.textContent = c;
+      f.appendChild(s);
+    });
+    dd.replaceChild(f, t);
+  });
+  new IntersectionObserver((es, o) => es.forEach((e) => {
+    if (e.isIntersecting) {
+      L.classList.add("roda");
+      o.disconnect();
+    }
+  }), { threshold: 0.6 }).observe(L);
 })();
 </script>
 </body>
