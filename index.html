@@ -1031,6 +1031,17 @@ html body img.logo{background:none!important;box-shadow:none!important;border:0!
   
   @media (min-width: 601px) and (max-width: 1100px) { .mats.frases { grid-template-columns: repeat(3, minmax(0, 1fr)); } .mats.frases i { aspect-ratio: 4 / 3; } }
   @media (max-width: 600px) { .mats.frases i { aspect-ratio: 3 / 2; } }
+  
+  :root { --acao: #3f5870; --acao-h: #334a60; }
+  html body .barra .entrar, html body .barra.fixa .entrar, html body .barra:not(.fixa) .entrar, html body .c-b.c-b-cheio, html body #menu .tres3d {
+    background: var(--acao) !important; color: #fff !important; box-shadow: none !important; }
+  html body .barra .entrar:hover, html body .c-b.c-b-cheio:hover, html body #menu .tres3d:hover { background: var(--acao-h) !important; }
+  html body .c-b.c-b-cheio { min-height: 52px; padding-inline: 24px; font-size: 16.5px; }
+  html body .fecho .botao.escuro { background: #b9c9d9 !important; color: var(--tinta) !important; min-height: 56px; padding-inline: 28px; }
+  html body .fecho .botao.escuro:hover { background: #d3deea !important; }
+  html body .fecho-selo { background: var(--acao) !important; color: #fff !important; }
+  @media (max-width: 860px) { html body .barra .abre-menu { background: #fff; color: var(--tinta); box-shadow: inset 0 0 0 1px var(--linha); } }
+  html body .barra .entrar:focus-visible, html body .c-b.c-b-cheio:focus-visible, html body #menu .tres3d:focus-visible { outline: 2px solid var(--tinta); outline-offset: 3px; }
 </style>
 </head>
 <body><a class="saltar" href="#lugar">Saltar para o conteúdo</a>
