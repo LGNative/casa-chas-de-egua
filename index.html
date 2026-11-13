@@ -1062,6 +1062,17 @@ html body img.logo{background:none!important;box-shadow:none!important;border:0!
   
   .fecho .botao.so3d { gap: 10px; } .fecho .botao.so3d::after { content: none; }
   .fecho .botao.so3d svg { width: 20px; height: 20px; fill: currentColor; flex: none; }
+  
+  @media (min-width: 861px) {
+    html body .carimbo { width: min(440px, 34vw) !important; bottom: clamp(24px, 4vh, 56px) !important; max-height: calc(100svh - 140px); }
+    html body .carimbo h1 { font-size: clamp(34px, min(3.4vw, 6.2vh), 60px) !important; }
+    html body .carimbo .c-resumo { font-size: 16px; }
+  }
+  @media (min-width: 861px) and (max-height: 860px) {
+    html body .carimbo .c-dados { display: none !important; }
+    html body .carimbo .c-resumo { margin-bottom: 18px; }
+    html body .carimbo { padding: 24px 26px !important; }
+  }
 </style>
 </head>
 <body><a class="saltar" href="#lugar">Saltar para o conteúdo</a>
