@@ -989,6 +989,16 @@ html body img.logo{background:none!important;box-shadow:none!important;border:0!
     .div .pilha { height: 0; min-height: 100%; align-self: stretch; display: grid; grid-template-rows: 1fr 1fr; }
     .div .pilha figure { min-height: 0; } .div .pilha img { height: 100%; aspect-ratio: auto; object-fit: cover; }
   }
+  
+  .faixa { margin: clamp(64px, 8vw, 128px) 0 0; position: relative; }
+  .faixa img { display: block; width: 100%; height: min(86svh, 900px); object-fit: cover; object-position: 50% 55%; background: #e6e1d6; }
+  .faixa figcaption { max-width: var(--max); margin: 14px auto 0; padding: 0 var(--margem); color: var(--cinza); font-size: 15px; }
+  @supports (animation-timeline: view()) { @media (prefers-reduced-motion: no-preference) {
+    .faixa img { animation: faixa-abre linear both; animation-timeline: view(); animation-range: entry 0% cover 45%; }
+    @keyframes faixa-abre { from { clip-path: inset(8% 14% 8% 14%); } to { clip-path: inset(0); } }
+  } }
+  @media (max-width: 860px) { .faixa img { height: 62svh; } }
+  #falta { background: var(--papel); padding-bottom: clamp(56px, 7vw, 104px); }
 </style>
 </head>
 <body><a class="saltar" href="#lugar">Saltar para o conteúdo</a>
@@ -1087,6 +1097,8 @@ html body img.logo{background:none!important;box-shadow:none!important;border:0!
       </div>
     </div>
   </section>
+
+  <figure class="faixa" aria-label="Pausa entre as divisões e os materiais"><img src="img/cozinha-janela.jpg?v=5" loading="lazy" decoding="async" alt="A cozinha vista da janela, com as colunas até ao teto."><figcaption>A cozinha proposta, vista da janela</figcaption></figure>
 
   <section id="materiais" class="desenhos">
     <div class="dentro">
