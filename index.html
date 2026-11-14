@@ -1061,6 +1061,24 @@ html body img.logo{background:none!important;box-shadow:none!important;border:0!
     .lugar-nav button.ant, .lugar-nav button.seg { display: none; }
   }
   @media (prefers-reduced-motion: reduce) { .lugar-fita img, .lugar-pontos button::before { transition: none; } }
+  
+  @media (max-width: 860px) {
+    
+    html body .folhas figure { margin-inline: calc(-1 * var(--margem)); }
+    html body .folhas figure figcaption { padding-inline: var(--margem); }
+    html body .folhas figure::after { content: ""; top: 10px; right: 10px; width: 40px; height: 40px; padding: 0;
+      border-radius: 50%; background-position: center; background-size: 18px; box-shadow: 0 1px 4px rgba(0, 0, 0, .18); }
+  }
+  
+  @media (max-width: 700px) {
+    html body .pe-cols a { font-size: 16px; line-height: 1.7; }
+    html body .pe-cols { column-gap: 16px; }
+    html body .pe-sobre p { font-size: 16px; }
+    html body .pe-base .assin b { display: none; }
+    html body .pe-topo { white-space: nowrap; }
+  }
+  
+  html body .pe-cols { border-top: 1px solid var(--tinta); }
 </style>
 <script>(() => {
   try {
@@ -1256,7 +1274,7 @@ html body img.logo{background:none!important;box-shadow:none!important;border:0!
 </main>
 
 <nav class="guia" id="guia" aria-label="Planta: ir para uma divisão"><span class="guia-t">Está aqui</span><button type="button" class="guia-x" aria-label="Fechar a planta">×</button><svg class="planta-guia" viewBox="-2 -2 127 96" role="img" aria-label="Planta da casa, com a divisão que está a ver marcada"><path class="mur" d="M65.2,92.1 L0.0,92.1 L0.0,6.8 L65.2,6.8 L65.2,0.0 L123.4,0.0 L123.4,59.4 L70.2,59.4 L70.2,92.1 Z"/><polygon class="div-sala" data-d="sala" points="50.0,87.1 5.0,87.1 5.0,36.5 65.2,36.5 65.2,54.9 50.0,54.9"/><polygon class="div-cozinha" data-d="cozinha" points="65.2,35.9 5.0,35.9 5.0,11.8 65.2,11.8"/><polygon class="div-wc" data-d="wc" points="65.2,87.1 51.2,87.1 51.2,56.1 65.2,56.1"/><g class="div-quartos" data-d="quartos"><polygon points="118.4,54.4 85.4,54.4 85.4,26.2 118.4,26.2"/><polygon points="118.4,25.0 70.2,25.0 70.2,5.0 118.4,5.0"/></g><polygon class="hall" points="84.2,54.4 70.2,54.4 70.2,26.2 84.2,26.2"/><text x="29.4" y="62.1" data-l="sala">Sala</text><text x="35.1" y="23.6" data-l="cozinha">Cozinha</text><text x="58.2" y="72.1" data-l="wc">WC</text><text x="101.9" y="40.1" data-l="quartos">Q1</text><text x="94.4" y="14.6" data-l="quartos">Q2</text></svg></nav>
-<footer class="pe"><div class="dentro"><p class="pe-nome" aria-hidden="true">Casa Chãs d’Égua</p><div class="pe-cols"><nav aria-label="Secções no rodapé"><h2>Índice</h2><ul><li><a href="#lugar">A casa e a aldeia</a></li><li><a href="#planta">Planta</a></li><li><a href="#divisoes">Divisões</a></li><li><a href="#materiais">Materiais</a></li><li><a href="#ficha">Ficha técnica</a></li><li><a href="#documentos">Documentos</a></li></ul></nav><nav aria-label="Documentos no rodapé"><h2>Para ver</h2><ul><li><a href="doc/estudo-previo.html">Estudo prévio</a></li><li><a href="doc/casa-de-chas-de-egua.html">A casa por dentro</a></li><li><a href="doc/frentes-cozinha-para-o-carpinteiro.html">Frentes da cozinha</a></li><li><a href="passeio/index.html">Casa 3D</a></li></ul></nav><div class="pe-sobre"><h2>O estudo</h2><p>Chãs d’Égua, Arganil. Estudo prévio de interiores de 10 de novembro de 2026.</p><p class="pe-nota">Não substitui projeto licenciado.</p></div></div><div class="pe-base"><span class="assin"><img class="pe-logo" src="marca/logo.svg" alt="" width="40" height="42"><b>Casa Chãs d’Égua</b></span><a class="pe-topo" href="#topo">Voltar ao início<svg viewBox="0 0 256 256" aria-hidden="true"><path d="M205.66,117.66a8,8,0,0,1-11.32,0L136,59.31V216a8,8,0,0,1-16,0V59.31L61.66,117.66a8,8,0,0,1-11.32-11.32l72-72a8,8,0,0,1,11.32,0l72,72A8,8,0,0,1,205.66,117.66Z"/></svg></a></div></div></footer>
+<footer class="pe"><div class="dentro"><div class="pe-cols"><nav aria-label="Secções no rodapé"><h2>Índice</h2><ul><li><a href="#lugar">A casa e a aldeia</a></li><li><a href="#planta">Planta</a></li><li><a href="#divisoes">Divisões</a></li><li><a href="#materiais">Materiais</a></li><li><a href="#ficha">Ficha técnica</a></li><li><a href="#documentos">Documentos</a></li></ul></nav><nav aria-label="Documentos no rodapé"><h2>Para ver</h2><ul><li><a href="doc/estudo-previo.html">Estudo prévio</a></li><li><a href="doc/casa-de-chas-de-egua.html">A casa por dentro</a></li><li><a href="doc/frentes-cozinha-para-o-carpinteiro.html">Frentes da cozinha</a></li><li><a href="passeio/index.html">Casa 3D</a></li></ul></nav><div class="pe-sobre"><h2>O estudo</h2><p>Chãs d’Égua, Arganil. Estudo prévio de interiores de 10 de novembro de 2026.</p><p class="pe-nota">Não substitui projeto licenciado.</p></div></div><div class="pe-base"><span class="assin"><img class="pe-logo" src="marca/logo.svg" alt="" width="40" height="42"><b>Casa Chãs d’Égua</b></span><a class="pe-topo" href="#topo">Voltar ao início<svg viewBox="0 0 256 256" aria-hidden="true"><path d="M205.66,117.66a8,8,0,0,1-11.32,0L136,59.31V216a8,8,0,0,1-16,0V59.31L61.66,117.66a8,8,0,0,1-11.32-11.32l72-72a8,8,0,0,1,11.32,0l72,72A8,8,0,0,1,205.66,117.66Z"/></svg></a></div></div></footer>
 
 <dialog id="menu" aria-label="Menu">
   <div class="topo"><span><img class="logo" src="marca/logo.svg" alt="Casa Chãs d’Égua" width="48" height="50"></span><button type="button" class="fecha" id="fecha-menu">Fechar</button></div>
