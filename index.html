@@ -1093,6 +1093,12 @@ html body img.logo{background:none!important;box-shadow:none!important;border:0!
   }
 :root{color-scheme:only light}  
   html body #guia .guia-x, html body #guia .guia-t { color: var(--tinta) !important; }
+  
+  @media (hover: hover) and (prefers-reduced-motion: no-preference) {
+    a.botao svg.c-ic { transition: transform .6s cubic-bezier(.2,.7,.2,1); transform-origin: 50% 50%; }
+    a.botao:hover svg.c-ic, a.botao:focus-visible svg.c-ic { transform: perspective(60px) rotateY(180deg); }
+    .folhas figure img { transition: transform .5s cubic-bezier(.2,.7,.2,1); } .folhas figure:hover img { transform: translateY(-4px); }
+  }
 </style>
 <script>(() => {
   try {
