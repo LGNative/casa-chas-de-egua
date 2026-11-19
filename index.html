@@ -1127,6 +1127,21 @@ html body img.logo{background:none!important;box-shadow:none!important;border:0!
     html body .docs .seta { grid-column: 2; grid-row: 1 / span 2; align-self: center; }
     html body .docs strong { font-size: clamp(22px, 1.95vw, 30px) !important; }
   }
+
+  
+  @media (min-width: 861px) {
+    html body .lugar .lugar-fita { display: grid; grid-template-columns: repeat(12, minmax(0, 1fr)); gap: clamp(14px, 1.4vw, 20px); overflow: visible; scroll-snap-type: none; cursor: auto; padding: 0; margin: 0; }
+    html body .lugar-fita::after { display: none; }
+    html body .lugar-fita figure { grid-column: span 3; grid-row: 2; display: flex; flex-direction: column; min-width: 0; }
+    html body .lugar-fita figure:nth-child(1) { grid-column: 1 / span 8; grid-row: 1; }
+    html body .lugar-fita figure:nth-child(5) { grid-column: 9 / span 4; grid-row: 1; }
+    html body .lugar-fita figure img { opacity: 1 !important; cursor: zoom-in !important; aspect-ratio: 4 / 3; transition: transform .6s var(--ease), filter .3s var(--ease); }
+    html body .lugar-fita figure:nth-child(1) img { aspect-ratio: 3 / 2; }
+    html body .lugar-fita figure:nth-child(5) img { aspect-ratio: auto; flex: 1 1 0; height: auto; min-height: 0; }
+    html body .lugar-fita figure:hover img { filter: brightness(1.04); }
+    html body .lugar-fita figcaption { margin-top: 10px; font-size: 15px; flex-wrap: wrap; column-gap: 8px; row-gap: 0; }
+    html body .lugar .lugar-nav { display: none; }
+  }
 </style>
 <script>(() => {
   try {
@@ -1797,6 +1812,7 @@ document.getElementById("fechar").addEventListener("click", fecha);
     const fg = fs[i], c = getComputedStyle(fg).scrollSnapAlign;
     return c.includes("center") ? fg.offsetLeft - (f.clientWidth - fg.offsetWidth) / 2 : fg.offsetLeft - parseFloat(getComputedStyle(f).scrollPaddingLeft || 0);
   };
+  const mosaico = () => matchMedia("(min-width: 861px)").matches;
   let i0 = 0;
   const vai = (i) => {
     i = Math.max(0, Math.min(fs.length - 1, i));
@@ -1842,6 +1858,7 @@ document.getElementById("fechar").addEventListener("click", fecha);
   ant && (ant.onclick = () => vai(i0 - 1));
   seg && (seg.onclick = () => vai(i0 + 1));
   f.addEventListener("keydown", (e) => {
+    if (mosaico()) return;
     if (e.key === "ArrowRight") {
       e.preventDefault();
       vai(i0 + 1);
@@ -1858,6 +1875,7 @@ document.getElementById("fechar").addEventListener("click", fecha);
   });
   let wUlt = 0, wFeito = 0;
   f.addEventListener("wheel", (e) => {
+    if (mosaico()) return;
     const k = e.deltaMode === 1 ? 16 : e.deltaMode === 2 ? f.clientWidth : 1, dx = e.deltaX * k, dy = e.deltaY * k, t = performance.now(), parado = t - wUlt;
     wUlt = t;
     if (e.ctrlKey || Math.abs(dx) <= Math.abs(dy)) return;
@@ -1869,7 +1887,7 @@ document.getElementById("fechar").addEventListener("click", fecha);
   }, { passive: false });
   let d0 = null, arrastou = false;
   f.addEventListener("pointerdown", (e) => {
-    if (e.pointerType !== "mouse" || e.button !== 0) return;
+    if (mosaico() || e.pointerType !== "mouse" || e.button !== 0) return;
     d0 = { x: e.clientX, s: f.scrollLeft, i: i0, t: performance.now(), vx: 0, ux: e.clientX, ut: performance.now(), ok: false };
     arrastou = false;
   });
@@ -1903,6 +1921,7 @@ document.getElementById("fechar").addEventListener("click", fecha);
   addEventListener("pointercancel", larga);
   f.addEventListener("dragstart", (e) => e.preventDefault());
   f.addEventListener("click", (e) => {
+    if (mosaico()) return;
     const fg = e.target.closest("figure");
     if (arrastou) {
       e.preventDefault();
